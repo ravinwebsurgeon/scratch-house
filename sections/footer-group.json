@@ -27,11 +27,19 @@
             "heading": "CONTACT",
             "subtext": "<p>TONY.SCRATCHHOUSE@GMAIL.COM​<br/><br/>FOR CATERING, ORDERS &<br/>PRODUCT QUESTIONS: <br/>540-532-7139</p>"
           }
+        },
+        "link_list_RcqwFx": {
+          "type": "link_list",
+          "settings": {
+            "heading": "HOURS",
+            "menu": "footer-1"
+          }
         }
       },
       "block_order": [
         "text_4G3tRk",
-        "text_jn4E8h"
+        "text_jn4E8h",
+        "link_list_RcqwFx"
       ],
       "settings": {
         "color_scheme": "scheme-1",
