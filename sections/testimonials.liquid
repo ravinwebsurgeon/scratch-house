@@ -4,14 +4,11 @@
     <div class="testimonial-track">
       {% for block in section.blocks %}
         <div class="testimonial-item" {{ block.shopify_attributes }}>
-          <div class="stars">★★★★★</div>
-          <p>{{ block.settings.quote }}</p>
-        </div>
-      {% endfor %}
-      <!-- duplicate for seamless scroll -->
-      {% for block in section.blocks %}
-        <div class="testimonial-item">
-          <div class="stars">★★★★★</div>
+          <div class="testimonial-stars">
+            {% for i in (1..block.settings.stars) %}
+              ★
+            {% endfor %}
+          </div>
           <p>{{ block.settings.quote }}</p>
         </div>
       {% endfor %}
