@@ -16,6 +16,53 @@
   </div>
 </div>
 
+<style>
+.testimonial-section {
+  padding: 40px 20px;
+  background: #fff;
+}
+.testimonial-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.testimonial-item {
+  flex: 1 1 22%;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+.testimonial-stars {
+  color: #fbbf24; /* gold/yellow stars */
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.testimonial-text {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+.testimonial-author {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .testimonial-wrapper {
+    flex-direction: column;
+  }
+  .testimonial-item {
+    flex: 1 1 100%;
+  }
+}
+</style>
+
 {% schema %}
 {
   "name": "Testimonials Section",
