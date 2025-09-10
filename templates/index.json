@@ -39,7 +39,39 @@
             "author": ""
           }
         },
+        "testimonial_4T4DeL": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”",
+            "author": ""
+          }
+        },
+        "testimonial_azzfpq": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”",
+            "author": ""
+          }
+        },
         "testimonial_QX4WRB": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”",
+            "author": ""
+          }
+        },
+        "testimonial_d4gPWf": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”",
+            "author": ""
+          }
+        },
+        "testimonial_Jaqbbz": {
           "type": "testimonial",
           "settings": {
             "stars": 5,
@@ -54,13 +86,26 @@
             "text": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”",
             "author": ""
           }
+        },
+        "testimonial_g7n9zm": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”",
+            "author": ""
+          }
         }
       },
       "block_order": [
         "testimonial_6pJTTm",
         "testimonial_HhaPPi",
+        "testimonial_4T4DeL",
+        "testimonial_azzfpq",
         "testimonial_QX4WRB",
-        "testimonial_wyKaUL"
+        "testimonial_d4gPWf",
+        "testimonial_Jaqbbz",
+        "testimonial_wyKaUL",
+        "testimonial_g7n9zm"
       ],
       "name": "Testimonials Section",
       "settings": {}
