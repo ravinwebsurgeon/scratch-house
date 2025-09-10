@@ -12,7 +12,13 @@
     "image_text_bnner_HKPkqF": {
       "type": "image-text-bnner",
       "name": "Image-Text-Banner",
-      "settings": {}
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_3.png",
+        "heading": "Crafted from Plants.Made to Indulge",
+        "subtext": "Artisanal cheeses and gourmet medicinal meats infused withprobiotics, brain boosting  mushrooms, and protein.",
+        "button_label": "SHOP CHEESES",
+        "button_link": "#"
+      }
     }
   },
   "order": [
