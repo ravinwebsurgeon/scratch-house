@@ -19,7 +19,8 @@
           "settings": {
             "heading": "ADDRESS",
             "subtext": "<p>6309 UNIVERSITY AVENUESAN DIEGO CA</p>",
-            "mailto": ""
+            "mailto": "",
+            "telto": ""
           }
         },
         "text_jn4E8h": {
@@ -27,7 +28,8 @@
           "settings": {
             "heading": "CONTACT",
             "subtext": "",
-            "mailto": "<p>TONY.SCRATCHHOUSE@GMAIL.COM​</p>"
+            "mailto": "<p>TONY.SCRATCHHOUSE@GMAIL.COM​</p>",
+            "telto": "<p>FOR CATERING, ORDERS &<br/>PRODUCT QUESTIONS: <br/>540-532-7139<br/><br/></p>"
           }
         },
         "link_list_RcqwFx": {
