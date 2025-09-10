@@ -281,6 +281,13 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "instagram_d3HUyC": {
+      "type": "instagram",
+      "name": "Instagram Section",
+      "settings": {
+        "title": "Follow us on Instagram"
+      }
     }
   },
   "order": [
@@ -291,6 +298,7 @@
     "combo_board_emHV9M",
     "our_mission_AJydqF",
     "everydays_holiday_967hhM",
-    "newsletter_FHDjw7"
+    "newsletter_FHDjw7",
+    "instagram_d3HUyC"
   ]
 }
