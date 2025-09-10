@@ -254,6 +254,33 @@
       "settings": {
         "title": "For Everydays and Holidays"
       }
+    },
+    "newsletter_FHDjw7": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_Pyw6ee": {
+          "type": "heading",
+          "settings": {
+            "heading": "subscribe to our newsletter",
+            "heading_size": "h1"
+          }
+        },
+        "email_form_FQXbtb": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_Pyw6ee",
+        "email_form_FQXbtb"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -263,6 +290,7 @@
     "testimonials_jVGXNR",
     "combo_board_emHV9M",
     "our_mission_AJydqF",
-    "everydays_holiday_967hhM"
+    "everydays_holiday_967hhM",
+    "newsletter_FHDjw7"
   ]
 }
