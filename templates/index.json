@@ -216,6 +216,13 @@
         "button_text": "Join Our Journey",
         "image": "shopify://shop_images/Rectangle_4280.png"
       }
+    },
+    "everydays_holiday_967hhM": {
+      "type": "everydays-holiday",
+      "name": "Everyday Holiday",
+      "settings": {
+        "title": "Everyday Holiday"
+      }
     }
   },
   "order": [
@@ -224,6 +231,7 @@
     "holiday_special_GN4CwD",
     "testimonials_jVGXNR",
     "combo_board_emHV9M",
-    "our_mission_AJydqF"
+    "our_mission_AJydqF",
+    "everydays_holiday_967hhM"
   ]
 }
