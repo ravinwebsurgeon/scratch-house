@@ -21,7 +21,26 @@
 {% schema %}
 {
   "name": "Instagram Section",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Instagram Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Instagram Section"
