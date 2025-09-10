@@ -6,6 +6,19 @@
  <hr>
 </div>
 
+<div class="evrey-under-text">
+  {% for block in section.blocks %}
+<div class="evry-icon-text">
+<div class="everyt-icon">
+  <img src="{{ block.settings.img | img_url:'master' }}" >
+</div>
+<h3>{{ block.settings.head }}</h3>
+<div class="every-descrition">
+{{ block.settings.text }}
+</div>
+</div>
+{% endfor %}
+</div>
 </div>
 </div>
 </div>
