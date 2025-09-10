@@ -85,6 +85,9 @@
                   {%- when 'text' -%}
                     <div class="footer-block__details-content rte">
                       {{ block.settings.subtext }}
+                      <div class="mail-to">
+                       <a href="">TONY.SCRATCHHOUSE@GMAIL.COM​</a>
+                      </div>
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
@@ -244,7 +247,7 @@
             {%- render 'social-icons', class: 'footer__list-social' -%}
           {%- endif -%}
         </div>
-        
+
           </div>
         {%- endif -%}
 
