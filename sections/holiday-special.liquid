@@ -10,11 +10,13 @@
       <div class="holiday-text">
         <h3>{{ section.settings.heading }}</h3>
         <p>{{ section.settings.subheading }}</p>
+        <div class="button-holi-spec">
         {% if section.settings.button_label != blank and section.settings.button_link != blank %}
           <a href="{{ section.settings.button_link }}" class="btn-holiday">
             {{ section.settings.button_label }}
           </a>
         {% endif %}
+        </div>
       </div>
       </div>
       <div class="holi-special-img">
