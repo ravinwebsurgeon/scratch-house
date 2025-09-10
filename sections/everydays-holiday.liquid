@@ -27,7 +27,38 @@
 {% schema %}
 {
   "name": "Everyday Holiday",
-  "settings": [],
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Everyday Holiday"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon_text",
+      "name": "Icon with Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Icon Image"
+        },
+        {
+          "type": "text",
+          "id": "head",
+          "label": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Everyday Holiday"
