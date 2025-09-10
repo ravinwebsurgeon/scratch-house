@@ -55,22 +55,27 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  new Swiper(".testimonial-swiper", {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    loop: true,
-    allowTouchMove: false, // disable manual dragging for smooth effect
-    speed: 6000, // higher = slower scroll
-    autoplay: {
-      delay: 0, // no pause, continuous
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      0: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
-    }
-  });
+new Swiper(".testimonial-swiper", {
+  slidesPerView: "auto",   // lets slides flow naturally
+  spaceBetween: 30,
+  loop: true,
+  freeMode: {
+    enabled: true,
+    momentum: false,       // prevents snapping back
+  },
+  allowTouchMove: false,   // no drag — continuous
+  speed: 5000,             // higher = slower scroll
+  autoplay: {
+    delay: 0,              // continuous flow
+    disableOnInteraction: false,
+    pauseOnMouseEnter: false // 🚀 this prevents stopping on hover
+  },
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }
+});
 });
 </script>
 
