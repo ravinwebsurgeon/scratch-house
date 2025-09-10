@@ -729,3 +729,18 @@ line-height: 20px;
     cursor: pointer;
     transition: opacity 2s ease, background-color 2s ease, transform 2s ease;
 }
+
+.wrapper-insta-section .insta-all-posts .insta-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    opacity: 0;
+    z-index: 2;
+}
+
+.wrapper-insta-section .insta-all-posts .insta-under-images:hover > .insta-icon {
+    opacity: 1;
+}
