@@ -1,26 +1,26 @@
 <!-- Our Mission Section -->
-<section class="our-mission-section" style="display: flex; align-items: center; padding: 60px 0; background-color: #f9f9f9;">
-  <div class="container" style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; flex-wrap: wrap;">
+<section class="our-mission-section">
+  <div class="container">
     
     <!-- Text Content -->
-    <div class="mission-text" style="flex: 1; min-width: 300px; padding-right: 30px;">
-      <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 20px;">
+    <div class="mission-text">
+      <h2>
         {{ section.settings.heading }}
       </h2>
-      <p style="font-size: 16px; line-height: 1.6; color: #333; margin-bottom: 30px;">
+      <p>
         {{ section.settings.description }}
       </p>
       {% if section.settings.button_text != blank and section.settings.button_link != blank %}
-        <a href="{{ section.settings.button_link }}" class="btn" style="padding: 12px 25px; background-color: #f37021; color: #fff; font-weight: 600; text-decoration: none; border-radius: 5px;">
+        <a href="{{ section.settings.button_link }}" class="btn">
           {{ section.settings.button_text }}
         </a>
       {% endif %}
     </div>
 
     <!-- Image -->
-    <div class="mission-image" style="flex: 1; min-width: 300px; text-align: center;">
+    <div class="mission-image">
       {% if section.settings.image != blank %}
-        <img src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.heading }}" style="width: 100%; max-width: 500px; border-radius: 10px;">
+        <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.heading }}">
       {% endif %}
     </div>
 
