@@ -223,22 +223,25 @@
         "icon_text_dGYnAU": {
           "type": "icon_text",
           "settings": {
+            "img": "shopify://shop_images/Gift_box.png",
             "head": "Gifting",
-            "text": "Our thougtfully-themed collections\nare just a click away from becoming\nan unforgettable gift."
+            "text": "<p>Our thougtfully-themed collections<br/>are just a click away from becoming<br/>an unforgettable gift.</p>"
           }
         },
         "icon_text_iUyCXa": {
           "type": "icon_text",
           "settings": {
+            "img": "shopify://shop_images/Chef_hat.png",
             "head": "Snacking & Cooking",
-            "text": "Versatile enough for grating, melting\ninto sauces, layering into sandwiches\nor late-night snacking."
+            "text": "<p>Versatile enough for grating, melting<br/>into sauces, layering into sandwiches<br/>or late-night snacking.</p>"
           }
         },
         "icon_text_D4AYyM": {
           "type": "icon_text",
           "settings": {
+            "img": "shopify://shop_images/Confetti.png",
             "head": "Celebrating",
-            "text": "Elevated cheeses perfect for your most\nspecial occasions and impressive enough for that \"I can't believe it's vegan!\" reaction."
+            "text": "<p>Elevated cheeses perfect for your most<br/>special occasions and impressive enough for that \"I can't believe it's vegan!\" reaction.</p>"
           }
         }
       },
