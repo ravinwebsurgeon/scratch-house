@@ -100,10 +100,23 @@
       ],
       "name": "Testimonials Section",
       "settings": {}
+    },
+    "holiday_special_GN4CwD": {
+      "type": "holiday-special",
+      "name": "Holiday Special Section",
+      "settings": {
+        "title": "HOLIDAY SPECIAL",
+        "heading": "THANKSGIVING TURKEY DINNER",
+        "subheading": "A Festive Plant-Based Feast",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "image": "shopify://shop_images/Rectangle_4253.png"
+      }
     }
   },
   "order": [
     "image_text_bnner_HKPkqF",
-    "testimonials_hwjLUt"
+    "testimonials_hwjLUt",
+    "holiday_special_GN4CwD"
   ]
 }
