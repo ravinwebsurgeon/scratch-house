@@ -219,6 +219,34 @@
     },
     "everydays_holiday_967hhM": {
       "type": "everydays-holiday",
+      "blocks": {
+        "icon_text_dGYnAU": {
+          "type": "icon_text",
+          "settings": {
+            "head": "Gifting",
+            "text": "Our thougtfully-themed collections\nare just a click away from becoming\nan unforgettable gift."
+          }
+        },
+        "icon_text_iUyCXa": {
+          "type": "icon_text",
+          "settings": {
+            "head": "Snacking & Cooking",
+            "text": "Versatile enough for grating, melting\ninto sauces, layering into sandwiches\nor late-night snacking."
+          }
+        },
+        "icon_text_D4AYyM": {
+          "type": "icon_text",
+          "settings": {
+            "head": "Celebrating",
+            "text": "Elevated cheeses perfect for your most\nspecial occasions and impressive enough for that \"I can't believe it's vegan!\" reaction."
+          }
+        }
+      },
+      "block_order": [
+        "icon_text_dGYnAU",
+        "icon_text_iUyCXa",
+        "icon_text_D4AYyM"
+      ],
       "name": "Everyday Holiday",
       "settings": {
         "title": "Everyday Holiday"
