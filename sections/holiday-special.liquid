@@ -15,10 +15,12 @@
           </a>
         {% endif %}
       </div>
+      <div class="holi-special-img">
       <div class="holiday-image">
         {% if section.settings.image != blank %}
           <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.heading }}">
         {% endif %}
+      </div>
       </div>
     </div>
   </div>
