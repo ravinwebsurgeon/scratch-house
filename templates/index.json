@@ -101,6 +101,18 @@
       "name": "Testimonials Section",
       "settings": {}
     },
+    "holiday_special_GN4CwD": {
+      "type": "holiday-special",
+      "name": "Holiday Special Section",
+      "settings": {
+        "title": "HOLIDAY SPECIAL",
+        "heading": "THANKSGIVING TURKEY DINNER",
+        "subheading": "A Festive Plant-Based Feast",
+        "button_label": "SHOP NOW",
+        "button_link": "#",
+        "image": "shopify://shop_images/Rectangle_4253.png"
+      }
+    },
     "testimonials_jVGXNR": {
       "type": "testimonials",
       "blocks": {
@@ -182,16 +194,16 @@
       "name": "Testimonials Section",
       "settings": {}
     },
-    "holiday_special_GN4CwD": {
-      "type": "holiday-special",
-      "name": "Holiday Special Section",
+    "combo_board_emHV9M": {
+      "type": "combo-board",
+      "name": "Combo Board Section",
       "settings": {
-        "title": "HOLIDAY SPECIAL",
-        "heading": "THANKSGIVING TURKEY DINNER",
-        "subheading": "A Festive Plant-Based Feast",
+        "title": "Best Seller Combo boards",
+        "heading": "Best Sellers",
+        "subheading": "Can't-go-wrong favorites & Shark Tank features.",
         "button_label": "SHOP NOW",
         "button_link": "#",
-        "image": "shopify://shop_images/Rectangle_4253.png"
+        "image": "shopify://shop_images/Rectangle_4283.png"
       }
     }
   },
@@ -199,6 +211,7 @@
     "image_text_bnner_HKPkqF",
     "testimonials_hwjLUt",
     "holiday_special_GN4CwD",
-    "testimonials_jVGXNR"
+    "testimonials_jVGXNR",
+    "combo_board_emHV9M"
   ]
 }
