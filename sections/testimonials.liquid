@@ -1,87 +1,69 @@
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-<div class="testimonial-section">
-  <div class="swiper testimonial-swiper">
-    <div class="swiper-wrapper">
+<!-- testimonials.liquid -->
+<section class="testimonial-section">
+  <div class="testimonial-wrapper">
+    <div class="testimonial-track">
       {% for block in section.blocks %}
-        <div class="swiper-slide testimonial-item" {{ block.shopify_attributes }}>
-          <div class="testimonial-stars">
-            {% for i in (1..block.settings.stars) %}
-              ★
-            {% endfor %}
-          </div>
-          <p class="testimonial-text">“{{ block.settings.text }}”</p>
-          {% if block.settings.author != blank %}
-            <p class="testimonial-author">- {{ block.settings.author }}</p>
-          {% endif %}
+        <div class="testimonial-item" {{ block.shopify_attributes }}>
+          <div class="stars">★★★★★</div>
+          <p>{{ block.settings.quote }}</p>
+        </div>
+      {% endfor %}
+      <!-- duplicate for seamless scroll -->
+      {% for block in section.blocks %}
+        <div class="testimonial-item">
+          <div class="stars">★★★★★</div>
+          <p>{{ block.settings.quote }}</p>
         </div>
       {% endfor %}
     </div>
   </div>
-</div>
+</section>
 
 <style>
 .testimonial-section {
-  padding: 40px 20px;
+  overflow: hidden;
   background: #fff;
+  padding: 20px 0;
 }
+
+.testimonial-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.testimonial-track {
+  display: flex;
+  animation: scroll-left 40s linear infinite;
+}
+
 .testimonial-item {
-  background: #fff;
-  border: 1px solid #eee;
-  padding: 20px;
+  flex: 0 0 auto;
+  min-width: 300px;
+  margin: 0 20px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  border-radius: 6px;
-}
-.testimonial-stars {
-  color: #fbbf24; /* gold/yellow stars */
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-.testimonial-text {
   font-size: 16px;
-  font-style: italic;
+  color: #333;
+}
+
+.testimonial-item .stars {
+  color: gold;
   margin-bottom: 8px;
 }
-.testimonial-author {
-  font-size: 14px;
-  font-weight: 600;
-  color: #333;
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ✅ prevent pause on hover */
+.testimonial-track:hover {
+  animation-play-state: running;
 }
 </style>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-new Swiper(".testimonial-swiper", {
-  slidesPerView: "auto",   // lets slides flow naturally
-  spaceBetween: 30,
-  loop: true,
-  freeMode: {
-    enabled: true,
-    momentum: false,       // prevents snapping back
-  },
-  allowTouchMove: false,   // no drag — continuous
-  speed: 5000,             // higher = slower scroll
-  autoplay: {
-    delay: 0,              // continuous flow
-    disableOnInteraction: false,
-    pauseOnMouseEnter: false // 🚀 this prevents stopping on hover
-  },
-  breakpoints: {
-    0: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 }
-  }
-});
-});
-</script>
-
 {% schema %}
 {
-  "name": "Testimonials Section",
+  "name": "Testimonials Scroller",
   "settings": [],
   "blocks": [
     {
@@ -89,29 +71,17 @@ new Swiper(".testimonial-swiper", {
       "name": "Testimonial",
       "settings": [
         {
-          "type": "range",
-          "id": "stars",
-          "label": "Star Rating",
-          "min": 1,
-          "max": 5,
-          "default": 5
-        },
-        {
           "type": "textarea",
-          "id": "text",
+          "id": "quote",
           "label": "Testimonial Text"
-        },
-        {
-          "type": "text",
-          "id": "author",
-          "label": "Author Name"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Testimonials Section",
+      "name": "Testimonials Scroller",
+      "category": "Custom"
     }
   ]
 }
