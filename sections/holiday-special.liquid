@@ -1,0 +1,118 @@
+<section class="holiday-special">
+  <div class="container">
+    <h2 class="top-title">{{ section.settings.title }}</h2>
+    <div class="holiday-content">
+      <div class="holiday-text">
+        <h3>{{ section.settings.heading }}</h3>
+        <p>{{ section.settings.subheading }}</p>
+        {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+          <a href="{{ section.settings.button_link }}" class="btn-holiday">
+            {{ section.settings.button_label }}
+          </a>
+        {% endif %}
+      </div>
+      <div class="holiday-image">
+        {% if section.settings.image != blank %}
+          <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.heading }}">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.holiday-special {
+  padding: 40px 20px;
+  text-align: center;
+}
+.holiday-special .top-title {
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+}
+.holiday-special .holiday-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.holiday-special .holiday-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+.holiday-special .holiday-text h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+.holiday-special .holiday-text p {
+  font-size: 16px;
+  margin: 10px 0 20px;
+}
+.holiday-special .btn-holiday {
+  background: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.holiday-special .holiday-image {
+  flex: 1;
+  text-align: right;
+}
+.holiday-special .holiday-image img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Holiday Special Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Top Title",
+      "default": "HOLIDAY SPECIAL"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "THANKSGIVING TURKEY DINNER"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "A Festive Plant-Based Feast"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Text",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Right Side Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Holiday Special Section",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
