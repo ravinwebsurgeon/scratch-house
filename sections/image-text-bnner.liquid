@@ -1,3 +1,22 @@
+<div class="custom-banner-section">
+  <div class="custom-banner-wrapper">
+    <div class="custom-banner-text">
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.subtext }}</p>
+      {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="banner-btn">
+          {{ section.settings.button_label }}
+        </a>
+      {% endif %}
+    </div>
+    <div class="custom-banner-image">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | img_url: '1000x' }}" alt="{{ section.settings.heading }}">
+      {% endif %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
 {
   "name": "Image-Text-Banner",
