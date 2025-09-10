@@ -1,18 +1,23 @@
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 <div class="testimonial-section">
-  <div class="testimonial-wrapper">
-    {% for block in section.blocks %}
-      <div class="testimonial-item" {{ block.shopify_attributes }}>
-        <div class="testimonial-stars">
-          {% for i in (1..block.settings.stars) %}
-            ★
-          {% endfor %}
+  <div class="swiper testimonial-swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide testimonial-item" {{ block.shopify_attributes }}>
+          <div class="testimonial-stars">
+            {% for i in (1..block.settings.stars) %}
+              ★
+            {% endfor %}
+          </div>
+          <p class="testimonial-text">“{{ block.settings.text }}”</p>
+          {% if block.settings.author != blank %}
+            <p class="testimonial-author">- {{ block.settings.author }}</p>
+          {% endif %}
         </div>
-        <p class="testimonial-text">“{{ block.settings.text }}”</p>
-        {% if block.settings.author != blank %}
-          <p class="testimonial-author">- {{ block.settings.author }}</p>
-        {% endif %}
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 
@@ -21,14 +26,7 @@
   padding: 40px 20px;
   background: #fff;
 }
-.testimonial-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
 .testimonial-item {
-  flex: 1 1 22%;
   background: #fff;
   border: 1px solid #eee;
   padding: 20px;
@@ -51,17 +49,30 @@
   font-weight: 600;
   color: #333;
 }
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .testimonial-wrapper {
-    flex-direction: column;
-  }
-  .testimonial-item {
-    flex: 1 1 100%;
-  }
-}
 </style>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  new Swiper(".testimonial-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    allowTouchMove: false, // disable manual dragging for smooth effect
+    speed: 6000, // higher = slower scroll
+    autoplay: {
+      delay: 0, // no pause, continuous
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+});
+</script>
 
 {% schema %}
 {
