@@ -156,10 +156,8 @@
                 {%- endcase -%}
               </div>
             {%- endfor -%}
-          </div>
-        {%- endif -%}
 
-        <div
+             <div
           class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
@@ -246,6 +244,10 @@
             {%- render 'social-icons', class: 'footer__list-social' -%}
           {%- endif -%}
         </div>
+        
+          </div>
+        {%- endif -%}
+
       </div>
     {%- endunless -%}
   {%- endif -%}
