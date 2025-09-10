@@ -1,33 +1,29 @@
 <!-- Our Mission Section -->
 <section class="our-mission-section">
-  <div class="container">
-    
-    <!-- Text Content -->
+  <div class="container wrap-mission">
+    <div class="wrap-mission-data">
     <div class="mission-text">
-      <h2>
-        {{ section.settings.heading }}
-      </h2>
-      <p>
-        {{ section.settings.description }}
-      </p>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.description }}</p>
+      <div class="mission-btn">
       {% if section.settings.button_text != blank and section.settings.button_link != blank %}
         <a href="{{ section.settings.button_link }}" class="btn">
           {{ section.settings.button_text }}
         </a>
       {% endif %}
+      </div>
     </div>
-
-    <!-- Image -->
+    </div>
+<div class="wrap-mission-img">
     <div class="mission-image">
       {% if section.settings.image != blank %}
         <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.heading }}">
       {% endif %}
     </div>
-
+</div>
   </div>
 </section>
 
-<!-- Section Schema -->
 {% schema %}
 {
   "name": "Our Mission",
