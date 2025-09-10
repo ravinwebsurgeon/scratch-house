@@ -19,9 +19,55 @@
         "button_label": "SHOP CHEESES",
         "button_link": "#"
       }
+    },
+    "testimonials_hwjLUt": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_6pJTTm": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”",
+            "author": ""
+          }
+        },
+        "testimonial_HhaPPi": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”",
+            "author": ""
+          }
+        },
+        "testimonial_QX4WRB": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”",
+            "author": ""
+          }
+        },
+        "testimonial_wyKaUL": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_6pJTTm",
+        "testimonial_HhaPPi",
+        "testimonial_QX4WRB",
+        "testimonial_wyKaUL"
+      ],
+      "name": "Testimonials Section",
+      "settings": {}
     }
   },
   "order": [
-    "image_text_bnner_HKPkqF"
+    "image_text_bnner_HKPkqF",
+    "testimonials_hwjLUt"
   ]
 }
