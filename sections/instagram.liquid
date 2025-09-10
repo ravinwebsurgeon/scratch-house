@@ -1,7 +1,21 @@
 <div class="wrapper-insta-section">
-<div class="insta-page-width">
+  <div class="insta-page-width">
+    <div class="line-title">
+      <hr>
+      <h2 class="top-title">{{ section.settings.title }}</h2>
+      <hr>
+    </div>
 
-</div>
+    <div class="insta-all-posts">
+      {% for block in section.blocks %}
+        <div class="insta-under-images">
+          <div class="insta-image">
+            <img src="{{ block.settings.img | img_url:'master' }}">
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 {% schema %}
