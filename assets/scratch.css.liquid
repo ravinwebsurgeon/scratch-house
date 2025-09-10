@@ -711,3 +711,20 @@ line-height: 20px;
 .wrapper-insta-section .insta-all-posts > div {
     width: 100%;
 }
+
+.wrapper-insta-section .insta-image:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 20px;
+    z-index: 1;
+    opacity: .3;
+    cursor: pointer;
+    transition: opacity 2s ease, background-color 2s ease, transform 2s ease;
+}
