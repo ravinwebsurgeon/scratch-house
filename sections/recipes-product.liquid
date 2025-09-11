@@ -1,0 +1,161 @@
+{% comment %}
+  Dynamic Recipe/Blog Card Slider Section
+  Each block = image + title + text + button
+{% endcomment %}
+
+<section class="custom-recipe-slider">
+  <div class="recipe-slider">
+    {% for block in section.blocks %}
+      <div class="recipe-card" {{ block.shopify_attributes }}>
+        {% if block.settings.image != blank %}
+          <div class="recipe-image">
+            <img src="{{ block.settings.image | img_url: '600x' }}" alt="{{ block.settings.title | escape }}">
+          </div>
+        {% endif %}
+        <div class="recipe-content">
+          {% if block.settings.title != blank %}
+            <h3>{{ block.settings.title }}</h3>
+          {% endif %}
+          {% if block.settings.text != blank %}
+            <p>{{ block.settings.text }}</p>
+          {% endif %}
+          {% if block.settings.button_label != blank %}
+            <a href="{{ block.settings.button_link }}" class="recipe-btn">{{ block.settings.button_label }}</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- jQuery + Slick -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('.recipe-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    infinite: true,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
+</script>
+
+<style>
+.custom-recipe-slider {
+  padding: 40px 0;
+}
+.recipe-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+}
+.recipe-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+.recipe-content h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+  font-weight: 600;
+}
+.recipe-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+.recipe-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff5722;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.recipe-btn:hover {
+  background: #e64a19;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #ff5722;
+  font-size: 28px;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Recipe Slider",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "recipe_block",
+      "name": "Recipe Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Recipe Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Recipe Title",
+          "default": "Easter Brunch Recipe: Vegan Mini Quiches"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Recipe Description",
+          "default": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "Read More"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recipe Slider",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
