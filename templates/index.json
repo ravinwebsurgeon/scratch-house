@@ -402,8 +402,7 @@
       ],
       "name": "Scratch Compare",
       "settings": {
-        "title_cheese": "Scratch Cheese vs Other Cheese",
-        "title_meat": "Scratch Meat vs Other Meat"
+        "title": "How does scratch compare?"
       }
     },
     "customer_review_xwiMKH": {
