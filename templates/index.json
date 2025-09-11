@@ -104,32 +104,29 @@
     "tabbing_section_QnHixi": {
       "type": "tabbing-section",
       "blocks": {
-        "tab_6KmwH8": {
-          "type": "tab",
+        "text_DrW3UC": {
+          "type": "text",
           "settings": {
-            "tab_title": "Cheeses",
-            "collections_list": "frontpage,all"
+            "tab": "hew"
           }
         },
-        "tab_6Y63FT": {
-          "type": "tab",
+        "text_WFqCKB": {
+          "type": "text",
           "settings": {
-            "tab_title": "Cheeses",
-            "collections_list": "frontpage,all"
+            "tab": "Another"
           }
         },
-        "tab_U4TjXc": {
-          "type": "tab",
+        "text_XbLhy3": {
+          "type": "text",
           "settings": {
-            "tab_title": "Cheeses",
-            "collections_list": "frontpage,all"
+            "tab": "Anoth"
           }
         }
       },
       "block_order": [
-        "tab_6KmwH8",
-        "tab_6Y63FT",
-        "tab_U4TjXc"
+        "text_DrW3UC",
+        "text_WFqCKB",
+        "text_XbLhy3"
       ],
       "name": "Tabbing Section",
       "settings": {
