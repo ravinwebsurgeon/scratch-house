@@ -532,11 +532,17 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "tabbing_section_QnHixi": {
+      "type": "tabbing-section",
+      "name": "Tabbing Section",
+      "settings": {}
     }
   },
   "order": [
     "image_text_bnner_HKPkqF",
     "testimonials_hwjLUt",
+    "tabbing_section_QnHixi",
     "holiday_special_GN4CwD",
     "testimonials_jVGXNR",
     "combo_board_emHV9M",
