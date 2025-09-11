@@ -243,6 +243,30 @@
     },
     "scratch_compare_jNrdgT": {
       "type": "scratch-compare",
+      "blocks": {
+        "cheese_item_hD7iLU": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "",
+            "scratch": true,
+            "dairy": true,
+            "other_plant": true
+          }
+        },
+        "cheese_item_V7Gw97": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "",
+            "scratch": true,
+            "dairy": true,
+            "other_plant": true
+          }
+        }
+      },
+      "block_order": [
+        "cheese_item_hD7iLU",
+        "cheese_item_V7Gw97"
+      ],
       "name": "Scratch Compare",
       "settings": {
         "title_cheese": "Scratch Cheese vs Other Cheese",
