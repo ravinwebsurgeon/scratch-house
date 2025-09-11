@@ -14,6 +14,7 @@
       <div>Dairy Cheese</div>
       <div>Other Plant Cheese</div>
     </div>
+    <div class="table-back-texts">
     {% for block in section.blocks %}
       {% if block.type == 'cheese_item' %}
       <div class="table-row">
@@ -30,6 +31,7 @@
       </div>
       {% endif %}
     {% endfor %}
+</div>
   </div>
 
   <!-- MEAT TABLE -->
@@ -92,10 +94,6 @@
   text-align: center;
   border-bottom: 1px solid #FFFFFF33;
   background-color: #343434;
-}
-
-.table-row:first-child {
-  border-radius: 20px;
 }
 
 .table-row:last-child {
