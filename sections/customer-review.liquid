@@ -9,10 +9,12 @@
       <div class="video-card" {{ block.shopify_attributes }}>
         <div class="video-wrapper">
           {% if block.settings.thumbnail != blank %}
-            <img src="{{ block.settings.thumbnail | img_url: '600x' }}" class="video-thumbnail" alt="Video Thumbnail">
+            <img src="{{ block.settings.thumbnail | img_url: 'master' }}" class="video-thumbnail" alt="Video Thumbnail">
           {% endif %}
 
-          <button class="play-btn">▶</button>
+          <button class="play-btn">
+            <img src="/wp-content/uploads/2025/09/Boogs-Apparel-taking.mp4">
+          </button>
 
           {% if block.settings.video != blank %}
             {{ block.settings.video | video_tag: controls: false, autoplay: false, muted: false, loop: false, class: "video-element" }}
