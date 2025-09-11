@@ -206,6 +206,90 @@
         "image": "shopify://shop_images/Rectangle_4283.png"
       }
     },
+    "scratch_compare_jNrdgT": {
+      "type": "scratch-compare",
+      "blocks": {
+        "feature_AhgDRd": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Feature Title",
+            "feature_text": "Short description goes here.",
+            "feature_link": "",
+            "feature_button": "Learn More"
+          }
+        },
+        "feature_FMEWmJ": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Feature Title",
+            "feature_text": "Short description goes here.",
+            "feature_link": "",
+            "feature_button": "Learn More"
+          }
+        },
+        "feature_fxhFzc": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Feature Title",
+            "feature_text": "Short description goes here.",
+            "feature_link": "",
+            "feature_button": "Learn More"
+          }
+        },
+        "feature_w3mECh": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Feature Title",
+            "feature_text": "Short description goes here.",
+            "feature_link": "",
+            "feature_button": "Learn More"
+          }
+        },
+        "feature_PE4nWi": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Feature Title",
+            "feature_text": "Short description goes here.",
+            "feature_link": "",
+            "feature_button": "Learn More"
+          }
+        },
+        "feature_HR9wdJ": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Feature Title",
+            "feature_text": "Short description goes here.",
+            "feature_link": "",
+            "feature_button": "Learn More"
+          }
+        },
+        "feature_9rjhhY": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Feature Title",
+            "feature_text": "Short description goes here.",
+            "feature_link": "",
+            "feature_button": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "feature_AhgDRd",
+        "feature_FMEWmJ",
+        "feature_fxhFzc",
+        "feature_w3mECh",
+        "feature_PE4nWi",
+        "feature_HR9wdJ",
+        "feature_9rjhhY"
+      ],
+      "name": "Scratch Compare",
+      "settings": {
+        "section_heading": "Why Choose Us?",
+        "section_subheading": "Write a description that explains the section purpose.",
+        "bg_color": "#ffffff",
+        "container_width": "container"
+      }
+    },
     "customer_review_xwiMKH": {
       "type": "customer-review",
       "blocks": {
@@ -455,6 +539,7 @@
     "holiday_special_GN4CwD",
     "testimonials_jVGXNR",
     "combo_board_emHV9M",
+    "scratch_compare_jNrdgT",
     "customer_review_xwiMKH",
     "recipes_product_ArQRDD",
     "our_mission_AJydqF",
