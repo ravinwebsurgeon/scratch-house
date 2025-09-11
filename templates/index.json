@@ -327,6 +327,11 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "customer_review_xwiMKH": {
+      "type": "customer-review",
+      "name": "Customer Review",
+      "settings": {}
     }
   },
   "order": [
@@ -335,6 +340,7 @@
     "holiday_special_GN4CwD",
     "testimonials_jVGXNR",
     "combo_board_emHV9M",
+    "customer_review_xwiMKH",
     "our_mission_AJydqF",
     "everydays_holiday_967hhM",
     "instagram_d3HUyC",
