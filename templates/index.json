@@ -248,18 +248,18 @@
           "type": "cheese_item",
           "settings": {
             "feature": "Dairy % lactose free",
-            "scratch": true,
-            "dairy": true,
-            "other_plant": true
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
           }
         },
         "cheese_item_V7Gw97": {
           "type": "cheese_item",
           "settings": {
             "feature": "cholesterol free",
-            "scratch": true,
-            "dairy": true,
-            "other_plant": true
+            "scratch": "true",
+            "dairy": "true",
+            "other_plant": "true"
           }
         }
       },
