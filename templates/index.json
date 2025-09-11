@@ -219,19 +219,22 @@
         "video_block_tXHEhA": {
           "type": "video_block",
           "settings": {
-            "thumbnail": "shopify://shop_images/86f4dd2f04d0ae0916d4f39ae7b2b5a2f61024ab.jpg"
+            "thumbnail": "shopify://shop_images/86f4dd2f04d0ae0916d4f39ae7b2b5a2f61024ab.jpg",
+            "video": "shopify://files/videos/copy_6A66EABF-0681-4B8E-9494-C926AC6DC8E6.mp4"
           }
         },
         "video_block_xLpg3j": {
           "type": "video_block",
           "settings": {
-            "thumbnail": "shopify://shop_images/b478dfa9a8f141ba705a716f0d947772da9155b6.jpg"
+            "thumbnail": "shopify://shop_images/b478dfa9a8f141ba705a716f0d947772da9155b6.jpg",
+            "video": "shopify://files/videos/copy_6A66EABF-0681-4B8E-9494-C926AC6DC8E6.mp4"
           }
         },
         "video_block_AHHpi4": {
           "type": "video_block",
           "settings": {
-            "thumbnail": "shopify://shop_images/faaebc8854fdd720c8edf0c77752d9954aba1ed2.jpg"
+            "thumbnail": "shopify://shop_images/faaebc8854fdd720c8edf0c77752d9954aba1ed2.jpg",
+            "video": "shopify://files/videos/copy_6A66EABF-0681-4B8E-9494-C926AC6DC8E6.mp4"
           }
         }
       },
