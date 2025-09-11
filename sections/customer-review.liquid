@@ -34,7 +34,7 @@ $(document).ready(function(){
     var video = wrapper.find("video")[0];
 
     // Hide thumbnail + play button
-    wrapper.find(".video-thumbnail, .play-btn").hide();
+    wrapper.find(".video-thumbnail, .play-btn, .video-wrapper::before").hide();
 
     // Show and play video
     $(video).show();
