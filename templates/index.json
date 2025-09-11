@@ -108,21 +108,21 @@
           "type": "tab",
           "settings": {
             "tab_title": "Cheeses",
-            "tab_collection": "pot-roast"
+            "collections_list": "frontpage,all"
           }
         },
         "tab_6Y63FT": {
           "type": "tab",
           "settings": {
             "tab_title": "Cheeses",
-            "tab_collection": "spring-salad"
+            "collections_list": "frontpage,all"
           }
         },
         "tab_U4TjXc": {
           "type": "tab",
           "settings": {
             "tab_title": "Cheeses",
-            "tab_collection": "charcuterie-boards"
+            "collections_list": "frontpage,all"
           }
         }
       },
@@ -243,87 +243,10 @@
     },
     "scratch_compare_jNrdgT": {
       "type": "scratch-compare",
-      "blocks": {
-        "feature_AhgDRd": {
-          "type": "feature",
-          "settings": {
-            "feature_title": "Feature Title",
-            "feature_text": "Short description goes here.",
-            "feature_link": "",
-            "feature_button": "Learn More"
-          }
-        },
-        "feature_FMEWmJ": {
-          "type": "feature",
-          "settings": {
-            "feature_title": "Feature Title",
-            "feature_text": "Short description goes here.",
-            "feature_link": "",
-            "feature_button": "Learn More"
-          }
-        },
-        "feature_fxhFzc": {
-          "type": "feature",
-          "settings": {
-            "feature_title": "Feature Title",
-            "feature_text": "Short description goes here.",
-            "feature_link": "",
-            "feature_button": "Learn More"
-          }
-        },
-        "feature_w3mECh": {
-          "type": "feature",
-          "settings": {
-            "feature_title": "Feature Title",
-            "feature_text": "Short description goes here.",
-            "feature_link": "",
-            "feature_button": "Learn More"
-          }
-        },
-        "feature_PE4nWi": {
-          "type": "feature",
-          "settings": {
-            "feature_title": "Feature Title",
-            "feature_text": "Short description goes here.",
-            "feature_link": "",
-            "feature_button": "Learn More"
-          }
-        },
-        "feature_HR9wdJ": {
-          "type": "feature",
-          "settings": {
-            "feature_title": "Feature Title",
-            "feature_text": "Short description goes here.",
-            "feature_link": "",
-            "feature_button": "Learn More"
-          }
-        },
-        "feature_9rjhhY": {
-          "type": "feature",
-          "settings": {
-            "feature_title": "Feature Title",
-            "feature_text": "Short description goes here.",
-            "feature_link": "",
-            "feature_button": "Learn More"
-          }
-        }
-      },
-      "block_order": [
-        "feature_AhgDRd",
-        "feature_FMEWmJ",
-        "feature_fxhFzc",
-        "feature_w3mECh",
-        "feature_PE4nWi",
-        "feature_HR9wdJ",
-        "feature_9rjhhY"
-      ],
-      "disabled": true,
       "name": "Scratch Compare",
       "settings": {
-        "section_heading": "Why Choose Us?",
-        "section_subheading": "Write a description that explains the section purpose.",
-        "bg_color": "#ffffff",
-        "container_width": "container"
+        "title_cheese": "Scratch Cheese vs Other Cheese",
+        "title_meat": "Scratch Meat vs Other Meat"
       }
     },
     "customer_review_xwiMKH": {
