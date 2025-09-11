@@ -32,8 +32,25 @@
       {% if block.type == 'meat_item' %}
       <div class="table-row">
         <div>{{ block.settings.feature }}</div>
-        <div>{% if block.settings.scratch %}✔{% endif %}</div>
-        <div>{% if block.settings.other_plant %}✔{% endif %}</div>
+        <div>
+  {% if block.settings.scratch %}
+    <!-- If correct -->
+    <span style="color: green;">✔</span>
+  {% else %}
+    <!-- If wrong -->
+    <span style="color: red;">❌</span>
+  {% endif %}
+</div>
+
+<div>
+  {% if block.settings.other_plant %}
+    <!-- If correct -->
+    <span style="color: green;">✔</span>
+  {% else %}
+    <!-- If wrong -->
+    <span style="color: red;">❌</span>
+  {% endif %}
+</div>
       </div>
       {% endif %}
     {% endfor %}
