@@ -212,7 +212,8 @@
         "video_block_nYj9mX": {
           "type": "video_block",
           "settings": {
-            "thumbnail": "shopify://shop_images/6d7565a8f9a013a827c3e82bb2ac6939dec3e490.jpg"
+            "thumbnail": "shopify://shop_images/6d7565a8f9a013a827c3e82bb2ac6939dec3e490.jpg",
+            "video": "shopify://files/videos/copy_6A66EABF-0681-4B8E-9494-C926AC6DC8E6.mp4"
           }
         },
         "video_block_tXHEhA": {
