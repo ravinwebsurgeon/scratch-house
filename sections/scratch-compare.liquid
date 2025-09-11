@@ -19,14 +19,20 @@
       {% if block.type == 'cheese_item' %}
       <div class="table-row">
         <div class="complare-text">{{ block.settings.feature }}</div>
-        <div>
+        <div class="comparddde-texts">
+            <div class="complare-right">
           {% if block.settings.scratch == 'right' %}✔{% elsif block.settings.scratch == 'wrong' %}✖{% endif %}
+            </div>
         </div>
-        <div>
+       <div class="comparddde-texts">
+         <div class="complare-right">
           {% if block.settings.dairy == 'right' %}✔{% elsif block.settings.dairy == 'wrong' %}✖{% endif %}
+          </div>
         </div>
-        <div>
+         <div class="comparddde-texts">
+             <div class="complare-right">
           {% if block.settings.other_plant == 'right' %}✔{% elsif block.settings.other_plant == 'wrong' %}✖{% endif %}
+          </div>
         </div>
       </div>
       {% endif %}
@@ -46,11 +52,15 @@
       {% if block.type == 'meat_item' %}
       <div class="table-row">
         <div class="complare-text">{{ block.settings.feature }}</div>
-        <div>
+        <div class="comparddde-texts">
+             <div class="complare-right">
           {% if block.settings.scratch == 'right' %}✔{% elsif block.settings.scratch == 'wrong' %}✖{% endif %}
+          </div>
         </div>
-        <div>
+        <div class="comparddde-texts">
+             <div class="complare-right">
           {% if block.settings.other_plant == 'right' %}✔{% elsif block.settings.other_plant == 'wrong' %}✖{% endif %}
+          </div>
         </div>
       </div>
       {% endif %}
