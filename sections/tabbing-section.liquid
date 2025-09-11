@@ -22,8 +22,8 @@
   <ul class="collection-list">
     {% for b in section.blocks %}
       {% if b.settings.tab_group == t and b.settings.col %}
-        <a href="{{ b.settings.col.url }}">
         <li>
+           <a href="{{ b.settings.col.url }}">
           <div class="tabbing-all-data">
           <div class="img-col">
             {% if b.settings.col.image %}
@@ -35,8 +35,8 @@
                <a href="{{ b.settings.col.url }}">Shop Now</a>
             </div>
           </div>
+          </a>
         </li>
-        </a>
       {% endif %}
     {% endfor %}
   </ul>
