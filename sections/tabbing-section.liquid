@@ -9,18 +9,24 @@
     <div class="main-tabs page-width">
       <!-- Tabs -->
       <ul class="tabs">
-        {% for block in section.blocks %}
-          <li data-tab="menu{{ forloop.index }}">{{ block.settings.tab }}</li>
+        {% for tab_block in section.blocks %}
+          <li data-tab="menu{{ forloop.index }}">{{ tab_block.settings.tab }}</li>
         {% endfor %}
       </ul>
 
-      <!-- Tab Content: just the collection name -->
-      {% for block in section.blocks %}
+      <!-- Tab Content -->
+      {% for tab_block in section.blocks %}
         <div class="tab-content" id="menu{{ forloop.index }}">
-          {% if block.settings.col %}
-            <h3 class="collection-title">{{ block.settings.col.title }}</h3>
+          {% if tab_block.blocks.size > 0 %}
+            <ul class="collection-list">
+              {% for collection_block in tab_block.blocks %}
+                {% if collection_block.settings.col %}
+                  <li>{{ collection_block.settings.col.title }}</li>
+                {% endif %}
+              {% endfor %}
+            </ul>
           {% else %}
-            <p>No collection selected.</p>
+            <p>No collections added to this tab.</p>
           {% endif %}
         </div>
       {% endfor %}
@@ -40,21 +46,30 @@
   ],
   "blocks": [
     {
-      "type": "collection_tab",
-      "name": "Tab + Collection",
+      "type": "tab",
+      "name": "Tab",
       "settings": [
         {
-          "type": "inline_richtext",
+          "type": "text",
           "id": "tab",
           "label": "Tab Title"
         },
-        {
-          "type": "collection",
-          "id": "col",
-          "label": "Choose Collection"
-        }
+        
       ]
-    }
+      
+      
+    },
+     {
+          "type": "collection_item",
+          "name": "Collection Item",
+          "settings": [
+            {
+              "type": "collection",
+              "id": "col",
+              "label": "Choose Collection"
+            }
+          ]
+        }
   ],
   "presets": [
     {
@@ -80,29 +95,11 @@
 </script>
 
 <style>
-  .tabs {
-    display:flex;
-    list-style:none;
-    padding:0;
-    margin:0 0 20px;
-  }
-  .tabs li {
-    margin-right:10px;
-    cursor:pointer;
-    padding:10px 20px;
-    background:#f0f0f0;
-    border:1px solid #ccc;
-    border-radius:5px 5px 0 0;
-  }
-  .tabs li.active {
-    background:#333;
-    color:#fff;
-  }
-  .tab-content {
-    display:none;
-    padding:20px;
-    border:1px solid #ccc;
-    border-radius:0 0 5px 5px;
-  }
-  .tab-content.active {display:block;}
+  .tabs { display:flex; list-style:none; padding:0; margin:0 0 20px; }
+  .tabs li { margin-right:10px; cursor:pointer; padding:10px 20px; background:#f0f0f0; border:1px solid #ccc; border-radius:5px 5px 0 0; }
+  .tabs li.active { background:#333; color:#fff; }
+  .tab-content { display:none; padding:20px; border:1px solid #ccc; border-radius:0 0 5px 5px; }
+  .tab-content.active { display:block; }
+  .collection-list { list-style:none; padding:0; }
+  .collection-list li { margin-bottom:10px; font-weight:bold; }
 </style>
