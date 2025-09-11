@@ -370,6 +370,13 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "recipes_product_aBkEFc": {
+      "type": "recipes-product",
+      "name": "Recipe Slider",
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
@@ -379,6 +386,7 @@
     "testimonials_jVGXNR",
     "combo_board_emHV9M",
     "customer_review_xwiMKH",
+    "recipes_product_aBkEFc",
     "our_mission_AJydqF",
     "everydays_holiday_967hhM",
     "instagram_d3HUyC",
