@@ -114,7 +114,13 @@ $(document).ready(function(){
 {% schema %}
 {
   "name": "Recipe Slider",
-  "settings": [],
+  "settings": [
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Heading"
+    }
+  ],
   "blocks": [
     {
       "type": "recipe_block",
@@ -123,25 +129,22 @@ $(document).ready(function(){
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Recipe Image"
+          "label": "Image"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Recipe Title",
-          "default": "Easter Brunch Recipe: Vegan Mini Quiches"
+          "label": "Title"
         },
         {
           "type": "textarea",
           "id": "text",
-          "label": "Recipe Description",
-          "default": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+          "label": "Description"
         },
         {
           "type": "text",
           "id": "button_label",
-          "label": "Button Label",
-          "default": "Read More"
+          "label": "Button Label"
         },
         {
           "type": "url",
