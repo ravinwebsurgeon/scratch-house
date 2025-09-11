@@ -1,5 +1,10 @@
 <section class="custom-video-section">
     <div class="reviews-page-width">
+         <div class="line-title">
+      <hr>
+      <h2 class="top-title">{{ section.settings.title }}</h2>
+      <hr>
+    </div>
   <div class="video-section">
     {% for block in section.blocks %}
       <div class="video-card" {{ block.shopify_attributes }}>
