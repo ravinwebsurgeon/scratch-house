@@ -1,4 +1,10 @@
 <div class="comparison-section">
+    <div class="comparison-page-width">
+        <div class="line-title">
+      <hr>
+      <h2 class="top-title">{{ section.settings.title }}</h2>
+      <hr>
+    </div>
   <!-- CHEESE TABLE -->
   <div class="comparison-table cheese-table">
     <div class="table-header">
@@ -47,6 +53,7 @@
     {% endfor %}
   </div>
 </div>
+</div>
 
 <style>
 .comparison-section {
@@ -78,7 +85,13 @@
 {% schema %}
 {
   "name": "Comparison Table",
-  "settings": [],
+  "settings": [
+        {
+    "type": "text",
+    "id": "title",
+    "label": "Heading"
+    }
+  ],
   "blocks": [
     {
       "type": "cheese_item",
