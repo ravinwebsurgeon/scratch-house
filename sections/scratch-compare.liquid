@@ -1,7 +1,6 @@
 <div class="comparison-section">
   <!-- CHEESE TABLE -->
   <div class="comparison-table cheese-table">
-    <h2>{{ section.settings.title_cheese }}</h2>
     <div class="table-header">
       <div>Feature</div>
       <div>Scratch Cheese</div>
@@ -28,7 +27,6 @@
 
   <!-- MEAT TABLE -->
   <div class="comparison-table meat-table">
-    <h2>{{ section.settings.title_meat }}</h2>
     <div class="table-header">
       <div>Feature</div>
       <div>Scratch Meat</div>
@@ -80,20 +78,7 @@
 {% schema %}
 {
   "name": "Comparison Table",
-  "settings": [
-    {
-      "type": "text",
-      "id": "title_cheese",
-      "label": "Cheese Table Title",
-      "default": "Cheese Comparison"
-    },
-    {
-      "type": "text",
-      "id": "title_meat",
-      "label": "Meat Table Title",
-      "default": "Meat Comparison"
-    }
-  ],
+  "settings": [],
   "blocks": [
     {
       "type": "cheese_item",
