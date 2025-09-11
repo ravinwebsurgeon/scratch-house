@@ -19,14 +19,22 @@
       <!-- Tab Contents -->
       {% for t in tab_names %}
         <div class="tab-content" id="menu{{ forloop.index }}">
-          <ul class="collection-list">
-            {% for b in section.blocks %}
-              {% if b.settings.tab_group == t and b.settings.col %}
-                <li>{{ b.settings.col.title }}</li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
+  <ul class="collection-list">
+    {% for b in section.blocks %}
+      {% if b.settings.tab_group == t and b.settings.col %}
+        <li>
+          <div class="img-col">
+            {% if b.settings.col.image %}
+              <img src="{{ b.settings.col.image | img_url: '400x' }}" alt="{{ b.settings.col.title | escape }}">
+            {% endif %}
+            <span>{{ b.settings.col.title }}</span>
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
       {% endfor %}
     </div>
   </div>
