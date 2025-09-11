@@ -23,7 +23,7 @@
             <h3>{{ block.settings.title }}</h3>
           {% endif %}
           {% if block.settings.text != blank %}
-            <p>{{ block.settings.text }}</p>
+            <div class="recipe-description">{{ block.settings.text }}</div>
           {% endif %}
           {% if block.settings.button_label != blank %}
             <a href="{{ block.settings.button_link }}" class="recipe-btn">{{ block.settings.button_label }}</a>
