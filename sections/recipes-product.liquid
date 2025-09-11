@@ -68,17 +68,48 @@ $(document).ready(function(){
 </script>
 
 <style>
+
+    .custom-recipe-slider .recipe-slider button.slick-arrow svg {
+    width: 20px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+}
+
+.custom-recipe-slider .recipe-slider button.slick-arrow svg path {
+    fill: #F76E2A;
+}
+
+.custom-recipe-slider .recipe-slider button.slick-arrow {
+    padding: 0;
+    border: 1px solid #F76E2A;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 33%;
+    z-index: 1;
+    background-color: transparent;
+    transform: translateY(-50%);
+}
+
+.custom-recipe-slider .recipe-slider button.slick-next.custom-next.slick-arrow {
+    right: -3%;
+}
+
+.custom-recipe-slider .recipe-slider button.slick-prev.custom-prev.slick-arrow {
+    left: -3%;
+}
+
 .custom-recipe-slider {
      padding: 69px 0;
     background-color: #F5F5F5;
     margin-top: 100px;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  color: #ff5722;
-  font-size: 28px;
-}
 </style>
 
 {% schema %}
