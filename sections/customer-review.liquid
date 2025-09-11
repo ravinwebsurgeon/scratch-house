@@ -1,6 +1,6 @@
 {% comment %}
   Video Section with Dynamic Blocks
-  - Each block: Thumbnail image + video file + play button
+  Each block: Thumbnail image + uploaded video + play button
 {% endcomment %}
 
 <section class="custom-video-section">
@@ -15,7 +15,7 @@
           <button class="play-btn">▶</button>
 
           {% if block.settings.video != blank %}
-            <video class="video-element" src="{{ block.settings.video }}" preload="none"></video>
+            {{ block.settings.video | video_tag: controls: false, autoplay: false, muted: false, loop: false, class: "video-element" }}
           {% endif %}
         </div>
       </div>
@@ -29,7 +29,7 @@
 $(document).ready(function(){
   $(".play-btn").on("click", function(){
     var wrapper = $(this).closest(".video-wrapper");
-    var video = wrapper.find(".video-element")[0];
+    var video = wrapper.find("video")[0];
 
     // Hide thumbnail + play button
     wrapper.find(".video-thumbnail, .play-btn").hide();
@@ -100,9 +100,9 @@ $(document).ready(function(){
           "label": "Thumbnail Image"
         },
         {
-          "type": "url",
+          "type": "video",
           "id": "video",
-          "label": "Video URL (MP4 file)"
+          "label": "Upload Video"
         }
       ]
     }
