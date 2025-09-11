@@ -33,8 +33,11 @@ $(document).ready(function(){
     var wrapper = $(this).closest(".video-wrapper");
     var video = wrapper.find("video")[0];
 
+    // Add a class to remove overlay via CSS
+    wrapper.addClass("playing");
+
     // Hide thumbnail + play button
-    wrapper.find(".video-thumbnail, .play-btn, .video-wrapper::before").hide();
+    wrapper.find(".video-thumbnail, .play-btn").hide();
 
     // Show and play video
     $(video).show();
@@ -44,6 +47,28 @@ $(document).ready(function(){
 </script>
 
 <style>
+
+    .video-wrapper {
+  position: relative;
+}
+
+.video-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3); /* overlay effect */
+  border-radius: 12px;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+
+.video-wrapper.playing::before {
+  opacity: 0;
+  pointer-events: none;
+}
 
     .custom-video-section .line-title hr {
     margin: 0;
