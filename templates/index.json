@@ -206,6 +206,43 @@
         "image": "shopify://shop_images/Rectangle_4283.png"
       }
     },
+    "customer_review_xwiMKH": {
+      "type": "customer-review",
+      "blocks": {
+        "video_block_nYj9mX": {
+          "type": "video_block",
+          "settings": {
+            "thumbnail": "shopify://shop_images/6d7565a8f9a013a827c3e82bb2ac6939dec3e490.jpg"
+          }
+        },
+        "video_block_tXHEhA": {
+          "type": "video_block",
+          "settings": {
+            "thumbnail": "shopify://shop_images/86f4dd2f04d0ae0916d4f39ae7b2b5a2f61024ab.jpg"
+          }
+        },
+        "video_block_xLpg3j": {
+          "type": "video_block",
+          "settings": {
+            "thumbnail": "shopify://shop_images/b478dfa9a8f141ba705a716f0d947772da9155b6.jpg"
+          }
+        },
+        "video_block_AHHpi4": {
+          "type": "video_block",
+          "settings": {
+            "thumbnail": "shopify://shop_images/faaebc8854fdd720c8edf0c77752d9954aba1ed2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "video_block_nYj9mX",
+        "video_block_tXHEhA",
+        "video_block_xLpg3j",
+        "video_block_AHHpi4"
+      ],
+      "name": "Customer Review",
+      "settings": {}
+    },
     "our_mission_AJydqF": {
       "type": "our-mission",
       "name": "Our Mission",
@@ -327,11 +364,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "customer_review_xwiMKH": {
-      "type": "customer-review",
-      "name": "Customer Review",
-      "settings": {}
     }
   },
   "order": [
