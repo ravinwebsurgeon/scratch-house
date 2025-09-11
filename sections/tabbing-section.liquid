@@ -5,6 +5,42 @@
       <h2 class="top-title">{{ section.settings.title }}</h2>
       <hr>
     </div>
+
+     <!-- TAB BUTTONS -->
+    <ul class="tabs flex justify-center gap-4 mb-8">
+      {% for block in section.blocks %}
+        <li class="tab-btn {% if forloop.first %}active{% endif %}" data-tab="tab-{{ block.id }}">
+          {{ block.settings.tab_title }}
+        </li>
+      {% endfor %}
+    </ul>
+
+    <!-- TAB CONTENT -->
+    <div class="tabs-content">
+      {% for block in section.blocks %}
+        {% assign collection = collections[block.settings.tab_collection] %}
+        <div class="tab-panel {% if forloop.first %}active{% endif %}" id="tab-{{ block.id }}">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {% for product in collection.products limit:4 %}
+              <div class="product-card border rounded-lg overflow-hidden shadow-sm">
+                {% if product.featured_image %}
+                  <img src="{{ product.featured_image | img_url: '600x600' }}" alt="{{ product.title }}" class="w-full h-60 object-cover">
+                {% elsif block.settings.custom_image != blank %}
+                  <img src="{{ block.settings.custom_image | img_url: '600x600' }}" alt="{{ product.title }}" class="w-full h-60 object-cover">
+                {% endif %}
+                <div class="p-4 text-center">
+                  <h3 class="font-semibold mb-2">{{ product.title }}</h3>
+                  <a href="{{ product.url }}" class="bg-orange-500 text-white px-4 py-2 rounded inline-block">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
 </div>
 </div>
 
@@ -18,9 +54,34 @@
     "label": "Heading"
     }
   ],
+   "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab Title",
+          "default": "Cheeses"
+        },
+        {
+          "type": "collection",
+          "id": "tab_collection",
+          "label": "Select Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_image",
+          "label": "Custom Image (if collection image missing)"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Tabbing Section"
+      "name": "Tabbing Section",
+      "category": "Collection"
     }
   ]
 }
