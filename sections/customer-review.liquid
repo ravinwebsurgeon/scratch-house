@@ -120,6 +120,18 @@ $(document).ready(function(){
     object-fit: cover;
 }
 
+.custom-video-section .video-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 1;
+    opacity: .2;
+}
+
 .custom-video-section button.play-btn {
     position: absolute;
     z-index: 1;
