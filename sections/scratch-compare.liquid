@@ -12,9 +12,15 @@
       {% if block.type == 'cheese_item' %}
       <div class="table-row">
         <div>{{ block.settings.feature }}</div>
-        <div>{% if block.settings.scratch %}✔{% endif %}</div>
-        <div>{% if block.settings.dairy %}✔{% endif %}</div>
-        <div>{% if block.settings.other_plant %}✔{% endif %}</div>
+        <div>
+          {% if block.settings.scratch == 'right' %}✔{% elsif block.settings.scratch == 'wrong' %}✖{% endif %}
+        </div>
+        <div>
+          {% if block.settings.dairy == 'right' %}✔{% elsif block.settings.dairy == 'wrong' %}✖{% endif %}
+        </div>
+        <div>
+          {% if block.settings.other_plant == 'right' %}✔{% elsif block.settings.other_plant == 'wrong' %}✖{% endif %}
+        </div>
       </div>
       {% endif %}
     {% endfor %}
@@ -33,24 +39,11 @@
       <div class="table-row">
         <div>{{ block.settings.feature }}</div>
         <div>
-  {% if block.settings.scratch %}
-    <!-- If correct -->
-    <span style="color: green;">✔</span>
-  {% else %}
-    <!-- If wrong -->
-    <span style="color: red;">❌</span>
-  {% endif %}
-</div>
-
-<div>
-  {% if block.settings.other_plant %}
-    <!-- If correct -->
-    <span style="color: green;">✔</span>
-  {% else %}
-    <!-- If wrong -->
-    <span style="color: red;">❌</span>
-  {% endif %}
-</div>
+          {% if block.settings.scratch == 'right' %}✔{% elsif block.settings.scratch == 'wrong' %}✖{% endif %}
+        </div>
+        <div>
+          {% if block.settings.other_plant == 'right' %}✔{% elsif block.settings.other_plant == 'wrong' %}✖{% endif %}
+        </div>
       </div>
       {% endif %}
     {% endfor %}
@@ -58,99 +51,90 @@
 </div>
 
 <style>
-
-    .comparison-section {
+.comparison-section {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
 }
-
 .comparison-table {
-  background: #1c1c1c;
-  color: #fff;
-  border-radius: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   overflow: hidden;
-  flex: 1;
-  min-width: 300px;
+  width: 100%;
 }
-
-.comparison-table h2 {
-  background: #ff6600;
-  padding: 12px 20px;
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-}
-
 .table-header, .table-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  padding: 10px 20px;
-  border-bottom: 1px solid #333;
   text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
 }
-
 .table-header {
   font-weight: bold;
-  background: #333;
+  background: #f8f8f8;
 }
-
-.table-row:nth-child(even) {
-  background: #222;
+.table-row:last-child {
+  border-bottom: none;
 }
-
-.table-row div {
-  padding: 8px 5px;
-}
-
-
 </style>
 
 {% schema %}
 {
   "name": "Comparison Table",
-  "tag": "section",
   "settings": [
     {
       "type": "text",
       "id": "title_cheese",
       "label": "Cheese Table Title",
-      "default": "Scratch Cheese vs Other Cheese"
+      "default": "Cheese Comparison"
     },
     {
       "type": "text",
       "id": "title_meat",
       "label": "Meat Table Title",
-      "default": "Scratch Meat vs Other Meat"
+      "default": "Meat Comparison"
     }
   ],
   "blocks": [
     {
       "type": "cheese_item",
-      "name": "Cheese Item",
+      "name": "Cheese Feature",
       "settings": [
-        { "type": "text", "id": "feature", "label": "Feature" },
-        { "type": "checkbox", "id": "scratch", "label": "Scratch Cheese" },
-        { "type": "checkbox", "id": "dairy", "label": "Dairy Cheese" },
-        { "type": "checkbox", "id": "other_plant", "label": "Other Plant Cheese" }
+        { "type": "text", "id": "feature", "label": "Feature Name" },
+        { 
+          "type": "select", "id": "scratch", "label": "Scratch Cheese", 
+          "options": [ {"value": "right", "label": "✔"}, {"value": "wrong", "label": "✖"}, {"value": "", "label": "None"} ]
+        },
+        { 
+          "type": "select", "id": "dairy", "label": "Dairy Cheese", 
+          "options": [ {"value": "right", "label": "✔"}, {"value": "wrong", "label": "✖"}, {"value": "", "label": "None"} ]
+        },
+        { 
+          "type": "select", "id": "other_plant", "label": "Other Plant Cheese", 
+          "options": [ {"value": "right", "label": "✔"}, {"value": "wrong", "label": "✖"}, {"value": "", "label": "None"} ]
+        }
       ]
     },
     {
       "type": "meat_item",
-      "name": "Meat Item",
+      "name": "Meat Feature",
       "settings": [
-        { "type": "text", "id": "feature", "label": "Feature" },
-        { "type": "checkbox", "id": "scratch", "label": "Scratch Meat" },
-        { "type": "checkbox", "id": "other_plant", "label": "Other Plant Meat" }
+        { "type": "text", "id": "feature", "label": "Feature Name" },
+        { 
+          "type": "select", "id": "scratch", "label": "Scratch Meat", 
+          "options": [ {"value": "right", "label": "✔"}, {"value": "wrong", "label": "✖"}, {"value": "", "label": "None"} ]
+        },
+        { 
+          "type": "select", "id": "other_plant", "label": "Other Plant Meat", 
+          "options": [ {"value": "right", "label": "✔"}, {"value": "wrong", "label": "✖"}, {"value": "", "label": "None"} ]
+        }
       ]
     }
   ],
-  "max_blocks": 50,
+  "max_blocks": 20,
   "presets": [
     {
       "name": "Comparison Table",
-      "category": "Custom"
+      "category": "Tables"
     }
   ]
 }
