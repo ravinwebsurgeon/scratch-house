@@ -19,8 +19,8 @@
       {% if block.type == 'cheese_item' %}
       <div class="table-row">
         <div class="complare-text">{{ block.settings.feature }}</div>
-        <div class="comparddde-texts">
-            <div class="complare-right scratch">
+        <div class="comparddde-texts scratch">
+            <div class="complare-right">
           {% if block.settings.scratch == 'right' %}✔{% elsif block.settings.scratch == 'wrong' %}✖{% endif %}
             </div>
         </div>
@@ -52,8 +52,8 @@
       {% if block.type == 'meat_item' %}
       <div class="table-row">
         <div class="complare-text">{{ block.settings.feature }}</div>
-        <div class="comparddde-texts">
-             <div class="complare-right scratch">
+        <div class="comparddde-texts scratch">
+             <div class="complare-right">
           {% if block.settings.scratch == 'right' %}✔{% elsif block.settings.scratch == 'wrong' %}✖{% endif %}
           </div>
         </div>
