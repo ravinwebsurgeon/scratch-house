@@ -324,6 +324,62 @@
             "dairy": "wrong",
             "other_plant": "wrong"
           }
+        },
+        "meat_item_CJVFxf": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "low fat",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_KcPHtk": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "cholesterol free",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_6z8dNa": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "mouthwatering taste",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_MBYmbH": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "fiber-rich",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_gRqFkg": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "hormone-free",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_gGzchc": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "brain boosting nootropics",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_L9CqLR": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "gut-biome booster",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
         }
       },
       "block_order": [
@@ -335,7 +391,14 @@
         "cheese_item_6tP6iX",
         "cheese_item_MhnLXe",
         "cheese_item_PXYVE6",
-        "cheese_item_C3nceD"
+        "cheese_item_C3nceD",
+        "meat_item_CJVFxf",
+        "meat_item_KcPHtk",
+        "meat_item_6z8dNa",
+        "meat_item_MBYmbH",
+        "meat_item_gRqFkg",
+        "meat_item_gGzchc",
+        "meat_item_L9CqLR"
       ],
       "name": "Scratch Compare",
       "settings": {
