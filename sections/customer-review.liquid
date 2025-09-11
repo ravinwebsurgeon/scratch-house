@@ -1,9 +1,5 @@
-{% comment %}
-  Video Section with Dynamic Blocks
-  Each block: Thumbnail image + uploaded video + play button
-{% endcomment %}
-
 <section class="custom-video-section">
+    <div class="reviews-page-width">
   <div class="video-section">
     {% for block in section.blocks %}
       <div class="video-card" {{ block.shopify_attributes }}>
@@ -22,6 +18,7 @@
         </div>
       </div>
     {% endfor %}
+  </div>
   </div>
 </section>
 
