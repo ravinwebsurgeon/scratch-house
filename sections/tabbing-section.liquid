@@ -24,10 +24,12 @@
       {% if b.settings.tab_group == t and b.settings.col %}
         <a href="{{ b.settings.col.url }}">
         <li>
+          <div class="tabbing-all-data">
           <div class="img-col">
             {% if b.settings.col.image %}
               <img src="{{ b.settings.col.image | img_url: '400x' }}" alt="{{ b.settings.col.title | escape }}">
             {% endif %}
+          </div>
             <span>{{ b.settings.col.title }}</span>
           </div>
         </li>
@@ -98,5 +100,5 @@
  
   .tab-content { display:none; }
   .tab-content.active { display:block; }
-  
+
 </style>
