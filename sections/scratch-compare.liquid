@@ -1,191 +1,89 @@
-<section class="two-col-feature-section" style="background-color: {{ section.settings.bg_color }};">
-  <div class="{{ section.settings.container_width }} section-inner">
-    
-    <!-- LEFT COLUMN -->
-    <div class="left-col">
-      {% if section.settings.section_heading != blank %}
-        <h2>{{ section.settings.section_heading }}</h2>
-      {% endif %}
-      {% if section.settings.section_subheading != blank %}
-        <p>{{ section.settings.section_subheading }}</p>
-      {% endif %}
+<div class="comparison-section">
+  <!-- CHEESE TABLE -->
+  <div class="comparison-table cheese-table">
+    <h2>{{ section.settings.title_cheese }}</h2>
+    <div class="table-header">
+      <div>Feature</div>
+      <div>Scratch Cheese</div>
+      <div>Dairy Cheese</div>
+      <div>Other Plant Cheese</div>
     </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="right-col">
-      {% for block in section.blocks %}
-        <div class="feature-item" {{ block.shopify_attributes }}>
-          {% if block.settings.feature_image != blank %}
-            <img src="{{ block.settings.feature_image | img_url: '100x100' }}" alt="{{ block.settings.feature_title }}">
-          {% endif %}
-          <div>
-            {% if block.settings.feature_title != blank %}
-              <h3>{{ block.settings.feature_title }}</h3>
-            {% endif %}
-            {% if block.settings.feature_text != blank %}
-              <p>{{ block.settings.feature_text }}</p>
-            {% endif %}
-            {% if block.settings.feature_link != blank %}
-              <a href="{{ block.settings.feature_link }}">
-                {{ block.settings.feature_button }}
-              </a>
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-
+    {% for block in section.blocks %}
+      {% if block.type == 'cheese_item' %}
+      <div class="table-row">
+        <div>{{ block.settings.feature }}</div>
+        <div>{% if block.settings.scratch %}✔{% endif %}</div>
+        <div>{% if block.settings.dairy %}✔{% endif %}</div>
+        <div>{% if block.settings.other_plant %}✔{% endif %}</div>
+      </div>
+      {% endif %}
+    {% endfor %}
   </div>
-</section>
 
-<style>
+  <!-- MEAT TABLE -->
+  <div class="comparison-table meat-table">
+    <h2>{{ section.settings.title_meat }}</h2>
+    <div class="table-header">
+      <div>Feature</div>
+      <div>Scratch Meat</div>
+      <div>Other Plant Meat</div>
+    </div>
+    {% for block in section.blocks %}
+      {% if block.type == 'meat_item' %}
+      <div class="table-row">
+        <div>{{ block.settings.feature }}</div>
+        <div>{% if block.settings.scratch %}✔{% endif %}</div>
+        <div>{% if block.settings.other_plant %}✔{% endif %}</div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
 
-    /* === Two Column Feature Section === */
-.two-col-feature-section {
-  padding: 60px 20px;
-}
-
-.two-col-feature-section .section-inner {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.two-col-feature-section .left-col h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #222;
-}
-
-.two-col-feature-section .left-col p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #555;
-}
-
-/* Right Column (Blocks) */
-.two-col-feature-section .right-col .feature-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.two-col-feature-section .right-col .feature-item img {
-  width: 64px;
-  height: 64px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.two-col-feature-section .right-col h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0 0 5px;
-  color: #111;
-}
-
-.two-col-feature-section .right-col p {
-  font-size: 16px;
-  color: #666;
-  margin: 0 0 8px;
-}
-
-.two-col-feature-section .right-col a {
-  font-size: 14px;
-  font-weight: 500;
-  color: #0073e6;
-  text-decoration: none;
-}
-
-.two-col-feature-section .right-col a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive */
-@media (min-width: 768px) {
-  .two-col-feature-section .section-inner {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-
-</style>
 
 {% schema %}
 {
-  "name": "Scratch Compare",
+  "name": "Comparison Table",
+  "tag": "section",
   "settings": [
     {
       "type": "text",
-      "id": "section_heading",
-      "label": "Section Heading",
-      "default": "Why Choose Us?"
+      "id": "title_cheese",
+      "label": "Cheese Table Title",
+      "default": "Scratch Cheese vs Other Cheese"
     },
     {
-      "type": "textarea",
-      "id": "section_subheading",
-      "label": "Section Subheading",
-      "default": "Write a description that explains the section purpose."
-    },
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background Color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "select",
-      "id": "container_width",
-      "label": "Container Width",
-      "default": "container",
-      "options": [
-        { "value": "container", "label": "Boxed" },
-        { "value": "container-fluid", "label": "Full Width" }
-      ]
+      "type": "text",
+      "id": "title_meat",
+      "label": "Meat Table Title",
+      "default": "Scratch Meat vs Other Meat"
     }
   ],
   "blocks": [
     {
-      "type": "feature",
-      "name": "Feature Item",
+      "type": "cheese_item",
+      "name": "Cheese Item",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "feature_image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "feature_title",
-          "label": "Title",
-          "default": "Feature Title"
-        },
-        {
-          "type": "textarea",
-          "id": "feature_text",
-          "label": "Description",
-          "default": "Short description goes here."
-        },
-        {
-          "type": "url",
-          "id": "feature_link",
-          "label": "Button Link"
-        },
-        {
-          "type": "text",
-          "id": "feature_button",
-          "label": "Button Label",
-          "default": "Learn More"
-        }
+        { "type": "text", "id": "feature", "label": "Feature" },
+        { "type": "checkbox", "id": "scratch", "label": "Scratch Cheese" },
+        { "type": "checkbox", "id": "dairy", "label": "Dairy Cheese" },
+        { "type": "checkbox", "id": "other_plant", "label": "Other Plant Cheese" }
+      ]
+    },
+    {
+      "type": "meat_item",
+      "name": "Meat Item",
+      "settings": [
+        { "type": "text", "id": "feature", "label": "Feature" },
+        { "type": "checkbox", "id": "scratch", "label": "Scratch Meat" },
+        { "type": "checkbox", "id": "other_plant", "label": "Other Plant Meat" }
       ]
     }
   ],
+  "max_blocks": 50,
   "presets": [
     {
-      "name": "Scratch Compare",
+      "name": "Comparison Table",
       "category": "Custom"
     }
   ]
