@@ -4,6 +4,11 @@
 {% endcomment %}
 
 <section class="custom-recipe-slider">
+     <div class="line-title">
+      <hr>
+      <h2 class="top-title">{{ section.settings.title }}</h2>
+      <hr>
+    </div>
   <div class="recipe-slider">
     {% for block in section.blocks %}
       <div class="recipe-card" {{ block.shopify_attributes }}>
