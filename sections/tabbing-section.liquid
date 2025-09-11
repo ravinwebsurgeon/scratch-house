@@ -1,7 +1,23 @@
+<div class="cheese-tab-section">
+<div class="wrap-page-width">
+<div class="line-title">
+      <hr>
+      <h2 class="top-title">{{ section.settings.title }}</h2>
+      <hr>
+    </div>
+</div>
+</div>
+
 {% schema %}
 {
   "name": "Tabbing Section",
-  "settings": [],
+  "settings": [
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Heading"
+    }
+  ],
   "presets": [
     {
       "name": "Tabbing Section"
