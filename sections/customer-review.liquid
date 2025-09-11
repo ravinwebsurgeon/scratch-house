@@ -1,10 +1,116 @@
+{% comment %}
+  Video Section with Dynamic Blocks
+  - Each block: Thumbnail image + video file + play button
+{% endcomment %}
+
+<section class="custom-video-section">
+  <div class="video-section">
+    {% for block in section.blocks %}
+      <div class="video-card" {{ block.shopify_attributes }}>
+        <div class="video-wrapper">
+          {% if block.settings.thumbnail != blank %}
+            <img src="{{ block.settings.thumbnail | img_url: '600x' }}" class="video-thumbnail" alt="Video Thumbnail">
+          {% endif %}
+
+          <button class="play-btn">▶</button>
+
+          {% if block.settings.video != blank %}
+            <video class="video-element" src="{{ block.settings.video }}" preload="none"></video>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".play-btn").on("click", function(){
+    var wrapper = $(this).closest(".video-wrapper");
+    var video = wrapper.find(".video-element")[0];
+
+    // Hide thumbnail + play button
+    wrapper.find(".video-thumbnail, .play-btn").hide();
+
+    // Show and play video
+    $(video).show();
+    video.play();
+  });
+});
+</script>
+
+<style>
+.video-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.video-card {
+  position: relative;
+  width: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.video-thumbnail {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+.video-element {
+  width: 100%;
+  display: none; /* hidden until play */
+  border-radius: 12px;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+</style>
+
 {% schema %}
 {
   "name": "Customer Review",
   "settings": [],
+  "blocks": [
+    {
+      "type": "video_block",
+      "name": "Video Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "thumbnail",
+          "label": "Thumbnail Image"
+        },
+        {
+          "type": "url",
+          "id": "video",
+          "label": "Video URL (MP4 file)"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Customer Review"
+      "name": "Customer Review",
+      "category": "Media"
     }
   ]
 }
