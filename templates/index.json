@@ -255,15 +255,49 @@
         "recipe_block_F9mUMc": {
           "type": "recipe_block",
           "settings": {
+            "image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg",
             "title": "Easter Brunch Recipe: VeganMini Quiches",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
+            "button_label": "READ MORE",
+            "button_link": "#"
+          }
+        },
+        "recipe_block_RxUTGG": {
+          "type": "recipe_block",
+          "settings": {
+            "image": "shopify://shop_images/7fb2e21e41d7a8ddac31e97c1a516629976bf0f7.jpg",
+            "title": "Easter Brunch Recipe: VeganMini Quiches",
+            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
+            "button_label": "READ MORE",
+            "button_link": "#"
+          }
+        },
+        "recipe_block_A9rLXg": {
+          "type": "recipe_block",
+          "settings": {
+            "image": "shopify://shop_images/1473fdb526c3edda476a6cb481460ad1294ed8c4.jpg",
+            "title": "Easter Brunch Recipe: VeganMini Quiches",
+            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
+            "button_label": "READ MORE",
+            "button_link": "#"
+          }
+        },
+        "recipe_block_HjkzBK": {
+          "type": "recipe_block",
+          "settings": {
+            "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg",
+            "title": "Easter Brunch Recipe: VeganMini Quiches",
+            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
             "button_label": "READ MORE",
             "button_link": "#"
           }
         }
       },
       "block_order": [
-        "recipe_block_F9mUMc"
+        "recipe_block_F9mUMc",
+        "recipe_block_RxUTGG",
+        "recipe_block_A9rLXg",
+        "recipe_block_HjkzBK"
       ],
       "name": "Recipe Product",
       "settings": {
