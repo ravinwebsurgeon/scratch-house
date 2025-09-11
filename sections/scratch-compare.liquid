@@ -40,6 +40,55 @@
   </div>
 </div>
 
+<style>
+
+    .comparison-section {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.comparison-table {
+  background: #1c1c1c;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 300px;
+}
+
+.comparison-table h2 {
+  background: #ff6600;
+  padding: 12px 20px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-header, .table-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.table-header {
+  font-weight: bold;
+  background: #333;
+}
+
+.table-row:nth-child(even) {
+  background: #222;
+}
+
+.table-row div {
+  padding: 8px 5px;
+}
+
+
+</style>
 
 {% schema %}
 {
