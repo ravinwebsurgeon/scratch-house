@@ -101,6 +101,13 @@
       "name": "Testimonials Section",
       "settings": {}
     },
+    "tabbing_section_QnHixi": {
+      "type": "tabbing-section",
+      "name": "Tabbing Section",
+      "settings": {
+        "title": "Artisanal Cheeses & Meats"
+      }
+    },
     "holiday_special_GN4CwD": {
       "type": "holiday-special",
       "name": "Holiday Special Section",
@@ -532,11 +539,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "tabbing_section_QnHixi": {
-      "type": "tabbing-section",
-      "name": "Tabbing Section",
-      "settings": {}
     }
   },
   "order": [
