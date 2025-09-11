@@ -17,7 +17,7 @@
     {% for block in section.blocks %}
       {% if block.type == 'cheese_item' %}
       <div class="table-row">
-        <div>{{ block.settings.feature }}</div>
+        <div class="complare-text">{{ block.settings.feature }}</div>
         <div>
           {% if block.settings.scratch == 'right' %}✔{% elsif block.settings.scratch == 'wrong' %}✖{% endif %}
         </div>
@@ -42,7 +42,7 @@
     {% for block in section.blocks %}
       {% if block.type == 'meat_item' %}
       <div class="table-row">
-        <div>{{ block.settings.feature }}</div>
+        <div class="complare-text">{{ block.settings.feature }}</div>
         <div>
           {% if block.settings.scratch == 'right' %}✔{% elsif block.settings.scratch == 'wrong' %}✖{% endif %}
         </div>
