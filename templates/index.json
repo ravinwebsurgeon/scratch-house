@@ -272,6 +272,26 @@
             "button_link": "#"
           }
         },
+        "recipe_block_rp6dV4": {
+          "type": "recipe_block",
+          "settings": {
+            "image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg",
+            "title": "Easter Brunch Recipe: Vegan Mini Quiches",
+            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
+            "button_label": "READ MORE",
+            "button_link": "#"
+          }
+        },
+        "recipe_block_Fa7iFW": {
+          "type": "recipe_block",
+          "settings": {
+            "image": "shopify://shop_images/7fb2e21e41d7a8ddac31e97c1a516629976bf0f7.jpg",
+            "title": "Easter Brunch Recipe: Vegan Mini Quiches",
+            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
+            "button_label": "READ MORE",
+            "button_link": "#"
+          }
+        },
         "recipe_block_A9rLXg": {
           "type": "recipe_block",
           "settings": {
@@ -296,6 +316,8 @@
       "block_order": [
         "recipe_block_F9mUMc",
         "recipe_block_RxUTGG",
+        "recipe_block_rp6dV4",
+        "recipe_block_Fa7iFW",
         "recipe_block_A9rLXg",
         "recipe_block_HjkzBK"
       ],
