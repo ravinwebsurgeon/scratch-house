@@ -250,22 +250,92 @@
             "feature": "Dairy % lactose free",
             "scratch": "right",
             "dairy": "wrong",
-            "other_plant": "wrong"
+            "other_plant": "right"
           }
         },
         "cheese_item_V7Gw97": {
           "type": "cheese_item",
           "settings": {
             "feature": "cholesterol free",
-            "scratch": "true",
-            "dairy": "true",
-            "other_plant": "true"
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "right"
+          }
+        },
+        "cheese_item_mx9MqU": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "mouthwatering taste",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "right"
+          }
+        },
+        "cheese_item_HNfFFi": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "probiotics",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "cheese_item_kcChxL": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "brain boosting nootropics",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "cheese_item_6tP6iX": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "gluten-free",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "cheese_item_MhnLXe": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "Impact on planet",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "cheese_item_PXYVE6": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "Hormone-free",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "cheese_item_C3nceD": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "gut biome boosting",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
           }
         }
       },
       "block_order": [
         "cheese_item_hD7iLU",
-        "cheese_item_V7Gw97"
+        "cheese_item_V7Gw97",
+        "cheese_item_mx9MqU",
+        "cheese_item_HNfFFi",
+        "cheese_item_kcChxL",
+        "cheese_item_6tP6iX",
+        "cheese_item_MhnLXe",
+        "cheese_item_PXYVE6",
+        "cheese_item_C3nceD"
       ],
       "name": "Scratch Compare",
       "settings": {
