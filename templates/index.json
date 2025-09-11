@@ -249,6 +249,27 @@
         "title": "Customer Reviews"
       }
     },
+    "recipes_product_ArQRDD": {
+      "type": "recipes-product",
+      "blocks": {
+        "recipe_block_F9mUMc": {
+          "type": "recipe_block",
+          "settings": {
+            "title": "Easter Brunch Recipe: VeganMini Quiches",
+            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+            "button_label": "READ MORE",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "recipe_block_F9mUMc"
+      ],
+      "name": "Recipe Product",
+      "settings": {
+        "title": "Scratch House’s Epic recipes"
+      }
+    },
     "our_mission_AJydqF": {
       "type": "our-mission",
       "name": "Our Mission",
@@ -370,13 +391,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "recipes_product_aBkEFc": {
-      "type": "recipes-product",
-      "name": "Recipe Slider",
-      "settings": {
-        "title": ""
-      }
     }
   },
   "order": [
@@ -386,7 +400,7 @@
     "testimonials_jVGXNR",
     "combo_board_emHV9M",
     "customer_review_xwiMKH",
-    "recipes_product_aBkEFc",
+    "recipes_product_ArQRDD",
     "our_mission_AJydqF",
     "everydays_holiday_967hhM",
     "instagram_d3HUyC",
