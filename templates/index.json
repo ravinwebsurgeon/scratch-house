@@ -247,7 +247,7 @@
         "cheese_item_hD7iLU": {
           "type": "cheese_item",
           "settings": {
-            "feature": "",
+            "feature": "Dairy % lactose free",
             "scratch": true,
             "dairy": true,
             "other_plant": true
@@ -256,7 +256,7 @@
         "cheese_item_V7Gw97": {
           "type": "cheese_item",
           "settings": {
-            "feature": "",
+            "feature": "cholesterol free",
             "scratch": true,
             "dairy": true,
             "other_plant": true
