@@ -241,7 +241,9 @@
         "video_block_AHHpi4"
       ],
       "name": "Customer Review",
-      "settings": {}
+      "settings": {
+        "title": "customer reviews"
+      }
     },
     "our_mission_AJydqF": {
       "type": "our-mission",
