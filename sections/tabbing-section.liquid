@@ -20,6 +20,60 @@
   {% endfor %}
 </div>
 </div>
+
+
+    
+    
+
+
+</div>
+</div>
+
+
+
+
+{% schema %}
+{
+  "name": "Tabbing Section",
+  "settings": [
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Heading"
+    }
+  ],
+   "blocks": [
+    {
+      "type": "text",
+      "name": "Tabs",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "tab",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "col",
+          "label": "Choose collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tabbed Collections",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}
 <script>
   $(document).ready(function() {
    
@@ -70,46 +124,3 @@
       display: block;
     }
 </style>
-
-
-    
-    
-
-
-</div>
-</div>
-
-
-
-
-{% schema %}
-{
-  "name": "Tabbing Section",
-  "settings": [
-    {
-    "type": "text",
-    "id": "title",
-    "label": "Heading"
-    }
-  ],
-   "blocks": [
-    {
-      "type": "text",
-      "name": "Tabs",
-      "settings": [
-        {
-          "type": "inline_richtext",
-          "id": "tab",
-          "label": "Heading"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Tabbed Collections",
-      "category": "Collection"
-    }
-  ]
-}
-{% endschema %}
