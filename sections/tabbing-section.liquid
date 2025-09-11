@@ -7,7 +7,7 @@
     </div>
 
      <!-- TAB BUTTONS -->
-    <ul class="tabs flex justify-center gap-4 mb-8">
+    <ul class="tabs">
       {% for block in section.blocks %}
         <li class="tab-btn {% if forloop.first %}active{% endif %}" data-tab="tab-{{ block.id }}">
           {{ block.settings.tab_title }}
@@ -20,17 +20,17 @@
       {% for block in section.blocks %}
         {% assign collection = collections[block.settings.tab_collection] %}
         <div class="tab-panel {% if forloop.first %}active{% endif %}" id="tab-{{ block.id }}">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="grid">
             {% for product in collection.products limit:4 %}
-              <div class="product-card border rounded-lg overflow-hidden shadow-sm">
+              <div class="product-card">
                 {% if product.featured_image %}
-                  <img src="{{ product.featured_image | img_url: '600x600' }}" alt="{{ product.title }}" class="w-full h-60 object-cover">
+                  <img src="{{ product.featured_image | img_url: '600x600' }}" alt="{{ product.title }}">
                 {% elsif block.settings.custom_image != blank %}
-                  <img src="{{ block.settings.custom_image | img_url: '600x600' }}" alt="{{ product.title }}" class="w-full h-60 object-cover">
+                  <img src="{{ block.settings.custom_image | img_url: '600x600' }}" alt="{{ product.title }}">
                 {% endif %}
                 <div class="p-4 text-center">
                   <h3 class="font-semibold mb-2">{{ product.title }}</h3>
-                  <a href="{{ product.url }}" class="bg-orange-500 text-white px-4 py-2 rounded inline-block">
+                  <a href="{{ product.url }}">
                     Shop Now
                   </a>
                 </div>
