@@ -1245,6 +1245,37 @@ ul.collection-list {
 
 @media only screen and (max-width: 767px) {
 
+    .footer__blocks-wrapper.grid {
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.footer__blocks-wrapper.grid > div {
+    width: auto !important;
+    margin: 0 !important;
+}
+
+footer .footer-block__heading.inline-richtext {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+
+footer .footer-block__details-content p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+footer .footer-block__newsletter .newsletter-form__field-wrapper .field {
+    width: auto !important;
+    gap: 10px;
+}
+
+footer .footer-block--newsletter .footer__list-social {
+    justify-content: flex-start;
+    margin-top: 20px !important;
+}
+
     body .custom-recipe-slider .recipe-slider button.slick-prev.custom-prev.slick-arrow {
     right: 20px !important;
     left: auto;
