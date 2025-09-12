@@ -21,6 +21,40 @@
   </div>
 </div>
 
+<script>
+$(document).ready(function(){
+
+  function initMobileSlick() {
+    if ($(window).width() <= 767) {
+      if (!$('.insta-all-posts').hasClass('slick-initialized')) {
+        $('.insta-all-posts').slick({
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          infinite: false
+        });
+      }
+    } else {
+      if ($('.insta-all-posts').hasClass('slick-initialized')) {
+        $('.insta-all-posts').slick('unslick'); // Destroy slick on desktop
+      }
+    }
+  }
+
+  // Run on load
+  initMobileSlick();
+
+  // Run on resize
+  $(window).on('resize', function() {
+    initMobileSlick();
+  });
+
+});
+</script>
+
 {% schema %}
 {
   "name": "Instagram Section",
