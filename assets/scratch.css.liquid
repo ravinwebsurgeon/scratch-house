@@ -1245,15 +1245,28 @@ ul.collection-list {
 
 @media only screen and (max-width: 767px) {
 
-    .custom-video-section .video-section {
+    body .custom-video-section .video-card {
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+body .custom-video-section .reviews-page-width {
+    padding: 30px 0 0 25px;
+}
+
+body .custom-video-section .video-wrapper::before {
+    display: none;
+}
+
+    body .custom-video-section .video-section {
     display: block !important;
 }
 
-.custom-video-section .video-wrapper {
+body .custom-video-section .video-wrapper {
     padding-bottom: 300px;
 }
 
-.custom-video-section button.play-btn img {
+body .custom-video-section button.play-btn img {
     width: 40px;
     height: 40px;
 }
