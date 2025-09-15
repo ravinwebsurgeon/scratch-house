@@ -97,6 +97,19 @@
   width: 100%;
 }
 
+.compar-background .table-row .comparddde-texts.scratch::before {
+    content: "";
+    background-color: #F76E2A;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -24px;
+    z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 .table-header{
       display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -122,9 +135,10 @@
 }
 
 .compar-background .table-row .comparddde-texts.scratch {
-    background-color: #F76E2A;
     width: 170px;
     border: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .compar-background .cheese-table .table-row > div, .compar-background .meat-table .table-row {
