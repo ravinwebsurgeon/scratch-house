@@ -173,7 +173,8 @@
       ],
       "name": "Tabbing Section",
       "settings": {
-        "title": "Artisanal Cheeses & Meats"
+        "title": "Artisanal Cheeses & Meats",
+        "all_col": "shopify://collections"
       }
     },
     "holiday_special_GN4CwD": {
