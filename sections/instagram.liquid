@@ -37,9 +37,9 @@
 
 @Media (max-width: 767px){
 
-  .wrapper-insta-section .line-title .top-title {
+  {% comment %} .wrapper-insta-section .line-title .top-title {
     max-width: 200px;
-}
+} {% endcomment %}
 
   .wrapper-insta-section .insta-arrows .slick-arrow svg path {
     fill: #F76E2A;
@@ -66,6 +66,7 @@
 .wrapper-insta-section .title-arrows {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .wrapper-insta-section .insta-arrows {
