@@ -84,6 +84,11 @@
         "padding_bottom": 12
       }
     },
+    "product_recipes_QD83Tc": {
+      "type": "product-recipes",
+      "name": "Product Recipes",
+      "settings": {}
+    },
     "instagram_tnRVUF": {
       "type": "instagram",
       "blocks": {
@@ -148,11 +153,6 @@
         "padding_bottom": 28
       }
     },
-    "product_recipes_QD83Tc": {
-      "type": "product-recipes",
-      "name": "Product Recipes",
-      "settings": {}
-    },
     "newsletter_6XtkpT": {
       "type": "newsletter",
       "blocks": {
@@ -183,9 +183,9 @@
   },
   "order": [
     "main",
-    "instagram_tnRVUF",
-    "related-products",
     "product_recipes_QD83Tc",
+    "related-products",
+    "instagram_tnRVUF",
     "newsletter_6XtkpT"
   ]
 }
