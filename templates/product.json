@@ -101,10 +101,85 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "instagram_tnRVUF": {
+      "type": "instagram",
+      "blocks": {
+        "image_jiAAFM": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/9d39fa496b57d4fca0bb3567e71ec167cb9b5e3e.png"
+          }
+        },
+        "image_cV948c": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/d180fd74cd45c94c2fec56322c8fd02b060d461d.png"
+          }
+        },
+        "image_q47p7G": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/6209fcc0fca9f5a9feb418a74aded785c437d913.png"
+          }
+        },
+        "image_pW67tU": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/58abfac2132b13bd7e1b11985c9fefce4de53ee7.png"
+          }
+        },
+        "image_MQbegr": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/47149e3434de020109bbf39d6e0fc978747a0098.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_jiAAFM",
+        "image_cV948c",
+        "image_q47p7G",
+        "image_pW67tU",
+        "image_MQbegr"
+      ],
+      "name": "Instagram Section",
+      "settings": {
+        "title": "Follow us on Instagram"
+      }
+    },
+    "newsletter_6XtkpT": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_XLyPq7": {
+          "type": "heading",
+          "settings": {
+            "heading": "subscribe to our newsletter",
+            "heading_size": "h1"
+          }
+        },
+        "email_form_HrDt9U": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_XLyPq7",
+        "email_form_HrDt9U"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "instagram_tnRVUF",
+    "newsletter_6XtkpT"
   ]
 }
