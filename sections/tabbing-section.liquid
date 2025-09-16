@@ -91,7 +91,9 @@
 
 <style>
 
-  .cheese-tab-section .mobile-slider ul.collection-list {
+@media (max-width: 767px) {
+
+    .cheese-tab-section .mobile-slider ul.collection-list {
     padding-left: 5px;
 }
 
@@ -99,7 +101,9 @@
     margin-left: -5px;
 }
 
-@media (max-width: 767px) {
+  .cheese-tab-section .mobile-slider ul.collection-list.mobile-slide {
+    display: grid !important;
+}
 
   .cheese-tab-section .custom-arrows .slick-arrow svg path {
     fill: #F76E2A;
