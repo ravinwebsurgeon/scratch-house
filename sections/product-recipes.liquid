@@ -3,9 +3,9 @@
 
     <!-- Left Side Image -->
     <div class="two-col-left">
-      {% if product.metafields.custom.left_image != blank %}
+      {% if product.metafields.custom.recipe_left_image != blank %}
         <img 
-          src="{{ product.metafields.custom.left_image | img_url: 'master' }}" 
+          src="{{ product.metafields.custom.recipe_left_image | img_url: 'master' }}" 
           alt="{{ product.title }}" 
           loading="lazy">
       {% endif %}
