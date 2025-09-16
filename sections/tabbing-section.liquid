@@ -41,6 +41,28 @@
     {% endfor %}
   </ul>
 
+   <ul class="collection-list mobile-slide">
+    {% for b in section.blocks %}
+      {% if b.settings.tab_group == t and b.settings.col %}
+        <li>
+           <a href="{{ b.settings.col.url }}">
+          <div class="tabbing-all-data">
+          <div class="img-col">
+            {% if b.settings.col.image %}
+              <img src="{{ b.settings.col.image | img_url: '400x' }}" alt="{{ b.settings.col.title | escape }}">
+            {% endif %}
+          </div>
+            <h3>{{ b.settings.col.title }}</h3>
+            <div class="tabbing-button">
+               <a href="{{ b.settings.col.url }}">Shop Now</a>
+            </div>
+          </div>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
   <div class="tabbing-mobile">
   <div class="tabbing-mobile-button">
                <a href="{{ b.settings.all_col }}">Shop Now</a>
