@@ -5,34 +5,39 @@
     <div class="two-col-left">
       {% if product.metafields.custom.left_image != blank %}
         <img 
-          src="{{ product.metafields.custom.left_image | img_url: '600x' }}" 
+          src="{{ product.metafields.custom.left_image | img_url: 'master' }}" 
           alt="{{ product.title }}" 
           loading="lazy">
       {% endif %}
     </div>
 
     <!-- Right Side Features -->
-    <div class="two-col-right">
-      {% if product.metafields.custom.features != blank %}
-        {% for feature in product.metafields.custom.features %}
-          <div class="feature-item">
-            {% if feature.icon != blank %}
-              <div class="feature-icon">
-                <img src="{{ feature.icon | img_url: '100x' }}" alt="{{ feature.title }}" loading="lazy">
+   <div class="include-second-image">
+        <div class="product-all-under-data">
+          {% for images in product.metafields.custom.product_include_images.value %}
+            <div class="include-under-data">
+              {% assign index = forloop.index %}
+              <div class="include-logo">
+                <img src="{{ images | img_url: 'master' }}">
               </div>
-            {% endif %}
-            <div class="feature-content">
-              {% if feature.title != blank %}
-                <h3 class="feature-heading">{{ feature.title }}</h3>
-              {% endif %}
-              {% if feature.desc != blank %}
-                <p class="feature-desc">{{ feature.desc }}</p>
-              {% endif %}
+              <div class="include-textss">
+                {% for heading in product.metafields.custom.product_include_heading.value %}
+                  {% if forloop.index == index %}
+                    <div class="product-text">
+                      {{ heading }}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                {% for subtext in product.metafields.custom.product_include_text.value %}
+                  {% if forloop.index == index %}
+                    <div class="include-para">{{ subtext }}</div>
+                  {% endif %}
+                {% endfor %}
+              </div>
             </div>
-          </div>
-        {% endfor %}
-      {% endif %}
-    </div>
+          {% endfor %}
+        </div>
+      </div>
 
   </div>
 </div>
