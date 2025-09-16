@@ -12,25 +12,25 @@
     </div>
 
     <!-- Right Side Features -->
-   <div class="include-second-image">
+   <div class="recipe-second-image">
         <div class="product-all-under-data">
-          {% for images in product.metafields.custom.product_include_images.value %}
-            <div class="include-under-data">
+          {% for images in product.metafields.custom.product_recipe_images.value %}
+            <div class="recipe-under-data">
               {% assign index = forloop.index %}
-              <div class="include-logo">
+              <div class="recipe-logo">
                 <img src="{{ images | img_url: 'master' }}">
               </div>
-              <div class="include-textss">
-                {% for heading in product.metafields.custom.product_include_heading.value %}
+              <div class="recipe-textss">
+                {% for heading in product.metafields.custom.product_recipe_heading.value %}
                   {% if forloop.index == index %}
                     <div class="product-text">
                       {{ heading }}
                     </div>
                   {% endif %}
                 {% endfor %}
-                {% for subtext in product.metafields.custom.product_include_text.value %}
+                {% for subtext in product.metafields.custom.product_recipe_text.value %}
                   {% if forloop.index == index %}
-                    <div class="include-para">{{ subtext }}</div>
+                    <div class="recipe-para">{{ subtext }}</div>
                   {% endif %}
                 {% endfor %}
               </div>
