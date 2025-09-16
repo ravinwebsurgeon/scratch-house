@@ -87,7 +87,9 @@
     "product_recipes_QD83Tc": {
       "type": "product-recipes",
       "name": "Product Recipes",
-      "settings": {}
+      "settings": {
+        "title": "Mouthwatering Recipes"
+      }
     },
     "instagram_tnRVUF": {
       "type": "instagram",
