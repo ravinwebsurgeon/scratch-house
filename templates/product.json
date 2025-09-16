@@ -174,12 +174,18 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "product_recipes_QD83Tc": {
+      "type": "product-recipes",
+      "name": "Product Recipes",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "related-products",
     "instagram_tnRVUF",
+    "product_recipes_QD83Tc",
     "newsletter_6XtkpT"
   ]
 }
