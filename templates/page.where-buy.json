@@ -53,10 +53,53 @@
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
+    },
+    "all_links_PYjTk8": {
+      "type": "all-links",
+      "blocks": {
+        "link_tab_fABkCy": {
+          "type": "Link_tab",
+          "settings": {
+            "collection": "",
+            "custom_image": "shopify://shop_images/Rectangle_4293.png",
+            "badge": "Urthly vegan market",
+            "custom_collection_title": "Urthly vegan market"
+          }
+        },
+        "link_tab_kgMXMh": {
+          "type": "Link_tab",
+          "settings": {
+            "collection": "",
+            "badge": "",
+            "custom_collection_title": ""
+          }
+        },
+        "link_tab_rJeYfw": {
+          "type": "Link_tab",
+          "settings": {
+            "collection": "",
+            "badge": "",
+            "custom_collection_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_tab_fABkCy",
+        "link_tab_kgMXMh",
+        "link_tab_rJeYfw"
+      ],
+      "name": "All Links",
+      "settings": {
+        "top-heading": "OUR PARTNERS",
+        "para": "",
+        "btn_link": "",
+        "btn_text": ""
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_Xtwyaj"
+    "image_banner_Xtwyaj",
+    "all_links_PYjTk8"
   ]
 }
