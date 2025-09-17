@@ -1,0 +1,98 @@
+
+<section class="image-slider-section page-width">
+  <div class="swiper image-slider">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide">
+          {% if block.settings.link != blank %}
+            <a href="{{ block.settings.link }}">
+              <img
+                src="{{ block.settings.image | image_url: width: 1600 }}"
+                alt="{{ block.settings.alt | escape }}"
+                loading="lazy"
+              >
+            </a>
+          {% else %}
+            <img
+              src="{{ block.settings.image | image_url: width: 1600 }}"
+              alt="{{ block.settings.alt | escape }}"
+              loading="lazy"
+            >
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Image Slider",
+  "settings": [
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Autoplay speed (seconds)",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "default": 5
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide image"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Optional link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Slider",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}
+
+{% javascript %}
+  
+  const sliderEl = document.currentScript.closest('.image-slider-section');
+  if (sliderEl) {
+    new Swiper(sliderEl.querySelector('.image-slider'), {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoplay: {{ section.settings.autoplay_speed | times: 1000 }},
+      pagination: {
+        el: sliderEl.querySelector('.swiper-pagination'),
+        clickable: true
+      },
+      navigation: {
+        nextEl: sliderEl.querySelector('.swiper-button-next'),
+        prevEl: sliderEl.querySelector('.swiper-button-prev')
+      }
+    });
+  }
+{% endjavascript %}
