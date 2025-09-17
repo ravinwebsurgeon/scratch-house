@@ -13,28 +13,28 @@
     </div>
   </div>
 
-  <div class="faq-right-side" data-aos="fade-left">
-    {% if product.metafields.custom.product_faqs.value != blank %}
-      {% for item in product.metafields.custom.product_faqs.value %}
-        <div class="accordion-outer {% if forloop.first %}is-open{% endif %}">
-          <div class="accordion-heading">
-            {{ item.question }}
-            <div class="aworrs-faq">
-              <svg class="icon icon-caret" viewBox="0 0 10 6">
-                <path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"></path>
-              </svg>
-            </div>
-          </div>
-          <div
-            class="accordion-content"
-            style="{% if forloop.first %}max-height: 500px;{% else %}max-height: 0;{% endif %}"
-          >
-            <p>{{ item.answer }}</p>
+<div class="faq-right-side" data-aos="fade-left">
+  {% assign questions = product.metafields.custom.product_faq_questions.value %}
+  {% assign answers = product.metafields.custom.product_faq_answers.value %}
+
+  {% if questions != blank and answers != blank %}
+    {% for q in questions %}
+      {% assign a = answers[forloop.index0] %}
+      <div class="accordion-outer {% if forloop.first %}is-open{% endif %}">
+        <div class="accordion-heading">
+          {{ q }}
+          <div class="aworrs-faq">
+            <svg class="icon icon-caret" viewBox="0 0 10 6">
+              <path fill="currentColor" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708"></path>
+            </svg>
           </div>
         </div>
-      {% endfor %}
-    {% endif %}
-  </div>
+        <div class="accordion-content" style="{% if forloop.first %}max-height:500px;{% else %}max-height:0;{% endif %}">
+          <p>{{ a }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  {% endif %}
 </div>
 
 <script>
