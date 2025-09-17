@@ -13,8 +13,12 @@
       "id": "subtext",
       "label": "Intro Text",
       "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-    }
-   
+    },
+   {
+"type": "image_picker",
+"id": "mm",
+"label": "Image"
+}
    
   ],
   "blocks": [
@@ -60,11 +64,14 @@
 <section class="next-events">
   <div class="page-width">
     <header class="events-header">
-      <div>
-        
+      <div class="no-m">
+        <div class="left-h">
         <h2>{{ section.settings.heading }}</h2>
         <p class="events-intro">{{ section.settings.subtext }}</p>
-
+      </div>
+      <div class="ryt-tx">
+   <img src="{{  section.settings.mm | img_url:"medium" }}">
+        </div>
 
       </div>
      
