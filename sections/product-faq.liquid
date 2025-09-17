@@ -14,8 +14,8 @@
   </div>
 
   <div class="faq-right-side" data-aos="fade-left">
-    {% if product.metafields.faq.items.value != blank %}
-      {% for item in product.metafields.faq.items.value %}
+    {% if product.metafields.custom.product_faqs.value != blank %}
+      {% for item in product.metafields.custom.product_faqs.value %}
         <div class="accordion-outer {% if forloop.first %}is-open{% endif %}">
           <div class="accordion-heading">
             {{ item.question }}
