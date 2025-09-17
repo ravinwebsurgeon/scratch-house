@@ -1,85 +1,145 @@
+<section class="visit-faq-section" id="faqs">
+  <div class="faq-container">
+    <!-- Left Column -->
+    <div class="faq-left">
+      <h2 class="faq-heading1">{{ section.settings.heading }}</h2>
+      <div class="faq-description">
+     {{ section.settings.text }}
+      </div>
+    </div>
+ 
+    <!-- Right Column -->
+    <div class="faq-right">
+      {% if product.metafields.custom.visit_faq_ques and product.metafields.custom.visit_faq_answers %}
+        {% for question in product.metafields.custom.visit_faq_ques.value %}
+          {% assign answer = product.metafields.custom.visit_faq_answers.value[forloop.index0] %}
+          <div class="faq-item1">
+            <button class="faq-question1">
+              <span>{{ question }}</span>
+              <span class="faq-icon">
+                <!-- Simple Down Arrow SVG -->
+                <svg class="faq-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer1">
+              <p>{{ answer }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+ 
 <style>
-  .accordion-content {
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-  }
-  .accordion-outer {
-    border-bottom: 1px solid #eee;
-    padding: 10px 0;
+.visit-faq-section {
+    padding: 85px 89px;
+    background: #F5F5F5;
+    max-width: 1700px;
+    margin: 0 auto;
+    border-radius: 20px;
+    width:95%;
+}
+.faq-container {
+  display: flex;
+  gap: 209px;
+  max-width: 100%;
+}
+.visit-faq-section .faq-left {
+  max-width:320px;
+  width:100%;
+}
+.faq-heading1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000;
+  line-height:normal;
+}
+.faq-btn {
+    background: #12322b;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 160px;
+}
+.visit-faq-section .faq-right {
+  max-width:900px;
+  width:100%;
+}
+.faq-item1 {
+  border-bottom: 1px solid #000;
+    padding: 33px 0;
+}
+.faq-question1 {
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 24px;
+    background: none;
+    border: none;
     cursor: pointer;
-  }
-  .accordion-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 600;
-  }
+    padding: 0;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: Frutiger Neue LT W1G;
+}
+.faq-answer1 {
+    display: none;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: normal;
+    color: #000;
+    font-family: Frutiger Neue LT W1G;
+    margin-top: 0;
+    letter-spacing: normal;
+}
+.faq-answer1 p {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.faq-item1.active .faq-svg {
+  transform: rotate(180deg);
+}
+.faq-svg {
+  transition: transform 0.3s ease;
+}
 </style>
-
-<div class="accordion-wrapper {{ section.settings.custom-class }}">
-  <div class="faq-left-side" data-aos="fade-right">
-    <h2>{{ section.settings.heading }}</h2>
-    <div class="faq-main-description">
-      {{ section.settings.description }}
-    </div>
-  </div>
-
-  <div class="faq-right-side" data-aos="fade-left">
-    {% assign questions = product.metafields.custom.product_faq_questions.value | default: "" %}
-    {% assign answers = product.metafields.custom.product_faq_answers.value | default: "" %}
-
-    {% if questions != blank and answers != blank %}
-      {% for q in questions %}
-        {% assign a = answers[forloop.index0] %}
-        <div class="accordion-outer {% if forloop.first %}is-open{% endif %}">
-          <div class="accordion-heading">
-            <span>{{ q }}</span>
-            <div class="aworrs-faq">
-              <svg class="icon icon-caret" viewBox="0 0 10 6" width="14" height="14">
-                <path fill="currentColor" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708"></path>
-              </svg>
-            </div>
-          </div>
-          <div class="accordion-content" style="{% if forloop.first %}max-height:500px;{% else %}max-height:0;{% endif %}">
-            <p>{{ a }}</p>
-          </div>
-        </div>
-      {% endfor %}
-    {% endif %}
-  </div>
-</div> <!-- ✅ closing wrapper -->
-
+ 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const accordions = document.querySelectorAll(".accordion-wrapper");
-
-    accordions.forEach(wrapper => {
-      const items = wrapper.querySelectorAll(".accordion-outer");
-
-      items.forEach(item => {
-        const heading = item.querySelector(".accordion-heading");
-        const content = item.querySelector(".accordion-content");
-
-        heading.addEventListener("click", () => {
-          const isOpen = item.classList.contains("is-open");
-
-          // Close all accordions
-          items.forEach(i => {
-            i.classList.remove("is-open");
-            i.querySelector(".accordion-content").style.maxHeight = "0";
-          });
-
-          // Open the clicked one
-          if (!isOpen) {
-            item.classList.add("is-open");
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        });
-      });
-    });
+$(document).ready(function () {
+  $(".faq-question1").on("click", function () {
+    const $item = $(this).closest(".faq-item1");
+    const $answer = $item.find(".faq-answer1");
+ 
+    // Toggle active state
+    $item.toggleClass("active");
+ 
+    // Slide the answer up/down
+    $answer.stop(true, true).slideToggle(300);
+ 
+    // Optionally rotate the single arrow SVG
+    $item.find(".faq-svg").toggleClass("rotated");
   });
+});
 </script>
-
+ 
+ 
+ 
+ 
 {% schema %}
 {
   "name": "Product FAQ",
@@ -87,17 +147,13 @@
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading"
+      "label": "Heading",
+      "default": "Frequently Asked Questions"
     },
     {
       "type": "richtext",
-      "id": "description",
+      "id": "text",
       "label": "Description"
-    },
-    {
-      "type": "text",
-      "id": "custom-class",
-      "label": "Custom CSS Class"
     }
   ],
   "presets": [
@@ -107,3 +163,5 @@
   ]
 }
 {% endschema %}
+ 
+ 
