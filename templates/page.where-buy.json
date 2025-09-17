@@ -100,11 +100,17 @@
         "btn_link": "",
         "btn_text": ""
       }
+    },
+    "image_gallery_idwQAr": {
+      "type": "Image-Gallery",
+      "name": "Expanding Image Gallery",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "image_banner_Xtwyaj",
+    "image_gallery_idwQAr",
     "all_links_PYjTk8"
   ]
 }
