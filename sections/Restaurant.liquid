@@ -1,0 +1,139 @@
+<section class="hero-consulting"
+  style="background-image: url({{ section.settings.bg_image | image_url: 'master' }});">
+  <div class="hero-inner page-width">
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.text }}</p>
+
+    {% if section.blocks.size > 0 %}
+      <div class="process">
+        <strong>{{ section.settings.process_heading }}</strong><br>
+        {% for block in section.blocks %}
+          • {{ block.settings.step }}
+          {% unless forloop.last %}&nbsp;&nbsp;{% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if section.settings.button_label != blank %}
+      <a href="{{ section.settings.button_link }}" class="btn-get-started">
+        {{ section.settings.button_label }}
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Restaurant",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Restaurant Consulting Services"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description",
+      "default": "Alana, along with his team, offers culinary and management services..."
+    },
+    {
+      "type": "text",
+      "id": "process_heading",
+      "label": "Process Heading",
+      "default": "The Process"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Get Started"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Process step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "step",
+          "label": "Step text",
+          "default": "Discover"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Restaurant",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.hero-consulting {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 420px;
+  color: #fff;
+  background-size: cover;
+  background-position: right center;
+  padding: 60px 5%;
+}
+
+.hero-consulting::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.hero-inner h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-inner p {
+  margin-bottom: 1.5rem;
+}
+
+.process {
+  margin-bottom: 1.5rem;
+}
+
+.btn-get-started {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn-get-started:hover {
+  background: #fff;
+  color: #000;
+}
+{% endstylesheet %}
