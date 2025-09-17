@@ -16,9 +16,47 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_banner_Xtwyaj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_EVPw8J": {
+          "type": "heading",
+          "settings": {
+            "heading": "where to find us",
+            "heading_size": "hxxl"
+          }
+        },
+        "text_4FpVQw": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Currently serving Southern California for catering, events, wholesale/retail & wholesalers nationwide!</strong>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EVPw8J",
+        "text_4FpVQw"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_banner_Xtwyaj"
   ]
 }
