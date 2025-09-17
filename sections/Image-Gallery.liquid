@@ -1,6 +1,7 @@
 
 
-<section class="expanding-gallery page-width">
+<section class="expanding-gallery ">
+    <div class="page-width">
     <h2 class="al-text {% if settings.animations_reveal_on_scroll %}scroll-trigger animate--slide-in{% endif %}">
     {{ section.settings.top-heading }}
   </h2>
@@ -14,6 +15,7 @@
         >
       {% endif %}
     {% endfor %}
+  </div>
   </div>
 </section>
 
