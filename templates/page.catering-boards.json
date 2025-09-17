@@ -95,11 +95,70 @@
         "heading": "Larger parties are priced on a per person basis, email us for a quote.​",
         "link": ""
       }
+    },
+    "events_y8PfeB": {
+      "type": "Events",
+      "blocks": {
+        "event_HmhN6e": {
+          "type": "event",
+          "settings": {
+            "day": 18,
+            "month": "February",
+            "year": 2024,
+            "title": "Cooking classes",
+            "location": "Apple Upper West Side, Brooklyn",
+            "time": "10:15 a.m. – 11:15 a.m.",
+            "badge_text": "Buy Tickets",
+            "badge_style": "button",
+            "badge_link": ""
+          }
+        },
+        "event_cVGFBj": {
+          "type": "event",
+          "settings": {
+            "day": 18,
+            "month": "February",
+            "year": 2024,
+            "title": "Cooking classes",
+            "location": "Apple Upper West Side, Brooklyn",
+            "time": "10:15 a.m. – 11:15 a.m.",
+            "badge_text": "Buy Tickets",
+            "badge_style": "button",
+            "badge_link": ""
+          }
+        },
+        "event_tB97NU": {
+          "type": "event",
+          "settings": {
+            "day": 18,
+            "month": "February",
+            "year": 2024,
+            "title": "Cooking classes",
+            "location": "Apple Upper West Side, Brooklyn",
+            "time": "10:15 a.m. – 11:15 a.m.",
+            "badge_text": "Buy Tickets",
+            "badge_style": "button",
+            "badge_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "event_HmhN6e",
+        "event_cVGFBj",
+        "event_tB97NU"
+      ],
+      "name": "Next Events",
+      "settings": {
+        "heading": "Next events",
+        "subtext": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "view_all_link": ""
+      }
     }
   },
   "order": [
     "main",
     "restaurant_pzFhNt",
-    "portfolio_gallery_j8HJfx"
+    "portfolio_gallery_j8HJfx",
+    "events_y8PfeB"
   ]
 }
