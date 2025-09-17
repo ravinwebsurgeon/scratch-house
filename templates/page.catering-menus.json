@@ -27,10 +27,65 @@
         "button_label": "Shop Now",
         "button_link": "shopify://collections/all"
       }
+    },
+    "catering_menus_jAJDna": {
+      "type": "catering-menus",
+      "blocks": {
+        "link_block_9MmNtg": {
+          "type": "link_block",
+          "settings": {
+            "badge": "",
+            "block_title": "Hors D'oeuvres",
+            "block_desc": "",
+            "block_link": ""
+          }
+        },
+        "link_block_EX8DB6": {
+          "type": "link_block",
+          "settings": {
+            "badge": "",
+            "block_title": "Easter",
+            "block_desc": "",
+            "block_link": ""
+          }
+        },
+        "link_block_dH6NtP": {
+          "type": "link_block",
+          "settings": {
+            "badge": "",
+            "block_title": "LATIN AMERICA",
+            "block_desc": "",
+            "block_link": ""
+          }
+        },
+        "link_block_pFz3TY": {
+          "type": "link_block",
+          "settings": {
+            "badge": "",
+            "block_title": "TACO BAR",
+            "block_desc": "",
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_block_9MmNtg",
+        "link_block_EX8DB6",
+        "link_block_dH6NtP",
+        "link_block_pFz3TY"
+      ],
+      "name": "Catering Menus",
+      "settings": {
+        "top-heading": "",
+        "para": "",
+        "btn_link": "",
+        "btn_text": ""
+      }
     }
   },
   "order": [
     "main",
-    "image_text_bnner_FG9gKP"
+    "image_text_bnner_FG9gKP",
+    "catering_menus_jAJDna"
   ]
 }
