@@ -1,118 +1,111 @@
-
-
 <div class="collections page-width">
-  <h2 class="al-text {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">{{ section.settings.top-heading }}</h2>
-  <p class="collectonng-pggf {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">{{ section.settings.para }}</p>
+  <h2 class="al-text {% if settings.animations_reveal_on_scroll %}scroll-trigger animate--slide-in{% endif %}">
+    {{ section.settings.top-heading }}
+  </h2>
+  <p class="collectonng-pggf {% if settings.animations_reveal_on_scroll %}scroll-trigger animate--slide-in{% endif %}">
+    {{ section.settings.para }}
+  </p>
 
   <div id="collections-content-{{ section.id }}" class="block-ddggfj">
     {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'collection_tab' %}
-          {% assign collection = block.settings.collection %}
-          <div class="coll-cont {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-            <a href="{{ collection.url }}">
-              <div class="collection">
-                <div class="collection-titled">
-                  <div class="collection-bbage">
-                    <p class="collection-badge-text">
-                        {{ block.settings.badge }}
-                    </p>
-                  </div>
-                  <h3 class="collection-title">
-                    {% if block.settings.custom_collection_title != blank %}
-                      {{ block.settings.custom_collection_title }}
-                    {% else %}
-                      {{ collection.title }}
-                    {% endif %}
-                  </h3>
+      <div class="coll-cont {% if settings.animations_reveal_on_scroll %}scroll-trigger animate--slide-in{% endif %}">
+        <a href="{{ block.settings.block_link }}">
+          <div class="collection">
+            <div class="collection-titled">
+              {% if block.settings.badge != blank %}
+                <div class="collection-bbage">
+                  <p class="collection-badge-text">{{ block.settings.badge }}</p>
                 </div>
+              {% endif %}
+              <h3 class="collection-title">{{ block.settings.block_title }}</h3>
+              {% if block.settings.block_desc != blank %}
+                <p class="collection-desc">{{ block.settings.block_desc }}</p>
+              {% endif %}
+            </div>
 
-                <div class="collection-ddcon">
-                  {% assign custom_image = block.settings.custom_image %}
-                  {% assign first_product = collection.products | first %}
-                  
-                  {% if custom_image != blank %}
-                    <img src="{{ custom_image | img_url: 'master' }}">
-                  {% elsif first_product and first_product.featured_image %}
-                    <img src="{{ first_product.featured_image | img_url: 'master' }}">
-                  {% else %}
-                    <img src="{{ collection.featured_image | img_url: 'master' }}">
-                  {% endif %}
-                </div>
-              </div>
-            </a>
+            <div class="collection-ddcon">
+              {% if block.settings.custom_image %}
+                <img src="{{ block.settings.custom_image | img_url: 'master' }}" alt="{{ block.settings.block_title }}">
+              {% endif %}
+            </div>
           </div>
-      {% endcase %}
+        </a>
+      </div>
     {% endfor %}
   </div>
-    <div class="collection-button {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <a href="{{ section.settings.btn_link }}">{{ section.settings.btn_text }}</a>
-    </div>
-</div>
 
+  {% if section.settings.btn_text != blank %}
+    <div class="collection-button {% if settings.animations_reveal_on_scroll %}scroll-trigger animate--slide-in{% endif %}">
+      <a href="{{ section.settings.btn_link }}">{{ section.settings.btn_text }}</a>
+    </div>
+  {% endif %}
+</div>
 
 {% schema %}
 {
-  "name": "All Links",
+  "name": "All Links – Image & Text",
   "settings": [
     {
       "type": "inline_richtext",
       "id": "top-heading",
-      "label": "Enter text"
+      "label": "Top Heading"
     },
     {
-    "type": "inline_richtext",
-    "id":"para",
-    "label": "Add Para"
+      "type": "inline_richtext",
+      "id": "para",
+      "label": "Intro Paragraph"
     },
     {
-    "type": "url",
-    "id":"btn_link",
-    "label":"Add Button url"
+      "type": "url",
+      "id": "btn_link",
+      "label": "Main Button URL"
     },
     {
-    "type": "text",
-    "id":"btn_text",
-    "label":"btn_text"
-     }
+      "type": "text",
+      "id": "btn_text",
+      "label": "Main Button Text"
+    }
   ],
   "blocks": [
     {
-      "type": "Link_tab",
-      "name": "Links",
+      "type": "link_block",
+      "name": "Image & Text Block",
       "settings": [
-       
         {
           "type": "image_picker",
           "id": "custom_image",
-          "label": "Custom Image"
+          "label": "Block Image"
         },
-         {
-          "type": "text",
-          "id": "badge",
-          "label": "Custom Collection Badge"
-        },       
         {
           "type": "text",
-          "id": "custom_collection_title",
-          "label": "Custom Collection Title"
+          "id": "badge",
+          "label": "Optional Badge Text"
         },
+        {
+          "type": "text",
+          "id": "block_title",
+          "label": "Block Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "block_desc",
+          "label": "Block Description"
+        },
+        {
+          "type": "url",
+          "id": "block_link",
+          "label": "Block Button/Link URL"
+        }
       ]
     }
   ],
   "presets": [
     {
-      "name": "All Links",
+      "name": "All Links – Image & Text",
       "blocks": [
-        {
-          "type": "Link_tab"
-        },
-        {
-          "type": "Link_tab"
-        },
-        {
-          "type": "Link_tab"
-        }
+        { "type": "link_block" },
+        { "type": "link_block" },
+        { "type": "link_block" }
       ]
     }
   ]
