@@ -23,25 +23,32 @@
         "step_xYbKnr": {
           "type": "step",
           "settings": {
-            "step": "Discover"
+            "step": "8 inch board - $50"
           }
         },
         "step_BFAXye": {
           "type": "step",
           "settings": {
-            "step": "Discover"
+            "step": "12 inch board - $100"
+          }
+        },
+        "step_gUdrFV": {
+          "type": "step",
+          "settings": {
+            "step": "16 inch board - $160"
           }
         }
       },
       "block_order": [
         "step_xYbKnr",
-        "step_BFAXye"
+        "step_BFAXye",
+        "step_gUdrFV"
       ],
       "name": "Restaurant",
       "settings": {
-        "bg_image": "shopify://shop_images/a397fa.avif",
-        "heading": "Restaurant Consulting Services",
-        "text": "Alana, along with his team, offers culinary and management services...",
+        "bg_image": "shopify://shop_images/Rectangle_4283.png",
+        "heading": "custom cheese displays",
+        "text": "",
         "process_heading": "The Process",
         "button_label": "Get Started",
         "button_link": ""
