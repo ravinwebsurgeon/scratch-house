@@ -114,53 +114,6 @@
         "btn_text": ""
       }
     },
-    "multirow_MVNXdj": {
-      "type": "multirow",
-      "blocks": {
-        "row_LexcEB": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/faaebc8854fdd720c8edf0c77752d9954aba1ed2.jpg",
-            "caption": "",
-            "heading": "",
-            "text": "<p>Scratch House will help you create the vegan charcuterie spread of your dreams.<br/><br/></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_qBXzDj": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_4280.png",
-            "caption": "",
-            "heading": "",
-            "text": "<p>I was very leery. Every vegan cheese I ever tried tasted like cardboard.<br/><br/></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_LexcEB",
-        "row_qBXzDj"
-      ],
-      "name": "t:sections.multirow.presets.name",
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "image_layout": "alternate-left",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_slider_UFWp94": {
       "type": "image-slider",
       "blocks": {
@@ -222,8 +175,53 @@
         "slide_Jid36a"
       ],
       "name": "Image Slider",
+      "settings": {}
+    },
+    "multirow_MVNXdj": {
+      "type": "multirow",
+      "blocks": {
+        "row_LexcEB": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/faaebc8854fdd720c8edf0c77752d9954aba1ed2.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "<p>Scratch House will help you create the vegan charcuterie spread of your dreams.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_qBXzDj": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_4280.png",
+            "caption": "",
+            "heading": "",
+            "text": "<p>I was very leery. Every vegan cheese I ever tried tasted like cardboard.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_LexcEB",
+        "row_qBXzDj"
+      ],
+      "name": "t:sections.multirow.presets.name",
       "settings": {
-        "autoplay_speed": 5
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -231,7 +229,7 @@
     "main",
     "image_text_bnner_FG9gKP",
     "catering_menus_jAJDna",
-    "multirow_MVNXdj",
-    "image_slider_UFWp94"
+    "image_slider_UFWp94",
+    "multirow_MVNXdj"
   ]
 }
