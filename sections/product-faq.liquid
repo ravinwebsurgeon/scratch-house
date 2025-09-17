@@ -10,7 +10,7 @@
  
     <!-- Right Column -->
     <div class="faq-right">
-      {% if product.metafields.custom.visit_faq_ques and product.metafields.custom.visit_faq_answers %}
+      {% if product.metafields.custom.product_faq_questions and product.metafields.custom.product_faq_descriptions %}
         {% for question in product.metafields.custom.product_faq_questions.value %}
           {% assign answer = product.metafields.custom.product_faq_descriptions.value[forloop.index0] %}
           <div class="faq-item1">
