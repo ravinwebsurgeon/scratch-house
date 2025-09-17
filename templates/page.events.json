@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -67,6 +68,7 @@
         "event_TiWcBW",
         "event_Q3kVT3"
       ],
+      "disabled": true,
       "name": "Next Events",
       "settings": {
         "heading": "All displays include 3 to 5 cheeses and crackers/bread, plus seasonal accompianments such as nuts, pickles, fruit, and seasonal bruschetta. We can now offer gluten free, nut free, and other allergen free options.",
