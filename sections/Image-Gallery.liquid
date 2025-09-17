@@ -1,0 +1,84 @@
+{% comment %}
+  Section: Expanding Image Gallery
+  Drop this into sections/gallery-expand.liquid
+{% endcomment %}
+
+<section class="expanding-gallery page-width">
+  <div class="gallery">
+    {% for block in section.blocks %}
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1200 }}"
+          alt="{{ block.settings.alt_text | escape }}"
+        >
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .expanding-gallery {
+    background: #0e7c86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .expanding-gallery .gallery {
+    width: 100%;
+    max-width: 1400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .expanding-gallery .gallery img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+  }
+
+  .expanding-gallery .gallery img:hover {
+    width: 50%;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Expanding Image Gallery",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Gallery Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt text"
+          
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Expanding Image Gallery",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}
