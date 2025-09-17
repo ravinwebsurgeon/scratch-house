@@ -1,0 +1,69 @@
+<style>
+  .accordion-content {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+</style>
+
+<div class="accordion-wrapper {{ section.settings.custom-class }}">
+  <div class="faq-left-side" data-aos="fade-right">
+    <h2>{{ product.metafields.faq.heading }}</h2>
+    <div class="faq-main-description">
+      {{ product.metafields.faq.description }}
+    </div>
+  </div>
+
+  <div class="faq-right-side" data-aos="fade-left">
+    {% if product.metafields.faq.items.value != blank %}
+      {% for item in product.metafields.faq.items.value %}
+        <div class="accordion-outer {% if forloop.first %}is-open{% endif %}">
+          <div class="accordion-heading">
+            {{ item.question }}
+            <div class="aworrs-faq">
+              <svg class="icon icon-caret" viewBox="0 0 10 6">
+                <path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="accordion-content"
+            style="{% if forloop.first %}max-height: 500px;{% else %}max-height: 0;{% endif %}"
+          >
+            <p>{{ item.answer }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const accordions = document.querySelectorAll(".accordion-wrapper");
+
+    accordions.forEach(wrapper => {
+      const items = wrapper.querySelectorAll(".accordion-outer");
+
+      items.forEach(item => {
+        const heading = item.querySelector(".accordion-heading");
+        const content = item.querySelector(".accordion-content");
+
+        heading.addEventListener("click", () => {
+          const isOpen = item.classList.contains("is-open");
+
+          // Close all
+          items.forEach(i => {
+            i.classList.remove("is-open");
+            i.querySelector(".accordion-content").style.maxHeight = "0";
+          });
+
+          // Toggle this one
+          if (!isOpen) {
+            item.classList.add("is-open");
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      });
+    });
+  });
+</script>
