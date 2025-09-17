@@ -95,8 +95,8 @@
       "type": "product-faq",
       "name": "Product FAQ",
       "settings": {
-        "heading": "Product Related FAQs",
-        "description": ""
+        "heading": "Frequently Asked Questions",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet posuere turpis, at feugiat ligula. Suspendisse pretium tellus erat, eu imperdiet diam vulputate at. Integer eget pulvinar ante.</p>"
       }
     },
     "instagram_tnRVUF": {
