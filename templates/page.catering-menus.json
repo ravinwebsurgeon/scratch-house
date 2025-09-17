@@ -34,7 +34,6 @@
         "link_block_9MmNtg": {
           "type": "link_block",
           "settings": {
-            "badge": "",
             "block_title": "Hors D'oeuvres",
             "block_desc": "",
             "block_link": ""
@@ -43,7 +42,6 @@
         "link_block_EX8DB6": {
           "type": "link_block",
           "settings": {
-            "badge": "",
             "block_title": "Easter",
             "block_desc": "",
             "block_link": ""
@@ -52,7 +50,6 @@
         "link_block_dH6NtP": {
           "type": "link_block",
           "settings": {
-            "badge": "",
             "block_title": "LATIN AMERICA",
             "block_desc": "",
             "block_link": ""
@@ -61,9 +58,16 @@
         "link_block_pFz3TY": {
           "type": "link_block",
           "settings": {
-            "badge": "",
             "block_title": "TACO BAR",
             "block_desc": "",
+            "block_link": ""
+          }
+        },
+        "link_block_GAFicr": {
+          "type": "link_block",
+          "settings": {
+            "block_title": "",
+            "block_desc": "View Menu",
             "block_link": ""
           }
         }
@@ -72,7 +76,8 @@
         "link_block_9MmNtg",
         "link_block_EX8DB6",
         "link_block_dH6NtP",
-        "link_block_pFz3TY"
+        "link_block_pFz3TY",
+        "link_block_GAFicr"
       ],
       "name": "Catering Menus",
       "settings": {
