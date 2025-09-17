@@ -17,6 +17,26 @@
         "padding_bottom": 28
       }
     },
+    "restaurant_zeBdVr": {
+      "type": "Restaurant",
+      "blocks": {
+        "slide_rdnrqc": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/ev.avif",
+            "heading": "EVENTS & Catering",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_rdnrqc"
+      ],
+      "name": "Restaurant Hero Slider",
+      "settings": {}
+    },
     "events_VE9hpB": {
       "type": "Events",
       "blocks": {
@@ -78,6 +98,7 @@
   },
   "order": [
     "main",
+    "restaurant_zeBdVr",
     "events_VE9hpB"
   ]
 }
