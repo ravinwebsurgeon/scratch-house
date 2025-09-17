@@ -35,7 +35,7 @@
           "type": "link_block",
           "settings": {
             "block_title": "Hors D'oeuvres",
-            "block_desc": "",
+            "block_desc": "View Menu",
             "block_link": ""
           }
         },
@@ -43,7 +43,7 @@
           "type": "link_block",
           "settings": {
             "block_title": "Easter",
-            "block_desc": "",
+            "block_desc": "View Menu",
             "block_link": ""
           }
         },
@@ -51,7 +51,7 @@
           "type": "link_block",
           "settings": {
             "block_title": "LATIN AMERICA",
-            "block_desc": "",
+            "block_desc": "View Menu",
             "block_link": ""
           }
         },
@@ -59,7 +59,7 @@
           "type": "link_block",
           "settings": {
             "block_title": "TACO BAR",
-            "block_desc": "",
+            "block_desc": "View Menu",
             "block_link": ""
           }
         },
