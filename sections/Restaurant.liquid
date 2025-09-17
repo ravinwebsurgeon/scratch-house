@@ -1,3 +1,9 @@
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 <section class="hero-consulting-slider">
   <div class="hero-slider swiper">
     <div class="swiper-wrapper">
@@ -134,7 +140,8 @@
 {% endstylesheet %}
 
 {% javascript %}
-  const heroSwiper = new Swiper('.hero-slider', {
+document.addEventListener("DOMContentLoaded", function() {
+  new Swiper('.hero-slider', {
     loop: true,
     autoplay: { delay: 5000 },
     pagination: { el: '.swiper-pagination', clickable: true },
@@ -143,4 +150,6 @@
       prevEl: '.swiper-button-prev'
     }
   });
+});
 {% endjavascript %}
+
