@@ -1,47 +1,52 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+{% comment %}
+  Slick Slider Section
+{% endcomment %}
 
-<section id="image-slider-{{ section.id }}" class="image-slider-section page-width">
-  <div class="swiper image-slider">
-    <div class="swiper-wrapper">
-      {% for block in section.blocks %}
-        <div class="swiper-slide">
-          {% if block.settings.link != blank %}
-            <a href="{{ block.settings.link }}">
-              <img
-                src="{{ block.settings.image | image_url: width: 1600 }}"
-                alt="{{ block.settings.alt | escape }}"
-                loading="lazy"
-              >
-            </a>
-          {% else %}
+<section id="slick-slider-{{ section.id }}" class="slick-slider-section page-width">
+  <div class="slick-slider-wrapper">
+    {% for block in section.blocks %}
+      <div class="slick-slide">
+        {% if block.settings.link != blank %}
+          <a href="{{ block.settings.link }}">
             <img
               src="{{ block.settings.image | image_url: width: 1600 }}"
               alt="{{ block.settings.alt | escape }}"
               loading="lazy"
             >
-          {% endif %}
-        </div>
-      {% endfor %}
-    </div>
-
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-pagination"></div>
+          </a>
+        {% else %}
+          <img
+            src="{{ block.settings.image | image_url: width: 1600 }}"
+            alt="{{ block.settings.alt | escape }}"
+            loading="lazy"
+          >
+        {% endif %}
+      </div>
+    {% endfor %}
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "Image Slider",
+  "name": "Image Slick Slider",
   "settings": [
     {
       "type": "range",
       "id": "autoplay_speed",
       "label": "Autoplay speed (seconds)",
-      "min": 0,
+      "min": 1,
       "max": 10,
       "step": 1,
       "default": 5
+    },
+    {
+      "type": "range",
+      "id": "slides_to_show",
+      "label": "Slides to show (desktop)",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 4
     }
   ],
   "blocks": [
@@ -56,61 +61,51 @@
     }
   ],
   "presets": [
-    { "name": "Image Slider", "category": "Media" }
+    { "name": "Image Slick Slider", "category": "Media" }
   ]
 }
 {% endschema %}
 
 {% javascript %}
 document.addEventListener('DOMContentLoaded', function () {
-  const sliderEl = document.querySelector('#image-slider-{{ section.id }} .image-slider');
-  if (sliderEl) {
-    new Swiper(sliderEl, {
-      loop: true,
-      slidesPerView: 4,
-      spaceBetween: 0,
-      autoplay: {
-        delay: {{ section.settings.autoplay_speed | times: 1000 }}
-      },
-      breakpoints: {
-        0:   { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024:{ slidesPerView: 4 }
-      },
-      pagination: {
-        el: '#image-slider-{{ section.id }} .swiper-pagination',
-        clickable: true
-      },
-      navigation: {
-        nextEl: '#image-slider-{{ section.id }} .swiper-button-next',
-        prevEl: '#image-slider-{{ section.id }} .swiper-button-prev'
-      }
+  const slider = $('#slick-slider-{{ section.id }} .slick-slider-wrapper');
+  if (slider.length) {
+    slider.slick({
+      slidesToShow: {{ section.settings.slides_to_show }},
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: {{ section.settings.autoplay_speed | times: 1000 }},
+      dots: true,
+      arrows: true,
+      responsive: [
+        { breakpoint: 1024, settings: { slidesToShow: 2 } },
+        { breakpoint: 768,  settings: { slidesToShow: 1 } }
+      ]
     });
   }
 });
 {% endjavascript %}
 
 <style>
-.image-slider-section {
-  position: relative;
+.slick-slider-section {
   max-width: 100%;
+  position: relative;
 }
-.image-slider img {
+.slick-slider-wrapper img {
   width: 100%;
   height: auto;
-  display: block;
   border-radius: 12px;
+  display: block;
 }
-.image-slider .swiper-button-next,
-.image-slider .swiper-button-prev {
+.slick-prev:before, .slick-next:before {
   color: #fff;
   text-shadow: 0 0 6px rgba(0,0,0,0.4);
 }
-.image-slider .swiper-pagination-bullet {
-  background: #fff;
+.slick-dots li button:before {
+  color: #fff;
   opacity: 0.7;
 }
-.image-slider .swiper-pagination-bullet-active {
+.slick-dots li.slick-active button:before {
   opacity: 1;
 }
 </style>
