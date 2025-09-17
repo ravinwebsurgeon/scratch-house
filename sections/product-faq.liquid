@@ -7,9 +7,9 @@
 
 <div class="accordion-wrapper {{ section.settings.custom-class }}">
   <div class="faq-left-side" data-aos="fade-right">
-    <h2>{{ product.metafields.faq.heading }}</h2>
+    <h2>{{ section.settings.heading }}</h2>
     <div class="faq-main-description">
-      {{ product.metafields.faq.description }}
+      {{ section.settings.description }}
     </div>
   </div>
 
@@ -71,7 +71,18 @@
 {% schema %}
 {
   "name": "Product FAQ",
-  "settings": [],
+  "settings": [
+    {
+    "type": "text",
+    "id": "heading",
+    "label": "Heading"
+},
+{
+    "type": "richtext",
+    "id": "description",
+    "label": "Description"
+}
+  ],
   "presets": [
     {
       "name": "Product FAQ"
