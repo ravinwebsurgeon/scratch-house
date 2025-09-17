@@ -60,11 +60,11 @@
         "link_block_RYEMpL": {
           "type": "link_block",
           "settings": {
-            "custom_image": "shopify://shop_images/Rectangle_4291.png",
+            "custom_image": "shopify://shop_images/Screenshot_3.png",
             "badge": "Urthly vegan market",
             "block_title": "Find our products at this 100% Vegan Market in Garden Grove, Orange County",
             "block_desc": "View Website",
-            "block_link": "#"
+            "block_link": "https://www.urthlyveganmarket.com/"
           }
         }
       },
