@@ -11,13 +11,26 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_text_bnner_FG9gKP": {
+      "type": "image-text-bnner",
+      "name": "Image-Text-Banner",
+      "settings": {
+        "image": "shopify://shop_images/b478dfa9a8f141ba705a716f0d947772da9155b6.jpg",
+        "heading": "CATERING MENUS",
+        "subtext": "",
+        "button_label": "Shop Now",
+        "button_link": "shopify://collections/all"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_text_bnner_FG9gKP"
   ]
 }
