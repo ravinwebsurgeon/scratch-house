@@ -199,6 +199,69 @@
         "padding_bottom": 36
       }
     },
+    "image_slider_qXAVB6": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_djHPB4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "slide_PWBfmD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/pp.avif",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "slide_MCec9q": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_4291.png",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "slide_dVtpcX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "slide_jYriEH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/7fb2e21e41d7a8ddac31e97c1a516629976bf0f7.jpg",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "slide_HMd4Tn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/5665f01c496b91ea8031bb6143c2c784a3cdfe35.jpg",
+            "alt": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_djHPB4",
+        "slide_PWBfmD",
+        "slide_MCec9q",
+        "slide_dVtpcX",
+        "slide_jYriEH",
+        "slide_HMd4Tn"
+      ],
+      "name": "Image Slider",
+      "settings": {}
+    },
     "event_contact_E3BVUz": {
       "type": "Event-contact",
       "name": "Event contact",
@@ -219,6 +282,7 @@
     "events_VE9hpB",
     "portfolio_gallery_E8WQ9n",
     "multicolumn_fwafVD",
+    "image_slider_qXAVB6",
     "event_contact_E3BVUz"
   ]
 }
