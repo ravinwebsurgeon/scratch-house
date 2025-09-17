@@ -3,6 +3,11 @@
   "name": "Portfolio Gallery",
   "settings": [
     {
+    "type": "text",
+    "id": "sub-head",
+    "label": "Sub Heading"
+    },
+    {
       "type": "text",
       "id": "heading",
       "label": "Middle Item Title",
@@ -55,7 +60,7 @@
         {% endif %}
         {% if forloop.index == 3 %}
           <div class="portfolio-caption">
-            <span class="portfolio-label">Portfolio</span>
+            <span class="portfolio-label">{{ section.settings.sub-head }}</span>
             <h3>{{ section.settings.heading }}</h3>
             <a class="read-more" href="{{ section.settings.link }}">Read More →</a>
           </div>
