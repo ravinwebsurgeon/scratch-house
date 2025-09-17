@@ -33,11 +33,7 @@
                 alt="{{ block.settings.block_title | escape }}"
                 loading="lazy"
               >
-              {% if block.settings.badge != blank %}
-                <span class="all-links-badge">
-                  {{ block.settings.badge }}
-                </span>
-              {% endif %}
+              
             </div>
           {% endif %}
 
@@ -75,7 +71,7 @@
       "name": "Image & Text Block",
       "settings": [
         { "type": "image_picker", "id": "custom_image", "label": "Block Image" },
-        { "type": "text", "id": "badge", "label": "Optional Badge Text" },
+       
         { "type": "text", "id": "block_title", "label": "Block Heading" },
         { "type": "text", "id": "block_desc", "label": "Button Text" },
         { "type": "url", "id": "block_link", "label": "Block Button/Link URL" }
