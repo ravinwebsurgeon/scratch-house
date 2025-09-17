@@ -66,10 +66,21 @@
             "block_desc": "View Website",
             "block_link": "https://www.urthlyveganmarket.com/"
           }
+        },
+        "link_block_FzayKN": {
+          "type": "link_block",
+          "settings": {
+            "custom_image": "shopify://shop_images/Screenshot_4.png",
+            "badge": "Nomad Donuts",
+            "block_title": "Find our products on an extensive vegan breakfast and lunch menu in North Park, San Diego",
+            "block_desc": "View Website",
+            "block_link": ""
+          }
         }
       },
       "block_order": [
-        "link_block_RYEMpL"
+        "link_block_RYEMpL",
+        "link_block_FzayKN"
       ],
       "name": "All Links",
       "settings": {
