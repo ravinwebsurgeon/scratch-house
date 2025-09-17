@@ -11,8 +11,8 @@
     <!-- Right Column -->
     <div class="faq-right">
       {% if product.metafields.custom.visit_faq_ques and product.metafields.custom.visit_faq_answers %}
-        {% for question in product.metafields.custom.visit_faq_ques.value %}
-          {% assign answer = product.metafields.custom.visit_faq_answers.value[forloop.index0] %}
+        {% for question in product.metafields.custom.product_faq_questions.value %}
+          {% assign answer = product.metafields.custom.product_faq_descriptions.value[forloop.index0] %}
           <div class="faq-item1">
             <button class="faq-question1">
               <span>{{ question }}</span>
