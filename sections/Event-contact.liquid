@@ -26,6 +26,7 @@
       <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         {{ section.settings.heading }}
       </h2>
+      <h3 class="imgt">{{ section.settings.imgt }}</h3>
     {%- else -%}
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
@@ -155,6 +156,12 @@
     "type": "image_picker",
     "id": "img",
     "label": "Image"
+    },
+    {
+    "type": "text",
+    "id": "imgt",
+    "label": "Enter Text",
+    "default":"Get in Touch!"
     },
     {
       "type": "inline_richtext",
