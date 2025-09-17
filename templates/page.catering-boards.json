@@ -102,27 +102,27 @@
         "event_HmhN6e": {
           "type": "event",
           "settings": {
-            "day": 18,
+            "day": 1,
             "month": "February",
             "year": 2024,
-            "title": "Cooking classes",
+            "title": " 8\" display tray (serves 2-4) - $50",
             "location": "Apple Upper West Side, Brooklyn",
-            "time": "10:15 a.m. – 11:15 a.m.",
-            "badge_text": "Buy Tickets",
-            "badge_style": "button",
+            "time": "Unlimited",
+            "badge_text": "Contact Us",
+            "badge_style": "label",
             "badge_link": ""
           }
         },
         "event_cVGFBj": {
           "type": "event",
           "settings": {
-            "day": 18,
+            "day": 2,
             "month": "February",
             "year": 2024,
-            "title": "Cooking classes",
+            "title": "12” display tray (serves 6-10) - $100",
             "location": "Apple Upper West Side, Brooklyn",
-            "time": "10:15 a.m. – 11:15 a.m.",
-            "badge_text": "Buy Tickets",
+            "time": "Limited",
+            "badge_text": "Have a Look",
             "badge_style": "button",
             "badge_link": ""
           }
@@ -130,13 +130,13 @@
         "event_tB97NU": {
           "type": "event",
           "settings": {
-            "day": 18,
+            "day": 3,
             "month": "February",
             "year": 2024,
-            "title": "Cooking classes",
+            "title": "16” display tray (serves 10-15) - $160",
             "location": "Apple Upper West Side, Brooklyn",
-            "time": "10:15 a.m. – 11:15 a.m.",
-            "badge_text": "Buy Tickets",
+            "time": "No Limit",
+            "badge_text": "About Us",
             "badge_style": "button",
             "badge_link": ""
           }
@@ -149,9 +149,8 @@
       ],
       "name": "Next Events",
       "settings": {
-        "heading": "Events",
-        "subtext": "8\" display tray (serves 2-4) - $50<br>12” display tray (serves 6-10) - $100<br>16” display tray (serves 10-15) - $160",
-        "view_all_link": ""
+        "heading": "All displays include 3 to 5 cheeses and crackers/bread, plus seasonal accompianments such as nuts, pickles, fruit, and seasonal bruschetta. We can now offer gluten free, nut free, and other allergen free options.",
+        "subtext": "All pick up catering orders are available at Scratch House Vegan Kitchen: 6309 University Ave, San Diego"
       }
     }
   },
