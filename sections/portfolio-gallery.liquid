@@ -46,6 +46,7 @@
 {% endschema %}
 
 <section class="portfolio-gallery">
+    <div class="page-width">
   <div class="portfolio-wrapper">
     {% for block in section.blocks %}
       <div class="portfolio-item {% if forloop.index == 3 %}portfolio-center{% endif %}">
@@ -61,6 +62,7 @@
         {% endif %}
       </div>
     {% endfor %}
+  </div>
   </div>
 </section>
 
