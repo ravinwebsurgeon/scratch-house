@@ -99,6 +99,24 @@
         "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet posuere turpis, at feugiat ligula. Suspendisse pretium tellus erat, eu imperdiet diam vulputate at. Integer eget pulvinar ante.</p>"
       }
     },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
     "instagram_tnRVUF": {
       "type": "instagram",
       "blocks": {
@@ -145,24 +163,6 @@
         "title": "Follow us on Instagram"
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
-    },
     "newsletter_6XtkpT": {
       "type": "newsletter",
       "blocks": {
@@ -194,8 +194,8 @@
   "order": [
     "main",
     "product_recipes_QD83Tc",
-    "related-products",
     "product_faq_h9XiHL",
+    "related-products",
     "instagram_tnRVUF",
     "newsletter_6XtkpT"
   ]
