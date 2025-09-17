@@ -47,10 +47,58 @@
       ],
       "name": "Restaurant",
       "settings": {}
+    },
+    "portfolio_gallery_j8HJfx": {
+      "type": "portfolio-gallery",
+      "blocks": {
+        "image_rWGFmr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_4293.png"
+          }
+        },
+        "image_A3rRrK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_4292.png"
+          }
+        },
+        "image_gQi7CP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg"
+          }
+        },
+        "image_WfNypy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/62c5862b6094050f878999de8ca413911b381de2.jpg"
+          }
+        },
+        "image_AnkFx6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_rWGFmr",
+        "image_A3rRrK",
+        "image_gQi7CP",
+        "image_WfNypy",
+        "image_AnkFx6"
+      ],
+      "name": "Portfolio Gallery",
+      "settings": {
+        "heading": "Passion fruit mousse cake",
+        "link": ""
+      }
     }
   },
   "order": [
     "main",
-    "restaurant_pzFhNt"
+    "restaurant_pzFhNt",
+    "portfolio_gallery_j8HJfx"
   ]
 }
