@@ -91,6 +91,14 @@
         "title": "Mouthwatering Recipes"
       }
     },
+    "product_faq_h9XiHL": {
+      "type": "product-faq",
+      "name": "Product FAQ",
+      "settings": {
+        "heading": "Product Related FAQs",
+        "description": ""
+      }
+    },
     "instagram_tnRVUF": {
       "type": "instagram",
       "blocks": {
@@ -181,11 +189,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "product_faq_h9XiHL": {
-      "type": "product-faq",
-      "name": "Product FAQ",
-      "settings": {}
     }
   },
   "order": [
