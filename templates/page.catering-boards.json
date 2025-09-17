@@ -153,12 +153,52 @@
         "subtext": "All pick up catering orders are available at Scratch House Vegan Kitchen: 6309 University Ave, San Diego",
         "mm": "shopify://shop_images/6d7565a8f9a013a827c3e82bb2ac6939dec3e490.jpg"
       }
+    },
+    "image_with_text_VE8XNQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nKHNdA": {
+          "type": "heading",
+          "settings": {
+            "heading": "custom cheese displays",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ci7xcf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>8 inch board - $50</strong></p><p><strong>12 inch board - $100</strong></p><p><strong>16 inch board - $160</strong></p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nKHNdA",
+        "text_Ci7xcf"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_4292.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "restaurant_pzFhNt",
     "portfolio_gallery_j8HJfx",
-    "events_y8PfeB"
+    "events_y8PfeB",
+    "image_with_text_VE8XNQ"
   ]
 }
