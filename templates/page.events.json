@@ -94,11 +94,60 @@
         "subtext": "All pick up catering orders are available at Scratch House Vegan Kitchen: 6309 University Ave, San Diego<br><br>All displays include 3 to 5 cheeses and crackers/bread, plus seasonal accompianments such as nuts, pickles, fruit, and seasonal bruschetta. We can now offer gluten free, nut free, and other allergen free options.",
         "mm": "shopify://shop_images/6d7565a8f9a013a827c3e82bb2ac6939dec3e490.jpg"
       }
+    },
+    "portfolio_gallery_E8WQ9n": {
+      "type": "portfolio-gallery",
+      "blocks": {
+        "image_w3MqPz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_4293.png"
+          }
+        },
+        "image_NU3EUD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_4292.png"
+          }
+        },
+        "image_h3WWWK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg"
+          }
+        },
+        "image_U3RAnY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/62c5862b6094050f878999de8ca413911b381de2.jpg"
+          }
+        },
+        "image_TB3AEg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_w3MqPz",
+        "image_NU3EUD",
+        "image_h3WWWK",
+        "image_U3RAnY",
+        "image_TB3AEg"
+      ],
+      "name": "Portfolio Gallery",
+      "settings": {
+        "sub-head": "We would love to cater your next party or event!",
+        "heading": "Larger parties are priced on a per person basis, email us for a quote.​",
+        "link": ""
+      }
     }
   },
   "order": [
     "main",
     "restaurant_zeBdVr",
-    "events_VE9hpB"
+    "events_VE9hpB",
+    "portfolio_gallery_E8WQ9n"
   ]
 }
