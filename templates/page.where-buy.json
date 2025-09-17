@@ -76,11 +76,22 @@
             "block_desc": "View Website",
             "block_link": "https://nomaddonuts.com/"
           }
+        },
+        "link_block_VHrJ6L": {
+          "type": "link_block",
+          "settings": {
+            "custom_image": "shopify://shop_images/Screenshot_5.png",
+            "badge": "san diego vegan market",
+            "block_title": "100% Vegan Market & Deli from the owner of Mission Square Market.",
+            "block_desc": "View Website",
+            "block_link": "https://www.veganrestaurantsd.com/"
+          }
         }
       },
       "block_order": [
         "link_block_RYEMpL",
-        "link_block_FzayKN"
+        "link_block_FzayKN",
+        "link_block_VHrJ6L"
       ],
       "name": "All Links",
       "settings": {
