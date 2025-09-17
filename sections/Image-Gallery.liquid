@@ -1,10 +1,11 @@
 
 
 <section class="expanding-gallery page-width">
-  <div class="gallery">
     <h2 class="al-text {% if settings.animations_reveal_on_scroll %}scroll-trigger animate--slide-in{% endif %}">
     {{ section.settings.top-heading }}
   </h2>
+  <div class="gallery">
+    
     {% for block in section.blocks %}
       {% if block.settings.image %}
         <img
@@ -55,9 +56,10 @@
   "name": "Expanding Image Gallery",
   "settings": [
      {
-      "type": "inline_richtext",
+      "type": "text",
       "id": "top-heading",
-      "label": "Top Heading"
+      "label": "Top Heading",
+      "default":"Gallery"
     }
   ],
   "blocks": [
