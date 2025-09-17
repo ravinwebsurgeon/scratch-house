@@ -162,33 +162,6 @@
       "settings": {
         "title": "Follow us on Instagram"
       }
-    },
-    "newsletter_6XtkpT": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_XLyPq7": {
-          "type": "heading",
-          "settings": {
-            "heading": "subscribe to our newsletter",
-            "heading_size": "h1"
-          }
-        },
-        "email_form_HrDt9U": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_XLyPq7",
-        "email_form_HrDt9U"
-      ],
-      "name": "t:sections.newsletter.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -196,7 +169,6 @@
     "product_recipes_QD83Tc",
     "product_faq_h9XiHL",
     "related-products",
-    "instagram_tnRVUF",
-    "newsletter_6XtkpT"
+    "instagram_tnRVUF"
   ]
 }
