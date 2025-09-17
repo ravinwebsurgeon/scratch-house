@@ -16,9 +16,40 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "restaurant_pzFhNt": {
+      "type": "Restaurant",
+      "blocks": {
+        "step_xYbKnr": {
+          "type": "step",
+          "settings": {
+            "step": "Discover"
+          }
+        },
+        "step_BFAXye": {
+          "type": "step",
+          "settings": {
+            "step": "Discover"
+          }
+        }
+      },
+      "block_order": [
+        "step_xYbKnr",
+        "step_BFAXye"
+      ],
+      "name": "Restaurant",
+      "settings": {
+        "bg_image": "shopify://shop_images/a397fa.avif",
+        "heading": "Restaurant Consulting Services",
+        "text": "Alana, along with his team, offers culinary and management services...",
+        "process_heading": "The Process",
+        "button_label": "Get Started",
+        "button_link": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "restaurant_pzFhNt"
   ]
 }
