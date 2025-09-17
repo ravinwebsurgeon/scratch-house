@@ -15,9 +15,68 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "events_VE9hpB": {
+      "type": "Events",
+      "blocks": {
+        "event_9EDfFx": {
+          "type": "event",
+          "settings": {
+            "day": 1,
+            "month": "February",
+            "year": 2024,
+            "title": " 8\" display tray (serves 2-4) - $50",
+            "location": "Apple Upper West Side, Brooklyn",
+            "time": "Unlimited",
+            "badge_text": "Contact Us",
+            "badge_style": "label",
+            "badge_link": ""
+          }
+        },
+        "event_TiWcBW": {
+          "type": "event",
+          "settings": {
+            "day": 2,
+            "month": "February",
+            "year": 2024,
+            "title": "12” display tray (serves 6-10) - $100",
+            "location": "Apple Upper West Side, Brooklyn",
+            "time": "Limited",
+            "badge_text": "Have a Look",
+            "badge_style": "button",
+            "badge_link": ""
+          }
+        },
+        "event_Q3kVT3": {
+          "type": "event",
+          "settings": {
+            "day": 3,
+            "month": "February",
+            "year": 2024,
+            "title": "16” display tray (serves 10-15) - $160",
+            "location": "Apple Upper West Side, Brooklyn",
+            "time": "No Limit",
+            "badge_text": "About Us",
+            "badge_style": "button",
+            "badge_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "event_9EDfFx",
+        "event_TiWcBW",
+        "event_Q3kVT3"
+      ],
+      "name": "Next Events",
+      "settings": {
+        "heading": "All displays include 3 to 5 cheeses and crackers/bread, plus seasonal accompianments such as nuts, pickles, fruit, and seasonal bruschetta. We can now offer gluten free, nut free, and other allergen free options.",
+        "subtext": "All pick up catering orders are available at Scratch House Vegan Kitchen: 6309 University Ave, San Diego",
+        "mm": "shopify://shop_images/6d7565a8f9a013a827c3e82bb2ac6939dec3e490.jpg"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "events_VE9hpB"
   ]
 }
