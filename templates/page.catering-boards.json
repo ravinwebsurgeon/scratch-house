@@ -20,39 +20,33 @@
     "restaurant_pzFhNt": {
       "type": "Restaurant",
       "blocks": {
-        "step_xYbKnr": {
-          "type": "step",
+        "slide_qntWLK": {
+          "type": "slide",
           "settings": {
-            "step": "8 inch board - $50"
+            "bg_image": "shopify://shop_images/Rectangle_4253.png",
+            "heading": "CATERING & CHEESE DISPLAYS",
+            "text": "Serving the San Diego Area",
+            "button_label": "Get Started",
+            "button_link": ""
           }
         },
-        "step_BFAXye": {
-          "type": "step",
+        "slide_7f7hbR": {
+          "type": "slide",
           "settings": {
-            "step": "12 inch board - $100"
-          }
-        },
-        "step_gUdrFV": {
-          "type": "step",
-          "settings": {
-            "step": "16 inch board - $160"
+            "bg_image": "shopify://shop_images/Rectangle_3.png",
+            "heading": "custom catering ",
+            "text": "you name it, our team can do it. check out our plethora of sample menus and reach out to inquire. most events can be customized for guest count, budget, and space restrictions!!!",
+            "button_label": "About Us",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "step_xYbKnr",
-        "step_BFAXye",
-        "step_gUdrFV"
+        "slide_qntWLK",
+        "slide_7f7hbR"
       ],
       "name": "Restaurant",
-      "settings": {
-        "bg_image": "shopify://shop_images/Rectangle_4283.png",
-        "heading": "custom cheese displays",
-        "text": "",
-        "process_heading": "The Process",
-        "button_label": "Get Started",
-        "button_link": ""
-      }
+      "settings": {}
     }
   },
   "order": [
