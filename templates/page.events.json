@@ -203,7 +203,8 @@
       "type": "Event-contact",
       "name": "Event contact",
       "settings": {
-        "heading": "Contact form",
+        "img": "shopify://shop_images/d180fd74cd45c94c2fec56322c8fd02b060d461d.png",
+        "heading": "<strong>Interested in Catering?</strong>",
         "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,
