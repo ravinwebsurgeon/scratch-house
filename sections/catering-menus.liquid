@@ -1,0 +1,130 @@
+{% comment %}
+  Section: All Links – Image & Text
+{% endcomment %}
+<section class="all-links-image-text page-width">
+  <div class="all-links-header">
+    {% if section.settings.top-heading != blank %}
+      <h2 class="all-links-title">
+        {{ section.settings.top-heading }}
+      </h2>
+    {% endif %}
+
+    {% if section.settings.para != blank %}
+      <p class="all-links-intro">
+        {{ section.settings.para }}
+      </p>
+    {% endif %}
+
+    {% if section.settings.btn_link != blank and section.settings.btn_text != blank %}
+      <a href="{{ section.settings.btn_link }}" class="all-links-main-btn btn">
+        {{ section.settings.btn_text }}
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="all-links-grid">
+    {% for block in section.blocks %}
+      {% if block.type == 'link_block' %}
+        <div class="all-links-item">
+          {% if block.settings.custom_image != blank %}
+            <div class="all-links-image-wrapper">
+              <img
+                src="{{ block.settings.custom_image | image_url: width: 600 }}"
+                alt="{{ block.settings.block_title | escape }}"
+                loading="lazy"
+              >
+              {% if block.settings.badge != blank %}
+                <span class="all-links-badge">
+                  {{ block.settings.badge }}
+                </span>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          <div class="all-links-content">
+            {% if block.settings.block_title != blank %}
+              <h3 class="all-links-block-title">
+                {{ block.settings.block_title }}
+              </h3>
+            {% endif %}
+
+            {% if block.settings.block_desc != blank and block.settings.block_link != blank %}
+              <a href="{{ block.settings.block_link }}" class="all-links-block-btn btn-link">
+                {{ block.settings.block_desc }}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "All Links – Image & Text",
+  "settings": [
+    { "type": "inline_richtext", "id": "top-heading", "label": "Top Heading" },
+    { "type": "inline_richtext", "id": "para", "label": "Intro Paragraph" },
+    { "type": "url", "id": "btn_link", "label": "Main Button URL" },
+    { "type": "text", "id": "btn_text", "label": "Main Button Text" }
+  ],
+  "blocks": [
+    {
+      "type": "link_block",
+      "name": "Image & Text Block",
+      "settings": [
+        { "type": "image_picker", "id": "custom_image", "label": "Block Image" },
+        { "type": "text", "id": "badge", "label": "Optional Badge Text" },
+        { "type": "text", "id": "block_title", "label": "Block Heading" },
+        { "type": "text", "id": "block_desc", "label": "Button Text" },
+        { "type": "url", "id": "block_link", "label": "Block Button/Link URL" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "All Links – Image & Text",
+      "blocks": [
+        { "type": "link_block" },
+        { "type": "link_block" },
+        { "type": "link_block" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.all-links-image-text {
+  padding: 3rem 1rem;
+}
+.all-links-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.all-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.all-links-image-wrapper {
+  position: relative;
+}
+.all-links-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+.all-links-block-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--color-link, #007ace);
+  text-decoration: underline;
+}
+{% endstylesheet %}
