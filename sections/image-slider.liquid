@@ -77,25 +77,61 @@ $('.multiple-items').slick({
 {% endjavascript %}
 
 <style>
+/* Section wrapper */
 .slick-slider-section {
   max-width: 100%;
+  padding: 40px 0;
+  background: #fafafa; /* subtle background */
   position: relative;
+}
+
+/* Slides */
+.slick-slider-wrapper .slick-slide {
+  padding: 0 10px;
 }
 .slick-slider-wrapper img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
   display: block;
+  transition: transform 0.3s ease;
 }
+.slick-slider-wrapper img:hover {
+  transform: scale(1.03);
+}
+
+/* Navigation arrows */
 .slick-prev:before, .slick-next:before {
-  color: #fff;
-  text-shadow: 0 0 6px rgba(0,0,0,0.4);
+  color: #333;
+  font-size: 30px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+}
+
+/* Dots */
+.slick-dots {
+  bottom: -35px;
 }
 .slick-dots li button:before {
-  color: #fff;
-  opacity: 0.7;
+  color: #555;
+  opacity: 0.6;
+  font-size: 12px;
 }
 .slick-dots li.slick-active button:before {
+  color: #111;
   opacity: 1;
 }
+
+/* Responsive spacing */
+@media (max-width: 1024px) {
+  .slick-slider-wrapper .slick-slide {
+    padding: 0 8px;
+  }
+}
+@media (max-width: 768px) {
+  .slick-slider-wrapper .slick-slide {
+    padding: 0 5px;
+  }
+}
+
 </style>
