@@ -91,7 +91,8 @@
       ],
       "name": "Portfolio Gallery",
       "settings": {
-        "heading": "We would love to cater your next party or event!",
+        "sub-head": "We would love to cater your next party or event!",
+        "heading": "Larger parties are priced on a per person basis, email us for a quote.​",
         "link": ""
       }
     }
