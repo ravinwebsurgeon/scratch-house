@@ -102,6 +102,14 @@
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part9.pdf?v=1758196935"
           }
+        },
+        "link_block_gcbPBL": {
+          "type": "link_block",
+          "settings": {
+            "block_title": "Caribbean",
+            "block_desc": "View Menu",
+            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part11.pdf?v=1758197095"
+          }
         }
       },
       "block_order": [
@@ -113,7 +121,8 @@
         "link_block_gamhdE",
         "link_block_mKHXMy",
         "link_block_zLcfjF",
-        "link_block_G3XQ4U"
+        "link_block_G3XQ4U",
+        "link_block_gcbPBL"
       ],
       "name": "Catering Menus",
       "settings": {
