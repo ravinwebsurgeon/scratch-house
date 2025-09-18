@@ -61,6 +61,7 @@
         "link_block_pFz3TY": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/flat-lay-mexican-food.jpg",
             "block_title": "TACO BAR",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part3.pdf?v=1758196627"
@@ -69,6 +70,7 @@
         "link_block_GAFicr": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/penne-pasta-with-tomato-sauce-beef-grated-cheese.jpg",
             "block_title": "ITALIAN",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part5.pdf?v=1758196693"
@@ -77,6 +79,7 @@
         "link_block_gamhdE": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/top-view-delicious-healthy-breakfast.jpg",
             "block_title": "Hawaiian",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part6.pdf?v=1758196769"
@@ -85,6 +88,7 @@
         "link_block_mKHXMy": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/2147840958.jpg",
             "block_title": "Southern BBQ",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part7.pdf?v=1758196831"
