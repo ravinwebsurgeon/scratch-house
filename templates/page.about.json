@@ -16,9 +16,19 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_video_section_zCCfTg": {
+      "type": "about-video-section",
+      "name": "about video section",
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/26aec6bb36b94f099a2dffceddbb1596.mp4",
+        "subheading": "ABOUT",
+        "heading": "SCRATCH HOUSE"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_video_section_zCCfTg"
   ]
 }
