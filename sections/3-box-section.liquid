@@ -52,8 +52,8 @@
 {% endschema %}
 
 <section class="about-banner-section">
-  <div class="banner-wrapper">
-    <!-- Background Banner -->
+  <div class="banner-frame">
+    <!-- Background banner image -->
     {% if section.settings.banner_image != blank %}
       <img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="Banner" class="banner-image">
     {% endif %}
@@ -93,27 +93,31 @@
 
 <style>
 .about-banner-section {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
 }
 
-.banner-wrapper {
+.banner-frame {
   position: relative;
-  width: 100%;
+  max-width: 1200px;   /* control the frame size */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 6px 25px rgba(0,0,0,0.3);
 }
 
 .banner-image {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 20px;
 }
 
 /* Left Slider Box */
 .left-slider-box {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 20px;
+  left: 20px;
   width: 280px;
   background: #111;
   color: #fff;
@@ -123,6 +127,7 @@
   box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
 }
 
+/* Product Card in Slider */
 .product-card {
   text-align: center;
 }
@@ -151,7 +156,7 @@
 .right-floating-box {
   position: absolute;
   top: 20%;
-  right: 40px;
+  right: 20px;
   width: 260px;
   background: #111;
   color: #fff;
@@ -181,21 +186,3 @@
   background: #cc5200;
 }
 </style>
-
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  if (typeof $ !== "undefined" && $(".product-slider").length) {
-    $(".product-slider").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      dots: false,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      pauseOnHover: false,
-      swipe: false
-    });
-  }
-});
-</script>
