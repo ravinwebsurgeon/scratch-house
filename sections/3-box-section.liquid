@@ -1,0 +1,257 @@
+<section class="hero-three-box">
+  <div class="hero-content">
+   
+    <div class="hero-text">
+      <h1>{{ section.settings.main_heading }}</h1>
+      <p>{{ section.settings.sub_heading }}</p>
+    </div>
+
+  
+    <div class="hero-main-box">
+      {% if section.settings.main_image %}
+        <img src="{{ section.settings.main_image | img_url: 'master' }}" alt="Hero Image">
+      {% endif %}
+    </div>
+
+   
+    <div class="hero-right-box">
+      {% if section.settings.right_box_image %}
+        <img src="{{ section.settings.right_box_image | img_url: '400x400' }}" alt="Right Box Image">
+      {% endif %}
+      <div class="hero-right-box-content">
+        <h4>{{ section.settings.right_box_text }}</h4>
+        {% if section.settings.right_box_button_text != blank %}
+          <a href="{{ section.settings.right_box_button_link }}" class="hero-btn">
+            {{ section.settings.right_box_button_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+   
+    <div class="hero-bottom-slider">
+      <div class="slider-wrapper">
+        {% for block in section.blocks %}
+          <div class="slide">
+            {% if block.settings.thumb %}
+              <img src="{{ block.settings.thumb | img_url: '100x100' }}" alt="Slide Thumbnail">
+            {% endif %}
+            <div class="slide-content">
+              <h5>{{ block.settings.slide_heading }}</h5>
+              <p>{{ block.settings.slide_text }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.hero-three-box {
+  position: relative;
+  background: #111;
+  color: #fff;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+.hero-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text {
+  z-index: 2;
+}
+.hero-text h1 {
+  font-size: 64px;
+  font-weight: 800;
+  margin: 0;
+}
+.hero-text p {
+  color: #ff7f00;
+  margin-top: 10px;
+}
+.hero-main-box {
+  border: 8px solid #222;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.hero-main-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.hero-right-box {
+  position: absolute;
+  top: 30%;
+  right: -40px;
+  background: #000;
+  border-radius: 16px;
+  padding: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+.hero-right-box img {
+  width: 100%;
+  border-radius: 12px;
+}
+.hero-right-box-content {
+  margin-top: 10px;
+}
+.hero-right-box-content h4 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+.hero-btn {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 8px 14px;
+  background: #ff7f00;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+
+.hero-bottom-slider {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 12px;
+  padding: 15px;
+  max-width: 360px;
+}
+.slider-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.slide {
+  display: flex;
+  gap: 12px;
+  min-width: 280px;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.slide img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.slide-content h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.slide-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  .hero-right-box {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin: 20px auto;
+  }
+  .hero-bottom-slider {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 20px;
+  }
+}
+</style>
+{% schema %}
+{
+  "name": "Hero 3-Box Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "QUALITY FOODS"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub Heading",
+      "default": "Healthy food for healthy body"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_box_image",
+      "label": "Right Floating Box Image"
+    },
+    {
+      "type": "text",
+      "id": "right_box_text",
+      "label": "Right Floating Box Text",
+      "default": "Delicious Pizza"
+    },
+    {
+      "type": "url",
+      "id": "right_box_button_link",
+      "label": "Right Box Button Link"
+    },
+    {
+      "type": "text",
+      "id": "right_box_button_text",
+      "label": "Right Box Button Text",
+      "default": "Shop Collection"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Bottom Slider Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "thumb",
+          "label": "Thumbnail Image"
+        },
+        {
+          "type": "text",
+          "id": "slide_heading",
+          "label": "Heading",
+          "default": "Delicious Pizza"
+        },
+        {
+          "type": "text",
+          "id": "slide_text",
+          "label": "Description",
+          "default": "Fresh and hot from the oven"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero 3-Box Section"
+    }
+  ]
+}
+{% endschema %}
