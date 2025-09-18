@@ -21,14 +21,12 @@
       "type": "3-box-section",
       "name": "Hero 3-Box with Products",
       "settings": {
-        "main_heading": "",
-        "sub_heading": "",
-        "main_image": "shopify://shop_images/banner_demo.jpg",
-        "right_box_image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg",
-        "right_box_text": "Delicious Pizza",
-        "right_box_button_link": "shopify://products/spring-salad",
-        "right_box_button_text": "Shop Collection",
-        "product_collection": "spring-salad"
+        "banner_image": "shopify://shop_images/banner_demo.jpg",
+        "right_image": "shopify://shop_images/about-pizzon.png",
+        "right_heading": "Delicious Pizza",
+        "right_button_link": "shopify://collections/spring-salad",
+        "right_button_text": "Shop Collection",
+        "slider_collection": "spring-salad"
       }
     }
   },
