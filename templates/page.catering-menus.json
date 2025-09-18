@@ -106,6 +106,7 @@
         "link_block_G3XQ4U": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/2148123694.jpg",
             "block_title": "Chinese",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part9.pdf?v=1758196935"
@@ -114,6 +115,7 @@
         "link_block_gcbPBL": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/top-view-delicious-mexican-food-ready-be-served.jpg",
             "block_title": "Caribbean",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part10.pdf?v=1758197605"
@@ -122,6 +124,7 @@
         "link_block_JQrbpn": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/2148759733.jpg",
             "block_title": "Mediterranean",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part11_1.pdf?v=1758197182"
@@ -130,6 +133,7 @@
         "link_block_VxGiVm": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/5665f01c496b91ea8031bb6143c2c784a3cdfe35.jpg",
             "block_title": "Breakfast",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Catering_Menus.pdf?v=1758197258"
@@ -138,6 +142,7 @@
         "link_block_PAkcXN": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/Rectangle4248.png",
             "block_title": "Brunch",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Catering_Menus_1.pdf?v=1758197384"
