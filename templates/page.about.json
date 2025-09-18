@@ -16,22 +16,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "3_box_section_9QP3M9": {
-      "type": "3-box-section",
-      "name": "Hero 3-Box with Products",
-      "settings": {
-        "banner_image": "shopify://shop_images/banner_demo.jpg",
-        "right_image": "shopify://shop_images/about-pizzon.png",
-        "right_heading": "Delicious Pizza",
-        "right_button_link": "shopify://collections/spring-salad",
-        "right_button_text": "Shop Collection",
-        "slider_collection": "spring-salad"
-      }
     }
   },
   "order": [
-    "main",
-    "3_box_section_9QP3M9"
+    "main"
   ]
 }
