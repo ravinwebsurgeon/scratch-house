@@ -1,0 +1,115 @@
+{% comment %}
+  Banner Video Section with Frame
+{% endcomment %}
+
+<section class="banner-video-section">
+  <div class="video-frame">
+    
+    <!-- Video Background -->
+    <div class="video-wrapper">
+      {% if section.settings.video_url != blank %}
+        <iframe 
+          src="{{ section.settings.video_url }}?autoplay=1&mute=1&loop=1&controls=0&playlist={{ section.settings.video_url | split: 'v=' | last }}" 
+          frameborder="0" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen>
+        </iframe>
+      {% endif %}
+    </div>
+
+    <!-- Overlay Content -->
+    <div class="video-overlay">
+      {% if section.settings.subheading != blank %}
+        <p class="subheading">{{ section.settings.subheading }}</p>
+      {% endif %}
+      {% if section.settings.heading != blank %}
+        <h2 class="heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+    </div>
+
+  </div>
+</section>
+
+<style>
+.banner-video-section {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.video-frame {
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.25);
+  border: 6px solid #fff; /* clean framed border */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Overlay content */
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  padding: 20px;
+  background: rgba(0,0,0,0.35); /* optional overlay for readability */
+  border-radius: 12px;
+}
+
+.video-overlay .subheading {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.video-overlay .heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Framed Banner Video",
+  "settings": [
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video URL (YouTube/Vimeo/MP4)"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Discover Something New"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      
+    }
+  ],
+  "presets": [
+    {
+      "name": "about video section"
+    }
+  ]
+}
+{% endschema %}
