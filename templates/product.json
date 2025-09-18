@@ -163,6 +163,11 @@
         "title": "Follow us on Instagram"
       }
     },
+    "product_features_JNNYqR": {
+      "type": "product-features",
+      "name": "Product Features",
+      "settings": {}
+    },
     "3_box_section_kUC446": {
       "type": "3-box-section",
       "name": "Hero 3-Box with Products",
@@ -182,6 +187,7 @@
     "product_faq_h9XiHL",
     "related-products",
     "instagram_tnRVUF",
+    "product_features_JNNYqR",
     "3_box_section_kUC446"
   ]
 }
