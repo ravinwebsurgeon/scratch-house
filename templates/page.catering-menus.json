@@ -126,6 +126,14 @@
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Catering_Menus.pdf?v=1758197258"
           }
+        },
+        "link_block_PAkcXN": {
+          "type": "link_block",
+          "settings": {
+            "block_title": "Brunch",
+            "block_desc": "View Menu",
+            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Catering_Menus_1.pdf?v=1758197384"
+          }
         }
       },
       "block_order": [
@@ -140,7 +148,8 @@
         "link_block_G3XQ4U",
         "link_block_gcbPBL",
         "link_block_JQrbpn",
-        "link_block_VxGiVm"
+        "link_block_VxGiVm",
+        "link_block_PAkcXN"
       ],
       "name": "Catering Menus",
       "settings": {
