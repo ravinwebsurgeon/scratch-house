@@ -1,256 +1,132 @@
-{% schema %}
-{
-  "name": "Hero 3-Box with Products",
-  "settings": [
-    {
-      "type": "text",
-      "id": "main_heading",
-      "label": "Main Heading",
-      "default": "QUALITY FOODS"
-    },
-    {
-      "type": "text",
-      "id": "sub_heading",
-      "label": "Sub Heading",
-      "default": "Healthy food for healthy body"
-    },
-    {
-      "type": "image_picker",
-      "id": "main_image",
-      "label": "Main Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "right_box_image",
-      "label": "Right Floating Box Image"
-    },
-    {
-      "type": "text",
-      "id": "right_box_text",
-      "label": "Right Floating Box Text",
-      "default": "Delicious Pizza"
-    },
-    {
-      "type": "url",
-      "id": "right_box_button_link",
-      "label": "Right Box Button Link"
-    },
-    {
-      "type": "text",
-      "id": "right_box_button_text",
-      "label": "Right Box Button Text",
-      "default": "Shop Collection"
-    },
-    {
-      "type": "collection",
-      "id": "product_collection",
-      "label": "Select Collection for Slider"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Hero 3-Box with Products"
-    }
-  ]
-}
-{% endschema %}
+<section class="about-banner-section">
+  <div class="banner-wrapper">
+    <!-- Background banner image -->
+    <img src="{{ 'your-banner-image.jpg' | asset_url }}" alt="Banner" class="banner-image">
 
-<section class="hero-three-box">
-  <div class="hero-content">
-    <!-- Left Text -->
-    <div class="hero-text">
-      <h1>{{ section.settings.main_heading }}</h1>
-      <p>{{ section.settings.sub_heading }}</p>
-    </div>
-
-    <!-- Main Image Box -->
-    <div class="hero-main-box">
-      {% if section.settings.main_image %}
-        <img src="{{ section.settings.main_image | img_url: 'master' }}" alt="Hero Image">
-      {% endif %}
-    </div>
-
-    <!-- Right Floating Box -->
-    <div class="hero-right-box">
-      {% if section.settings.right_box_image %}
-        <img src="{{ section.settings.right_box_image | img_url: '400x400' }}" alt="Right Box Image">
-      {% endif %}
-      <div class="hero-right-box-content">
-        <h4>{{ section.settings.right_box_text }}</h4>
-        {% if section.settings.right_box_button_text != blank %}
-          <a href="{{ section.settings.right_box_button_link }}" class="hero-btn">
-            {{ section.settings.right_box_button_text }}
-          </a>
-        {% endif %}
+    <!-- Left bottom product slider -->
+    <div class="left-slider-box">
+      <div class="product-slider">
+        {% for product in collections.featured.products limit:5 %}
+          <div class="product-card">
+            <img src="{{ product.featured_image | img_url: '200x200' }}" alt="{{ product.title }}">
+            <h4>{{ product.title }}</h4>
+            <a href="{{ product.url }}" class="buy-btn">Buy Now</a>
+          </div>
+        {% endfor %}
       </div>
     </div>
 
-    <!-- Bottom Left Product Slider -->
-    {% if section.settings.product_collection != blank %}
-      {% assign collection = collections[section.settings.product_collection] %}
-      {% if collection.products.size > 0 %}
-        <div class="hero-bottom-slider">
-          <div class="slider-wrapper">
-            {% for product in collection.products %}
-              <div class="slide">
-                <a href="{{ product.url }}" class="slide-thumb">
-                  <img src="{{ product.featured_image | img_url: '200x200' }}" alt="{{ product.title }}">
-                </a>
-                <div class="slide-content">
-                  <h5>{{ product.title }}</h5>
-                  <a href="{{ product.url }}" class="hero-btn">Buy Now</a>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-      {% endif %}
-    {% endif %}
+    <!-- Right floating box -->
+    <div class="right-floating-box">
+      <img src="{{ 'pizza-sample.jpg' | asset_url }}" alt="Delicious Pizza">
+      <h3>Delicious Pizza</h3>
+      <a href="/collections/pizza" class="shop-btn">Shop Collection</a>
+    </div>
   </div>
 </section>
+{% stylesheet %}
+  .about-banner-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Left Slider Box */
+.left-slider-box {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 280px;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  z-index: 5;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+}
+
+.product-card {
+  text-align: center;
+}
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.product-card h4 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.buy-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #ff6600;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.buy-btn:hover {
+  background: #cc5200;
+}
+
+/* Right Floating Box */
+.right-floating-box {
+  position: absolute;
+  top: 20%;
+  right: 40px;
+  width: 260px;
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  z-index: 5;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+}
+.right-floating-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+.right-floating-box h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+.shop-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #ff6600;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.shop-btn:hover {
+  background: #cc5200;
+}
+
+{% endstylesheet %}
 <script>
 $(document).ready(function(){
   $('.product-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
+    swipe: false
   });
 });
 </script>
-
-<style>
-.hero-three-box {
-  position: relative;
-  background: #111;
-  color: #fff;
-  padding: 60px 20px;
-  overflow: hidden;
-}
-.hero-content {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.hero-text {
-  z-index: 2;
-}
-.hero-text h1 {
-  font-size: 64px;
-  font-weight: 800;
-  margin: 0;
-}
-.hero-text p {
-  color: #ff7f00;
-  margin-top: 10px;
-}
-.hero-main-box {
-  border: 8px solid #222;
-  border-radius: 16px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
-.hero-main-box img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Right Floating Box */
-.hero-right-box {
-  position: absolute;
-  top: 30%;
-  right: -40px;
-  background: #000;
-  border-radius: 16px;
-  padding: 15px;
-  width: 280px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-}
-.hero-right-box img {
-  width: 100%;
-  border-radius: 12px;
-}
-.hero-right-box-content {
-  margin-top: 10px;
-}
-.hero-right-box-content h4 {
-  margin: 5px 0;
-  font-size: 18px;
-}
-.hero-btn {
-  display: inline-block;
-  margin-top: 5px;
-  padding: 8px 14px;
-  background: #ff7f00;
-  color: #fff;
-  border-radius: 6px;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-/* Bottom Left Product Slider */
-.hero-bottom-slider {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(0,0,0,0.85);
-  border-radius: 12px;
-  padding: 15px;
-  max-width: 360px;
-}
-.slider-wrapper {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-.slide {
-  display: flex;
-  gap: 12px;
-  min-width: 280px;
-  align-items: center;
-  scroll-snap-align: start;
-}
-.slide-thumb img {
-  width: 60px;
-  height: 60px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-.slide-content h5 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 600;
-}
-.slide-content .hero-btn {
-  margin-top: 5px;
-  padding: 6px 12px;
-  font-size: 13px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 40px;
-  }
-  .hero-right-box {
-    position: relative;
-    right: auto;
-    top: auto;
-    margin: 20px auto;
-  }
-  .hero-bottom-slider {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    margin-top: 20px;
-  }
-}
-</style>
