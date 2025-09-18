@@ -1,0 +1,159 @@
+<section class="custom-gallery-section">
+  <div class="gallery-container">
+    {% if section.settings.heading != blank %}
+      <h2 class="gallery-heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="gallery-grid">
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank %}
+          <div class="gallery-item">
+            <a href="{{ block.settings.image | image_url: width: 2000 }}" class="gallery-link" data-gallery="popup-gallery">
+              <img src="{{ block.settings.image | image_url: width: 800 }}" alt="Gallery Image" loading="lazy">
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+.custom-gallery-section {
+  width: 100%;
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.gallery-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+</style>
+
+<!-- Lightbox Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("[data-gallery='popup-gallery']");
+  
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      
+      const popup = document.createElement("div");
+      popup.classList.add("gallery-popup");
+      popup.innerHTML = `
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+          <img src="${this.href}" alt="Popup Image">
+          <span class="popup-close">&times;</span>
+        </div>
+      `;
+      document.body.appendChild(popup);
+
+      popup.querySelector(".popup-overlay").addEventListener("click", () => popup.remove());
+      popup.querySelector(".popup-close").addEventListener("click", () => popup.remove());
+    });
+  });
+});
+</script>
+
+<style>
+.gallery-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.gallery-popup .popup-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.gallery-popup img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.gallery-popup .popup-close {
+  position: absolute;
+  top: -15px; 
+  right: -15px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Gallery Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Gallery Heading",
+      "default": "Our Gallery"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Gallery Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gallery Section",
+      "category": "Custom Sections",
+      "blocks": [
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" }
+      ]
+    }
+  ]
+}
+{% endschema %}
