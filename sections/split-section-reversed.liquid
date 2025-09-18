@@ -1,0 +1,116 @@
+<section class="split-banner-section-alt">
+  <div class="split-banner-inner-alt">
+    <!-- Left Text -->
+    <div class="split-banner-content-alt">
+      {% if section.settings.heading != blank %}
+        <h2 class="split-heading-alt">{{ section.settings.heading }}</h2>
+      {% endif %}
+      {% if section.settings.text != blank %}
+        <p class="split-text-alt">{{ section.settings.text }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Right Image -->
+    <div class="split-banner-image-alt">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url: width: 1000 }}" alt="Banner Image">
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+.split-banner-section-alt {
+  width: 100%;
+  background: #f9f9f9;
+}
+
+.split-banner-inner-alt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.split-banner-content-alt, 
+.split-banner-image-alt {
+  flex: 1 1 50%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.split-banner-image-alt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.split-banner-content-alt {
+  padding: 60px;
+  background: #fdf7f2; /* light aesthetic bg */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.split-heading-alt {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.split-text-alt {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Responsive */
+@media(max-width: 991px) {
+  .split-banner-inner-alt {
+    flex-direction: column;
+  }
+  .split-banner-content-alt, 
+  .split-banner-image-alt {
+    flex: 1 1 100%;
+    min-height: 300px;
+  }
+  .split-banner-content-alt {
+    padding: 40px 20px;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Split Section (Reversed)",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Right Side Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "BKIND"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description",
+      "default": "At BKIND, we offer all-natural, plant-based, vegan, eco-friendly beauty and skin care products..."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Split section (Reversed)",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
