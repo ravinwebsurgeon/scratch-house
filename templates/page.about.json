@@ -16,9 +16,24 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "3_box_section_9QP3M9": {
+      "type": "3-box-section",
+      "name": "Hero 3-Box with Products",
+      "settings": {
+        "main_heading": "",
+        "sub_heading": "",
+        "main_image": "shopify://shop_images/banner_demo.jpg",
+        "right_box_image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg",
+        "right_box_text": "Delicious Pizza",
+        "right_box_button_link": "shopify://products/spring-salad",
+        "right_box_button_text": "Shop Collection",
+        "product_collection": "spring-salad"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "3_box_section_9QP3M9"
   ]
 }
