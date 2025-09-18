@@ -1,0 +1,74 @@
+<section class="product-features-section" id="features-info">
+  {% if product.metafields.custom.features_section_heading != blank %}
+    <h2 class="section-heading">{{ product.metafields.custom.features_section_heading }}</h2>
+  {% endif %}
+
+  <div class="features-wrapper">
+    {% assign titles = product.metafields.custom.features_titles.value %}
+    {% assign descriptions = product.metafields.custom.features_descriptions.value %}
+
+    {%- assign titles_size = titles.size -%}
+    {%- assign desc_size = descriptions.size -%}
+    {% if titles_size > desc_size %}
+      {% assign loop_size = titles_size %}
+    {% else %}
+      {% assign loop_size = desc_size %}
+    {% endif %}
+
+    {%- assign last_index = loop_size | minus: 1 -%}
+
+    <!-- Left column -->
+    <ul class="product-features left-col">
+      {% for i in (0..last_index) %}
+        {% assign mod = i | modulo: 2 %}
+        {% if mod == 0 and titles[i] %}
+          <li>
+            <strong>{{ titles[i] }}</strong>
+            {% if descriptions[i] %}
+              <p>{{ descriptions[i] }}</p>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <!-- Center image -->
+    {% if product.metafields.custom.features_center_image != blank %}
+      <div class="feature-image">
+        <img 
+          src="{{ product.metafields.custom.features_center_image | image_url: width: 600 }}" 
+          alt="{{ product.title }} features image">
+      </div>
+    {% endif %}
+
+    <!-- Right column -->
+    <ul class="product-features right-col">
+      {% for i in (0..last_index) %}
+        {% assign mod = i | modulo: 2 %}
+        {% if mod == 1 and titles[i] %}
+          <li>
+            <strong>{{ titles[i] }}</strong>
+            {% if descriptions[i] %}
+              <p>{{ descriptions[i] }}</p>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Features",
+  "tag": "section",
+  "class": "features-metafields",
+
+  "presets": [
+    {
+      "name": "Product Features",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}
