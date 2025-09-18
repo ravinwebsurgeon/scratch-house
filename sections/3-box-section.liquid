@@ -108,6 +108,19 @@
     {% endif %}
   </div>
 </section>
+<script>
+$(document).ready(function(){
+  $('.product-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+  });
+});
+</script>
 
 <style>
 .hero-three-box {
