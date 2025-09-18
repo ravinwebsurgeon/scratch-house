@@ -1,19 +1,76 @@
+{% schema %}
+{
+  "name": "Hero 3-Box with Products",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "QUALITY FOODS"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub Heading",
+      "default": "Healthy food for healthy body"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_box_image",
+      "label": "Right Floating Box Image"
+    },
+    {
+      "type": "text",
+      "id": "right_box_text",
+      "label": "Right Floating Box Text",
+      "default": "Delicious Pizza"
+    },
+    {
+      "type": "url",
+      "id": "right_box_button_link",
+      "label": "Right Box Button Link"
+    },
+    {
+      "type": "text",
+      "id": "right_box_button_text",
+      "label": "Right Box Button Text",
+      "default": "Shop Collection"
+    },
+    {
+      "type": "collection",
+      "id": "product_collection",
+      "label": "Select Collection for Slider"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero 3-Box with Products"
+    }
+  ]
+}
+{% endschema %}
+
 <section class="hero-three-box">
   <div class="hero-content">
-   
+    <!-- Left Text -->
     <div class="hero-text">
       <h1>{{ section.settings.main_heading }}</h1>
       <p>{{ section.settings.sub_heading }}</p>
     </div>
 
-  
+    <!-- Main Image Box -->
     <div class="hero-main-box">
       {% if section.settings.main_image %}
         <img src="{{ section.settings.main_image | img_url: 'master' }}" alt="Hero Image">
       {% endif %}
     </div>
 
-   
+    <!-- Right Floating Box -->
     <div class="hero-right-box">
       {% if section.settings.right_box_image %}
         <img src="{{ section.settings.right_box_image | img_url: '400x400' }}" alt="Right Box Image">
@@ -28,22 +85,27 @@
       </div>
     </div>
 
-   
-    <div class="hero-bottom-slider">
-      <div class="slider-wrapper">
-        {% for block in section.blocks %}
-          <div class="slide">
-            {% if block.settings.thumb %}
-              <img src="{{ block.settings.thumb | img_url: '100x100' }}" alt="Slide Thumbnail">
-            {% endif %}
-            <div class="slide-content">
-              <h5>{{ block.settings.slide_heading }}</h5>
-              <p>{{ block.settings.slide_text }}</p>
-            </div>
+    <!-- Bottom Left Product Slider -->
+    {% if section.settings.product_collection != blank %}
+      {% assign collection = collections[section.settings.product_collection] %}
+      {% if collection.products.size > 0 %}
+        <div class="hero-bottom-slider">
+          <div class="slider-wrapper">
+            {% for product in collection.products %}
+              <div class="slide">
+                <a href="{{ product.url }}" class="slide-thumb">
+                  <img src="{{ product.featured_image | img_url: '200x200' }}" alt="{{ product.title }}">
+                </a>
+                <div class="slide-content">
+                  <h5>{{ product.title }}</h5>
+                  <a href="{{ product.url }}" class="hero-btn">Buy Now</a>
+                </div>
+              </div>
+            {% endfor %}
           </div>
-        {% endfor %}
-      </div>
-    </div>
+        </div>
+      {% endif %}
+    {% endif %}
   </div>
 </section>
 
@@ -86,7 +148,7 @@
   height: auto;
 }
 
-
+/* Right Floating Box */
 .hero-right-box {
   position: absolute;
   top: 30%;
@@ -120,7 +182,7 @@
   text-decoration: none;
 }
 
-
+/* Bottom Left Product Slider */
 .hero-bottom-slider {
   position: absolute;
   bottom: 20px;
@@ -143,7 +205,7 @@
   align-items: center;
   scroll-snap-align: start;
 }
-.slide img {
+.slide-thumb img {
   width: 60px;
   height: 60px;
   border-radius: 8px;
@@ -154,13 +216,13 @@
   font-size: 16px;
   font-weight: 600;
 }
-.slide-content p {
-  margin: 0;
-  font-size: 14px;
-  color: #bbb;
+.slide-content .hero-btn {
+  margin-top: 5px;
+  padding: 6px 12px;
+  font-size: 13px;
 }
 
-
+/* Responsive */
 @media (max-width: 768px) {
   .hero-text h1 {
     font-size: 40px;
@@ -179,79 +241,3 @@
   }
 }
 </style>
-{% schema %}
-{
-  "name": "Hero 3-Box Section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "main_heading",
-      "label": "Main Heading",
-      "default": "QUALITY FOODS"
-    },
-    {
-      "type": "text",
-      "id": "sub_heading",
-      "label": "Sub Heading",
-      "default": "Healthy food for healthy body"
-    },
-    {
-      "type": "image_picker",
-      "id": "main_image",
-      "label": "Main Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "right_box_image",
-      "label": "Right Floating Box Image"
-    },
-    {
-      "type": "text",
-      "id": "right_box_text",
-      "label": "Right Floating Box Text",
-      "default": "Delicious Pizza"
-    },
-    {
-      "type": "url",
-      "id": "right_box_button_link",
-      "label": "Right Box Button Link"
-    },
-    {
-      "type": "text",
-      "id": "right_box_button_text",
-      "label": "Right Box Button Text",
-      "default": "Shop Collection"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "slide",
-      "name": "Bottom Slider Item",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "thumb",
-          "label": "Thumbnail Image"
-        },
-        {
-          "type": "text",
-          "id": "slide_heading",
-          "label": "Heading",
-          "default": "Delicious Pizza"
-        },
-        {
-          "type": "text",
-          "id": "slide_text",
-          "label": "Description",
-          "default": "Fresh and hot from the oven"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Hero 3-Box Section"
-    }
-  ]
-}
-{% endschema %}
