@@ -162,6 +162,18 @@
       "settings": {
         "title": "Follow us on Instagram"
       }
+    },
+    "3_box_section_kUC446": {
+      "type": "3-box-section",
+      "name": "Hero 3-Box with Products",
+      "settings": {
+        "banner_image": "shopify://shop_images/banner_demo.jpg",
+        "right_image": "shopify://shop_images/about-pizzon.png",
+        "right_heading": "Delicious Pizza",
+        "right_button_link": "shopify://collections/spring-salad",
+        "right_button_text": "Shop Collection",
+        "slider_collection": "spring-salad"
+      }
     }
   },
   "order": [
@@ -169,6 +181,7 @@
     "product_recipes_QD83Tc",
     "product_faq_h9XiHL",
     "related-products",
-    "instagram_tnRVUF"
+    "instagram_tnRVUF",
+    "3_box_section_kUC446"
   ]
 }
