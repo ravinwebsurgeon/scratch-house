@@ -1,31 +1,98 @@
+{% schema %}
+{
+  "name": "About Banner Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Background Banner Image"
+    },
+    {
+      "type": "header",
+      "content": "Right Floating Box"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Box Image"
+    },
+    {
+      "type": "text",
+      "id": "right_heading",
+      "label": "Right Box Heading",
+      "default": "Delicious Pizza"
+    },
+    {
+      "type": "url",
+      "id": "right_button_link",
+      "label": "Right Button Link"
+    },
+    {
+      "type": "text",
+      "id": "right_button_text",
+      "label": "Right Button Text",
+      "default": "Shop Collection"
+    },
+    {
+      "type": "header",
+      "content": "Left Slider Box"
+    },
+    {
+      "type": "collection",
+      "id": "slider_collection",
+      "label": "Choose Collection for Slider"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Banner with Boxes"
+    }
+  ]
+}
+{% endschema %}
+
 <section class="about-banner-section">
   <div class="banner-wrapper">
-    <!-- Background banner image -->
-    <img src="{{ 'your-banner-image.jpg' | asset_url }}" alt="Banner" class="banner-image">
+    <!-- Background Banner -->
+    {% if section.settings.banner_image != blank %}
+      <img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="Banner" class="banner-image">
+    {% endif %}
 
     <!-- Left bottom product slider -->
     <div class="left-slider-box">
       <div class="product-slider">
-        {% for product in collections.featured.products limit:5 %}
-          <div class="product-card">
-            <img src="{{ product.featured_image | img_url: '200x200' }}" alt="{{ product.title }}">
-            <h4>{{ product.title }}</h4>
-            <a href="{{ product.url }}" class="buy-btn">Buy Now</a>
-          </div>
-        {% endfor %}
+        {% assign slider_collection = collections[section.settings.slider_collection] %}
+        {% if slider_collection and slider_collection.products.size > 0 %}
+          {% for product in slider_collection.products limit: 10 %}
+            <div class="product-card">
+              <img src="{{ product.featured_image | img_url: '300x300' }}" alt="{{ product.title }}">
+              <h4>{{ product.title }}</h4>
+              <a href="{{ product.url }}" class="buy-btn">Buy Now</a>
+            </div>
+          {% endfor %}
+        {% else %}
+          <p>No products found.</p>
+        {% endif %}
       </div>
     </div>
 
-    <!-- Right floating box -->
+    <!-- Right Floating Box -->
     <div class="right-floating-box">
-      <img src="{{ 'pizza-sample.jpg' | asset_url }}" alt="Delicious Pizza">
-      <h3>Delicious Pizza</h3>
-      <a href="/collections/pizza" class="shop-btn">Shop Collection</a>
+      {% if section.settings.right_image != blank %}
+        <img src="{{ section.settings.right_image | img_url: '400x400' }}" alt="{{ section.settings.right_heading }}">
+      {% endif %}
+      <h3>{{ section.settings.right_heading }}</h3>
+      {% if section.settings.right_button_link != blank %}
+        <a href="{{ section.settings.right_button_link }}" class="shop-btn">
+          {{ section.settings.right_button_text }}
+        </a>
+      {% endif %}
     </div>
   </div>
 </section>
-{% stylesheet %}
-  .about-banner-section {
+
+<style>
+.about-banner-section {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -113,21 +180,22 @@
 .shop-btn:hover {
   background: #cc5200;
 }
-
-{% endstylesheet %}
+</style>
 
 <script>
-$(document).ready(function(){
-  $('.product-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnHover: false,
-    swipe: false
-  });
+document.addEventListener("DOMContentLoaded", function(){
+  if (typeof $ !== "undefined" && $(".product-slider").length) {
+    $(".product-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnHover: false,
+      swipe: false
+    });
+  }
 });
 </script>
