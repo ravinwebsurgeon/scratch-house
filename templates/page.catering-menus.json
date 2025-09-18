@@ -52,6 +52,7 @@
         "link_block_dH6NtP": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/flat-lay-delicious-brazilian-food-composition.jpg",
             "block_title": "LATIN AMERICA",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part4.pdf?v=1758197495"
