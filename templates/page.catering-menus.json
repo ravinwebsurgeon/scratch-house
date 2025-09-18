@@ -34,6 +34,7 @@
         "link_block_9MmNtg": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/side-view-caesar-salad-with-chicken-sauces_1.jpg",
             "block_title": "Hors D'oeuvres",
             "block_desc": "View Menu",
             "block_link": "https://www.scratchhousevegan.com/_files/ugd/a397fa_aece14385d894b1fa7e2d247528e9c76.pdf"
@@ -42,6 +43,7 @@
         "link_block_EX8DB6": {
           "type": "link_block",
           "settings": {
+            "custom_image": "shopify://shop_images/homemade-baked-porchetta-rolls-with-several-herbs-pepper-garlic.jpg",
             "block_title": "Easter",
             "block_desc": "View Menu",
             "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/IMG_3139.pdf?v=1758196535"
