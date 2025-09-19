@@ -1,7 +1,11 @@
 <section class="product-features-section" id="features-info">
+  <div class="line-title">
+    <hr>
   {% if product.metafields.custom.features_section_heading != blank %}
     <h2 class="section-heading">{{ product.metafields.custom.features_section_heading }}</h2>
   {% endif %}
+  <hr>
+</div>
 
   <div class="features-wrapper">
     {% assign titles = product.metafields.custom.features_titles.value %}
