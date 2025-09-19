@@ -99,6 +99,11 @@
         "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet posuere turpis, at feugiat ligula. Suspendisse pretium tellus erat, eu imperdiet diam vulputate at. Integer eget pulvinar ante.</p>"
       }
     },
+    "product_features_JNNYqR": {
+      "type": "product-features",
+      "name": "Product Features",
+      "settings": {}
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -163,11 +168,6 @@
         "title": "Follow us on Instagram"
       }
     },
-    "product_features_JNNYqR": {
-      "type": "product-features",
-      "name": "Product Features",
-      "settings": {}
-    },
     "3_box_section_kUC446": {
       "type": "3-box-section",
       "name": "Hero 3-Box with Products",
@@ -184,10 +184,10 @@
   "order": [
     "main",
     "product_recipes_QD83Tc",
+    "product_features_JNNYqR",
     "product_faq_h9XiHL",
     "related-products",
     "instagram_tnRVUF",
-    "product_features_JNNYqR",
     "3_box_section_kUC446"
   ]
 }
