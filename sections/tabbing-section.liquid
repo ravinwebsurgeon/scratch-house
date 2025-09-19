@@ -10,7 +10,7 @@
       {% assign tab_names = section.blocks | map: 'settings' | map: 'tab_group' | uniq %}
 
       <!-- Tabs -->
-      <div class="tabs-arrows">
+      <div class="tabs-arrows" data-aos="fade-down">
       <ul class="tabs">
         {% for t in tab_names %}
           <li data-tab="menu{{ forloop.index }}">{{ t }}</li>
