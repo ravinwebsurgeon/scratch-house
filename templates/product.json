@@ -91,6 +91,11 @@
         "title": "Mouthwatering Recipes"
       }
     },
+    "product_features_JNNYqR": {
+      "type": "product-features",
+      "name": "Product Features",
+      "settings": {}
+    },
     "product_faq_h9XiHL": {
       "type": "product-faq",
       "name": "Product FAQ",
@@ -99,10 +104,17 @@
         "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet posuere turpis, at feugiat ligula. Suspendisse pretium tellus erat, eu imperdiet diam vulputate at. Integer eget pulvinar ante.</p>"
       }
     },
-    "product_features_JNNYqR": {
-      "type": "product-features",
-      "name": "Product Features",
-      "settings": {}
+    "3_box_section_kUC446": {
+      "type": "3-box-section",
+      "name": "Hero 3-Box with Products",
+      "settings": {
+        "banner_image": "shopify://shop_images/banner_demo.jpg",
+        "right_image": "shopify://shop_images/about-pizzon.png",
+        "right_heading": "Delicious Pizza",
+        "right_button_link": "shopify://collections/spring-salad",
+        "right_button_text": "Shop Collection",
+        "slider_collection": "spring-salad"
+      }
     },
     "related-products": {
       "type": "related-products",
@@ -167,18 +179,6 @@
       "settings": {
         "title": "Follow us on Instagram"
       }
-    },
-    "3_box_section_kUC446": {
-      "type": "3-box-section",
-      "name": "Hero 3-Box with Products",
-      "settings": {
-        "banner_image": "shopify://shop_images/banner_demo.jpg",
-        "right_image": "shopify://shop_images/about-pizzon.png",
-        "right_heading": "Delicious Pizza",
-        "right_button_link": "shopify://collections/spring-salad",
-        "right_button_text": "Shop Collection",
-        "slider_collection": "spring-salad"
-      }
     }
   },
   "order": [
@@ -186,8 +186,8 @@
     "product_recipes_QD83Tc",
     "product_features_JNNYqR",
     "product_faq_h9XiHL",
+    "3_box_section_kUC446",
     "related-products",
-    "instagram_tnRVUF",
-    "3_box_section_kUC446"
+    "instagram_tnRVUF"
   ]
 }
