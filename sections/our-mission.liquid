@@ -2,7 +2,7 @@
 <section class="our-mission-section">
     <div class="mission-background">
   <div class="container wrap-mission">
-    <div class="wrap-mission-data">
+    <div class="wrap-mission-data" data-aos="fade-up">
     <div class="mission-text">
       <h2>{{ section.settings.heading }}</h2>
       <p>{{ section.settings.description }}</p>
@@ -15,7 +15,7 @@
       </div>
     </div>
     </div>
-<div class="wrap-mission-img">
+<div class="wrap-mission-img" data-aos="zoom-in">
     <div class="mission-image">
       {% if section.settings.image != blank %}
         <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.heading }}">
