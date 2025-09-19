@@ -64,6 +64,7 @@
         {% assign slider_collection = collections[section.settings.slider_collection] %}
         {% if slider_collection and slider_collection.products.size > 0 %}
           {% for product in slider_collection.products limit: 10 %}
+            <div class="flexing-div">
             <div class="product-card">
               <div class="slick-imge-scroll">
               <img src="{{ product.featured_image | img_url: '300x300' }}" alt="{{ product.title }}">
@@ -73,6 +74,7 @@
               <a href="{{ product.url }}" class="buy-btn">Buy Now</a>
               </div>
             </div>
+          </div>
           {% endfor %}
         {% else %}
           <p>No products found.</p>
