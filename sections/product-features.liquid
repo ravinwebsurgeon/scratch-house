@@ -42,7 +42,7 @@
     {% if product.metafields.custom.features_center_image != blank %}
       <div class="feature-image">
         <img 
-          src="{{ product.metafields.custom.features_center_image | image_url: width: 600 }}" 
+          src="{{ product.metafields.custom.features_center_image | image_url:'master' }}" 
           alt="{{ product.title }} features image">
       </div>
     {% endif %}
