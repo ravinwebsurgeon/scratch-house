@@ -30,7 +30,7 @@
       <!-- Tab Contents -->
       {% for t in tab_names %}
         <div class="tab-content" id="menu{{ forloop.index }}">
-          <div class="mobile-slider">
+          <div class="mobile-slider" data-aos="fade-up">
   <ul class="collection-list">
     {% for b in section.blocks %}
       {% if b.settings.tab_group == t and b.settings.col %}
