@@ -374,7 +374,7 @@
       };
     </script>
 
-    <!-- AOS CSS -->
+    {% comment %} <!-- AOS CSS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <!-- AOS JS -->
@@ -388,7 +388,7 @@
       mirror: true 
     });
   });
-</script>
+</script> {% endcomment %}
 
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
