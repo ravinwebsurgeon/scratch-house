@@ -36,9 +36,6 @@
     <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
-
-    {% comment %} <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> {% endcomment %}
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -379,10 +376,19 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 <script>
- AOS.init({
-    duration: 1000, 
-    once: false  
+  document.addEventListener("DOMContentLoaded", function() {
+    AOS.init({
+      duration: 1000, // 1 second
+      once: false,    // animate every time
+      mirror: true    // optional: animate when scrolling back up
+    });
   });
 </script>
 
