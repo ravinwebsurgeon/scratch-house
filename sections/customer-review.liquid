@@ -1,6 +1,6 @@
 <section class="custom-video-section">
     <div class="reviews-page-width">
-    <div class="title-arrows">
+    <div class="title-arrows" data-aos="fade-down">
     <div class="line-title">
       <hr>
       <h2 class="top-title">{{ section.settings.title }}</h2>
@@ -17,7 +17,7 @@
     </div>
 
     </div>
-  <div class="video-section">
+  <div class="video-section" data-aos="zoom-in">
     {% for block in section.blocks %}
       <div class="video-card" {{ block.shopify_attributes }}>
         <div class="video-wrapper">
