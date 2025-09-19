@@ -5,12 +5,12 @@
 
 <section class="custom-recipe-slider">
     <div class="recipe-page-width">
-     <div class="line-title">
+     <div class="line-title" data-aos="fade-down">
       <hr>
       <h2 class="top-title">{{ section.settings.title }}</h2>
       <hr>
     </div>
-  <div class="recipe-slider">
+  <div class="recipe-slider" data-aos="fade-up">
     {% for block in section.blocks %}
       <div class="recipe-card" {{ block.shopify_attributes }}>
         {% if block.settings.image != blank %}
