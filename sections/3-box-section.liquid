@@ -78,15 +78,19 @@
 
     <!-- Right Floating Box -->
     <div class="right-floating-box">
+      <div class="slick-imge-scroll">
       {% if section.settings.right_image != blank %}
         <img src="{{ section.settings.right_image | img_url: '400x400' }}" alt="{{ section.settings.right_heading }}">
       {% endif %}
+    </div>
+    <div class="slick-scroll-texts">
       <h3>{{ section.settings.right_heading }}</h3>
       {% if section.settings.right_button_link != blank %}
         <a href="{{ section.settings.right_button_link }}" class="shop-btn">
           {{ section.settings.right_button_text }}
         </a>
       {% endif %}
+    </div>
     </div>
   </div>
 </section>
