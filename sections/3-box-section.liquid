@@ -66,13 +66,17 @@
           {% for product in slider_collection.products limit: 10 %}
             <div class="flexing-div">
             <div class="product-card">
+              <div>
               <div class="slick-imge-scroll">
               <img src="{{ product.featured_image | img_url: '300x300' }}" alt="{{ product.title }}">
               </div>
+            </div>
+            <div>
               <div class="slick-scroll-texts">
               <h4>{{ product.title }}</h4>
               <a href="{{ product.url }}" class="buy-btn">Buy Now</a>
               </div>
+            </div>
             </div>
           </div>
           {% endfor %}
