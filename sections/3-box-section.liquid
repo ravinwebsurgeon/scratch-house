@@ -65,9 +65,13 @@
         {% if slider_collection and slider_collection.products.size > 0 %}
           {% for product in slider_collection.products limit: 10 %}
             <div class="product-card">
+              <div class="slick-imge-scroll">
               <img src="{{ product.featured_image | img_url: '300x300' }}" alt="{{ product.title }}">
+              </div>
+              <div class="slick-scroll-texts">
               <h4>{{ product.title }}</h4>
               <a href="{{ product.url }}" class="buy-btn">Buy Now</a>
+              </div>
             </div>
           {% endfor %}
         {% else %}
@@ -78,12 +82,12 @@
 
     <!-- Right Floating Box -->
     <div class="right-floating-box">
-      <div class="slick-imge-scroll">
+      <div class="right-flos-img">
       {% if section.settings.right_image != blank %}
         <img src="{{ section.settings.right_image | img_url: '400x400' }}" alt="{{ section.settings.right_heading }}">
       {% endif %}
     </div>
-    <div class="slick-scroll-texts">
+    <div class="right-flos-texts">
       <h3>{{ section.settings.right_heading }}</h3>
       {% if section.settings.right_button_link != blank %}
         <a href="{{ section.settings.right_button_link }}" class="shop-btn">
