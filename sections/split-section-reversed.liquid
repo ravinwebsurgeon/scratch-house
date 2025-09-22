@@ -11,11 +11,13 @@
     </div>
 
     <!-- Right Image -->
+    <div class="split-bann-sec">
     <div class="split-banner-image-alt">
       {% if section.settings.image != blank %}
         <img src="{{ section.settings.image | img_url:'master' }}" alt="Banner Image">
       {% endif %}
     </div>
+  </div>
   </div>
 </section>
 
