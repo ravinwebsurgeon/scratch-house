@@ -7,14 +7,9 @@
     
     <!-- Video Background -->
     <div class="video-wrapper">
-      {% if section.settings.video_url != blank %}
-        <iframe 
-          src="{{ section.settings.video_url }}?autoplay=1&mute=1&loop=1&controls=0&playlist={{ section.settings.video_url | split: 'v=' | last }}" 
-          frameborder="0" 
-          allow="autoplay; encrypted-media" 
-          allowfullscreen>
-        </iframe>
-      {% endif %}
+         {% if block.settings.video != blank %}
+            {{ block.settings.video | video_tag: controls: false, autoplay: false, muted: false, loop: false, class: "video-element" }}
+          {% endif %}
     </div>
 
     <!-- Overlay Content -->
