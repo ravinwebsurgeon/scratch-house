@@ -8,7 +8,12 @@
     <!-- Video Background -->
     <div class="video-wrapper">
          {% if section.settings.video != blank %}
-            {{ section.settings.video | video_tag: controls: false, autoplay: false, muted: false, loop: false, class: "video-element" }}
+            {{ section.settings.video | video_tag: 
+            controls: false, 
+        autoplay: true, 
+        muted: true, 
+        loop: true
+            }}
           {% endif %}
     </div>
 
