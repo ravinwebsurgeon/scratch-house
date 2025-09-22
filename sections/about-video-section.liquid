@@ -6,6 +6,7 @@
   <div class="video-frame">
     
     <!-- Video Background -->
+    <div class="about-under-video">
     <div class="video-wrapper">
          {% if section.settings.video != blank %}
             {{ section.settings.video | video_tag: 
@@ -16,6 +17,7 @@
             }}
           {% endif %}
     </div>
+  </div>
 
     <!-- Overlay Content -->
     <div class="video-overlay">
