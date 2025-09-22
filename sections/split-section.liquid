@@ -1,11 +1,13 @@
 <section class="split-banner-section">
   <div class="split-banner-inner">
     <!-- Left Image -->
+    <div class="split-bnn-sec">
     <div class="split-banner-image">
       {% if section.settings.image != blank %}
         <img src="{{ section.settings.image | image_url: width: 1000 }}" alt="Banner Image">
       {% endif %}
     </div>
+  </div>
 
     <!-- Right Text -->
     <div class="split-banner-content">
