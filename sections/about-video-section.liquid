@@ -5,6 +5,16 @@
 <section class="banner-video-section">
   <div class="video-frame">
     
+     <!-- Overlay Content -->
+    <div class="video-overlay">
+      {% if section.settings.subheading != blank %}
+        <p class="subheading">{{ section.settings.subheading }}</p>
+      {% endif %}
+      {% if section.settings.heading != blank %}
+        <h2 class="heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+    </div>
+    
     <!-- Video Background -->
     <div class="about-under-video">
     <div class="video-wrapper">
@@ -19,16 +29,6 @@
     </div>
   </div>
 
-    <!-- Overlay Content -->
-    <div class="video-overlay">
-      {% if section.settings.subheading != blank %}
-        <p class="subheading">{{ section.settings.subheading }}</p>
-      {% endif %}
-      {% if section.settings.heading != blank %}
-        <h2 class="heading">{{ section.settings.heading }}</h2>
-      {% endif %}
-    </div>
-
   </div>
 </section>
 
@@ -39,6 +39,7 @@
     max-width: 100%;
     display: block;
     height: 100%;
+    border-radius: 20px;
 }
 
 .banner-video-section {
