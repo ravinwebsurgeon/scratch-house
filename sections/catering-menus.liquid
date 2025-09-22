@@ -29,7 +29,7 @@
           {% if block.settings.custom_image != blank %}
             <div class="all-links-image-wrapper">
               <img
-                src="{{ block.settings.custom_image | image_url: width: 600 }}"
+                src="{{ block.settings.custom_image | img_url:'master' }}"
                 alt="{{ block.settings.block_title | escape }}"
                 loading="lazy"
               >
