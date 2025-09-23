@@ -147,7 +147,20 @@ section.all-links-image-text.page-width {
     margin: 0;
 }
 
-
+.all-links-image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 20px;
+    z-index: 1;
+    opacity: 40%;
+}
 .all-links-grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
