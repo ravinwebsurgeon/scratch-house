@@ -118,6 +118,42 @@
 
 {% stylesheet %}
 
+.all-links-image-text button.slick-arrow svg {
+    width: 20px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+}
+
+.all-links-image-text button.slick-arrow svg path {
+    fill: #F76E2A;
+}
+
+.all-links-image-text button.slick-arrow {
+    padding: 0;
+    border: 1px solid #F76E2A;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background-color: transparent;
+    transform: translateY(-50%);
+}
+
+.all-links-image-text button.slick-next.custom-next.slick-arrow {
+    right: -3%;
+}
+
+.all-links-image-text button.slick-prev.custom-prev.slick-arrow {
+    left: -3%;
+}
+
+
 .all-links-item .certing-butn a {
     background-color: #f76e2a;
     border-radius: 5px;
