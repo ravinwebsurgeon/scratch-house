@@ -1,8 +1,11 @@
+ {% if section.settings.heading != blank %}
 <section class="visit-faq-section" id="faqs">
   <div class="faq-container">
     <!-- Left Column -->
     <div class="faq-left">
+      {% if section.settings.heading != blank %}
       <h2 class="faq-heading1">{{ section.settings.heading }}</h2>
+      {% endif %}
       <div class="faq-description">
      {{ section.settings.text }}
       </div>
@@ -33,6 +36,8 @@
     </div>
   </div>
 </section>
+
+{% endif %}
  
 <style>
 .visit-faq-section {
