@@ -44,6 +44,7 @@
           {% endif %}
 
           <div class="all-links-content">
+            <div class="all-link-flex">
             {% if block.settings.block_title != blank %}
               <h3 class="all-links-block-title">
                 {{ block.settings.block_title }}
@@ -55,6 +56,7 @@
                 {{ block.settings.block_desc }}
               </a>
             {% endif %}
+          </div>
           </div>
         </div>
       {% endif %}
