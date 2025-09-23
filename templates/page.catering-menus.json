@@ -218,12 +218,177 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "scratch_compare_UmdFMq": {
+      "type": "scratch-compare",
+      "blocks": {
+        "cheese_item_dAGQgJ": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "Dairy % lactose free",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "right"
+          }
+        },
+        "cheese_item_K39EXk": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "cholesterol free",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "right"
+          }
+        },
+        "cheese_item_Bc9wfp": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "mouthwatering taste",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "right"
+          }
+        },
+        "cheese_item_LFbkPw": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "probiotics",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "cheese_item_tbPmjE": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "brain boosting nootropics",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "cheese_item_8EX7pD": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "gluten-free",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "cheese_item_MUEtnz": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "Impact on planet",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "cheese_item_G643Ai": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "Hormone-free",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "cheese_item_thyQY7": {
+          "type": "cheese_item",
+          "settings": {
+            "feature": "gut biome boosting",
+            "scratch": "right",
+            "dairy": "wrong",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_JtGxBw": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "low fat",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_prw7Lk": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "cholesterol free",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_6cFyb8": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "mouthwatering taste",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_yqF7zj": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "fiber-rich",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_kpKUt9": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "hormone-free",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_e4LXJC": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "brain boosting nootropics",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        },
+        "meat_item_cKaae4": {
+          "type": "meat_item",
+          "settings": {
+            "feature": "gut-biome booster",
+            "scratch": "right",
+            "other_plant": "wrong"
+          }
+        }
+      },
+      "block_order": [
+        "cheese_item_dAGQgJ",
+        "cheese_item_K39EXk",
+        "cheese_item_Bc9wfp",
+        "cheese_item_LFbkPw",
+        "cheese_item_tbPmjE",
+        "cheese_item_8EX7pD",
+        "cheese_item_MUEtnz",
+        "cheese_item_G643Ai",
+        "cheese_item_thyQY7",
+        "meat_item_JtGxBw",
+        "meat_item_prw7Lk",
+        "meat_item_6cFyb8",
+        "meat_item_yqF7zj",
+        "meat_item_kpKUt9",
+        "meat_item_e4LXJC",
+        "meat_item_cKaae4"
+      ],
+      "name": "Scratch Compare",
+      "settings": {
+        "title": "How does scratch compare?"
+      }
     }
   },
   "order": [
     "main",
     "image_text_bnner_FG9gKP",
     "catering_menus_jAJDna",
+    "scratch_compare_UmdFMq",
     "multirow_MVNXdj"
   ]
 }
