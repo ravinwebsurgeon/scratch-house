@@ -172,69 +172,6 @@
         "btn_text": ""
       }
     },
-    "image_slider_UFWp94": {
-      "type": "image-slider",
-      "blocks": {
-        "slide_QYJJgP": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg",
-            "alt": "",
-            "link": ""
-          }
-        },
-        "slide_TACHPa": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/pp.avif",
-            "alt": "",
-            "link": ""
-          }
-        },
-        "slide_dQ94cX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_4291.png",
-            "alt": "",
-            "link": ""
-          }
-        },
-        "slide_EhyRUP": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg",
-            "alt": "",
-            "link": ""
-          }
-        },
-        "slide_QHCeiR": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/7fb2e21e41d7a8ddac31e97c1a516629976bf0f7.jpg",
-            "alt": "",
-            "link": ""
-          }
-        },
-        "slide_Jid36a": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/5665f01c496b91ea8031bb6143c2c784a3cdfe35.jpg",
-            "alt": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_QYJJgP",
-        "slide_TACHPa",
-        "slide_dQ94cX",
-        "slide_EhyRUP",
-        "slide_QHCeiR",
-        "slide_Jid36a"
-      ],
-      "name": "Image Slider",
-      "settings": {}
-    },
     "multirow_MVNXdj": {
       "type": "multirow",
       "blocks": {
@@ -287,7 +224,6 @@
     "main",
     "image_text_bnner_FG9gKP",
     "catering_menus_jAJDna",
-    "image_slider_UFWp94",
     "multirow_MVNXdj"
   ]
 }
