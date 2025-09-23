@@ -19,13 +19,11 @@
       </p>
     {% endif %}
 
-    <div class="certing-butn">
     {% if section.settings.btn_link != blank and section.settings.btn_text != blank %}
       <a href="{{ section.settings.btn_link }}" class="all-links-main-btn btn">
         {{ section.settings.btn_text }}
       </a>
     {% endif %}
-  </div>
   </div>
 
   <div class="all-links-grid">
@@ -51,11 +49,13 @@
               </h3>
             {% endif %}
 
+             <div class="certing-butn">
             {% if block.settings.block_desc != blank  %}
               <a href="{{ block.settings.block_link }}" class="all-links-block-btn btn-link">
                 {{ block.settings.block_desc }}
               </a>
             {% endif %}
+            </div>
           </div>
           </div>
         </div>
