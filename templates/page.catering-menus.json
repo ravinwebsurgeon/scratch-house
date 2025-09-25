@@ -382,6 +382,34 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "gallery_section_ndfB6A": {
+      "type": "gallery-section",
+      "blocks": {
+        "image_NUUdhF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2148123694.jpg"
+          }
+        },
+        "image_UUieyf": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_qhbUVA": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_NUUdhF",
+        "image_UUieyf",
+        "image_qhbUVA"
+      ],
+      "name": "Gallery Section",
+      "settings": {
+        "heading": "Our Gallery"
+      }
     }
   },
   "order": [
@@ -389,6 +417,7 @@
     "image_text_bnner_FG9gKP",
     "catering_menus_jAJDna",
     "scratch_compare_UmdFMq",
-    "multirow_MVNXdj"
+    "multirow_MVNXdj",
+    "gallery_section_ndfB6A"
   ]
 }
