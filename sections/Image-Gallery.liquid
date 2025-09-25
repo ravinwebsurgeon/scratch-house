@@ -214,122 +214,88 @@
   </div>
 </div>
 
-{% comment %} <!-- jQuery + Slick -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> {% endcomment %}
+<section class="expanding-gallery">
+  <div class="page-width">
+    <div class="all-links-header">
+      <div class="line-title">
+        <hr>
+        <h2 class="all-links-title">
+          {{ section.settings.top-heading }}
+        </h2>
+        <hr>
+      </div>
+    </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Responsive gallery slider
-  function initGallerySlider() {
-    if (window.innerWidth <= 768) {
-      if (!$('.responsive-gallery').hasClass('slick-initialized')) {
-        $('.responsive-gallery').slick({
-          slidesToShow: 1,
-          autoplay: true,
-          dots: true,
-          arrows: false,
-          infinite: true,
-          centerMode: true,
-          centerPadding: '20px'
-        });
-      }
-    } else {
-      if ($('.responsive-gallery').hasClass('slick-initialized')) {
-        $('.responsive-gallery').slick('unslick');
-      }
-    }
-  }
-  initGallerySlider();
-  window.addEventListener('resize', initGallerySlider);
+    <div class="gallery">
+      {% for block in section.blocks %}
+        {% if block.settings.image %}
+          <div class="gallery-item">
+            <img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.alt_text | escape }}">
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-  // Popup slider init
-  $('.popup-slider').slick({
-    slidesToShow: 1,
-    infinite: true,
-    arrows: true,
-    dots: false
-  });
-
-  // Open popup on image click
-  $('.popup-trigger').on('click', function() {
-    const index = $(this).data('index');
-    $('#gallery-popup').addClass('open');
-    $('.popup-slider').slick('slickGoTo', index);
-  });
-
-  // Close popup
-  $('.popup-close, #gallery-popup').on('click', function(e) {
-    if (e.target.id === 'gallery-popup' || e.target.classList.contains('popup-close')) {
-      $('#gallery-popup').removeClass('open');
-    }
-  });
-});
-</script>
+<!-- Popup -->
+<div class="gallery-popup">
+  <button class="close-popup">&times;</button>
+  <div class="popup-slider">
+    {% for block in section.blocks %}
+      {% if block.settings.image %}
+        <div>
+          <img src="{{ block.settings.image | img_url: '1200x' }}" alt="{{ block.settings.alt_text | escape }}">
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
 
 <style>
 .expanding-gallery {
-  padding: 60px 0;
+  padding: 50px 0;
 }
-
 .expanding-gallery .page-width {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
 }
-
-/* Heading */
+.expanding-gallery .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+.expanding-gallery .gallery img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.expanding-gallery .gallery img:hover {
+  transform: scale(1.03);
+}
 .expanding-gallery .all-links-header .line-title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
-
 .expanding-gallery .all-links-header .line-title hr {
-  width: 100px;
   background-color: #F76E2A;
-  border: none;
+  width: 100px;
   height: 3px;
+  border: none;
 }
-
-.expanding-gallery .all-links-title {
-  font-family: Oswald, sans-serif;
+.expanding-gallery .all-links-header .all-links-title {
+  font-family: Oswald;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 48px;
   text-transform: uppercase;
   color: #343434;
   margin: 0;
-  text-align: center;
-}
-
-/* Gallery Grid */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.gallery-item {
-  overflow: hidden;
-  border-radius: 16px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 16px;
-  transition: transform 0.4s ease;
-  cursor: pointer;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.08);
 }
 
 /* Popup */
@@ -342,69 +308,96 @@ document.addEventListener("DOMContentLoaded", function() {
   align-items: center;
   z-index: 9999;
 }
-
-.gallery-popup.open {
+.gallery-popup.active {
   display: flex;
 }
-
-.popup-inner {
-  width: 90%;
-  max-width: 900px;
-  position: relative;
+.gallery-popup .popup-slider img {
+  width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: 10px;
 }
-
-.popup-slider img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-.popup-close {
+.close-popup {
   position: absolute;
-  top: -50px;
-  right: -10px;
-  font-size: 50px;
-  color: #fff;
-  background: none;
+  top: 30px;
+  right: 30px;
+  background: #fff;
+  color: #000;
   border: none;
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
 }
-
-.popup-close:hover {
-  color: #F76E2A;
-}
-
-.slick-prev:before, .slick-next:before {
+.close-popup:hover {
+  background: #F76E2A;
   color: #fff;
-  font-size: 30px;
+  transform: rotate(90deg);
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* Slick arrows inside popup */
+.gallery-popup .slick-prev, .gallery-popup .slick-next {
+  background: rgba(255,255,255,0.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 10;
+}
+.gallery-popup .slick-prev:hover, .gallery-popup .slick-next:hover {
+  background: #F76E2A;
 }
 
-@media (max-width: 768px) {
-  .gallery {
+/* Mobile: slick for main gallery */
+@media(max-width: 768px) {
+  .expanding-gallery .gallery {
     display: block;
-  }
-  .gallery-item img {
-    height: 300px;
-  }
-  .expanding-gallery .all-links-title {
-    font-size: 36px;
-  }
-  .expanding-gallery .all-links-header .line-title hr {
-    display: none;
-  }
-  .popup-close {
-    top: -40px;
-    font-size: 40px;
   }
 }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // init slick for popup
+    $('.popup-slider').slick({
+      infinite: true,
+      arrows: true,
+      dots: false,
+    });
+
+    // init slick for gallery on mobile
+    if (window.innerWidth < 768) {
+      $('.gallery').slick({
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: '40px'
+      });
+    }
+
+    // click image -> open popup
+    document.querySelectorAll('.gallery-item img').forEach((img, index) => {
+      img.addEventListener('click', () => {
+        document.querySelector('.gallery-popup').classList.add('active');
+        $('.popup-slider').slick('slickGoTo', index);
+      });
+    });
+
+    // close popup
+    document.querySelector('.close-popup').addEventListener('click', () => {
+      document.querySelector('.gallery-popup').classList.remove('active');
+    });
+
+    // close on background click
+    document.querySelector('.gallery-popup').addEventListener('click', (e) => {
+      if (e.target.classList.contains('gallery-popup')) {
+        document.querySelector('.gallery-popup').classList.remove('active');
+      }
+    });
+  });
+</script>
 
 {% schema %}
 {
@@ -430,7 +423,7 @@ document.addEventListener("DOMContentLoaded", function() {
         {
           "type": "text",
           "id": "alt_text",
-          "label": "Alt text"
+          "label": "Alt Text"
         }
       ]
     }
@@ -444,6 +437,7 @@ document.addEventListener("DOMContentLoaded", function() {
   ]
 }
 {% endschema %}
+
 
 
 
