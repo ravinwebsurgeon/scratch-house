@@ -403,18 +403,23 @@ document.addEventListener("DOMContentLoaded", function() {
     font-size: 40px;
   }
 }
-.gallery-popup .slick-prev,
-.gallery-popup .slick-next {
-  width: 55px;
-  height: 55px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 50%;
-  backdrop-filter: blur(8px);
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  transition: all 0.3s ease;
+.gallery-popup .slick-prev, .gallery-popup .slick-next {
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    border-radius: 50%;
+    backdrop-filter: blur(8px);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    border: none;
+    outline: none;
+    font-size: 0;
 }
 
 .gallery-popup .slick-prev:hover,
