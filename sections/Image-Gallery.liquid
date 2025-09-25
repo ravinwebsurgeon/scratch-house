@@ -346,7 +346,13 @@ document.addEventListener("DOMContentLoaded", function() {
 .gallery-popup.open {
   display: flex;
 }
+.popup-inner.open {
+    display: block;
+}
 
+.gallery-popup.open .popup-inner {
+    display: block;
+}
 .popup-inner {
   width: 90%;
   max-width: 900px;
