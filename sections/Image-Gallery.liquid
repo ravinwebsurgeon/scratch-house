@@ -20,15 +20,35 @@
 </section>
 
 <style>
-  .expanding-gallery {
-    
+  .expanding-gallery {    
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
   }
+   .expanding-gallery .gallery {
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
 
-  .expanding-gallery .gallery {
+  .expanding-gallery .gallery img {
+  flex: 1 1 150px; /* initial width */
+  max-width: 200px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: flex 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+  .expanding-gallery .gallery img:hover {
+  flex: 3 1 300px; /* expand on hover */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+  {% comment %} .expanding-gallery .gallery {
     width: 100%;
     max-width: 1400px;
     height: 300px;
@@ -36,9 +56,9 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-  }
+  } {% endcomment %}
 
-  .expanding-gallery .gallery img {
+  {% comment %} .expanding-gallery .gallery img {
     width: 10%;
     height: 100%;
     object-fit: cover;
@@ -46,12 +66,12 @@
     border: 2px solid #fff;
     transition: all 0.5s ease-out;
     cursor: pointer;
-  }
+  } {% endcomment %}
 
-  .expanding-gallery .gallery img:hover {
+  {% comment %} .expanding-gallery .gallery img:hover {
     width: 50%;
     
-  }
+  } {% endcomment %}
 </style>
 
 {% schema %}
