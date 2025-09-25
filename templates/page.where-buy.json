@@ -98,13 +98,6 @@
             "image": "shopify://shop_images/a7eeec498a4a583e63de154c769da2df38d5f13d.jpg",
             "alt_text": ""
           }
-        },
-        "image_nH7XbA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg",
-            "alt_text": ""
-          }
         }
       },
       "block_order": [
@@ -113,8 +106,7 @@
         "image_YciF8m",
         "image_4Q7Eid",
         "image_UPrm4G",
-        "image_w3GPnY",
-        "image_nH7XbA"
+        "image_w3GPnY"
       ],
       "name": "Expanding Image Gallery",
       "settings": {
