@@ -214,88 +214,122 @@
   </div>
 </div>
 
-<section class="expanding-gallery">
-  <div class="page-width">
-    <div class="all-links-header">
-      <div class="line-title">
-        <hr>
-        <h2 class="all-links-title">
-          {{ section.settings.top-heading }}
-        </h2>
-        <hr>
-      </div>
-    </div>
+{% comment %} <!-- jQuery + Slick -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> {% endcomment %}
 
-    <div class="gallery">
-      {% for block in section.blocks %}
-        {% if block.settings.image %}
-          <div class="gallery-item">
-            <img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.alt_text | escape }}">
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Responsive gallery slider
+  function initGallerySlider() {
+    if (window.innerWidth <= 768) {
+      if (!$('.responsive-gallery').hasClass('slick-initialized')) {
+        $('.responsive-gallery').slick({
+          slidesToShow: 1,
+          autoplay: true,
+          dots: true,
+          arrows: false,
+          infinite: true,
+          centerMode: true,
+          centerPadding: '20px'
+        });
+      }
+    } else {
+      if ($('.responsive-gallery').hasClass('slick-initialized')) {
+        $('.responsive-gallery').slick('unslick');
+      }
+    }
+  }
+  initGallerySlider();
+  window.addEventListener('resize', initGallerySlider);
 
-<!-- Popup -->
-<div class="gallery-popup">
-  <button class="close-popup">&times;</button>
-  <div class="popup-slider">
-    {% for block in section.blocks %}
-      {% if block.settings.image %}
-        <div>
-          <img src="{{ block.settings.image | img_url: '1200x' }}" alt="{{ block.settings.alt_text | escape }}">
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
+  // Popup slider init
+  $('.popup-slider').slick({
+    slidesToShow: 1,
+    infinite: true,
+    arrows: true,
+    dots: false
+  });
+
+  // Open popup on image click
+  $('.popup-trigger').on('click', function() {
+    const index = $(this).data('index');
+    $('#gallery-popup').addClass('open');
+    $('.popup-slider').slick('slickGoTo', index);
+  });
+
+  // Close popup
+  $('.popup-close, #gallery-popup').on('click', function(e) {
+    if (e.target.id === 'gallery-popup' || e.target.classList.contains('popup-close')) {
+      $('#gallery-popup').removeClass('open');
+    }
+  });
+});
+</script>
 
 <style>
 .expanding-gallery {
-  padding: 50px 0;
+  padding: 60px 0;
 }
+
 .expanding-gallery .page-width {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 20px;
 }
-.expanding-gallery .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 15px;
-}
-.expanding-gallery .gallery img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-.expanding-gallery .gallery img:hover {
-  transform: scale(1.03);
-}
+
+/* Heading */
 .expanding-gallery .all-links-header .line-title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
+
 .expanding-gallery .all-links-header .line-title hr {
-  background-color: #F76E2A;
   width: 100px;
-  height: 3px;
+  background-color: #F76E2A;
   border: none;
+  height: 3px;
 }
-.expanding-gallery .all-links-header .all-links-title {
-  font-family: Oswald;
+
+.expanding-gallery .all-links-title {
+  font-family: Oswald, sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 60px;
   text-transform: uppercase;
   color: #343434;
   margin: 0;
+  text-align: center;
+}
+
+/* Gallery Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
 }
 
 /* Popup */
@@ -308,96 +342,122 @@
   align-items: center;
   z-index: 9999;
 }
-.gallery-popup.active {
+
+.gallery-popup.open {
   display: flex;
 }
-.gallery-popup .popup-slider img {
-  width: 80vw;
-  max-height: 80vh;
-  object-fit: contain;
-  margin: 0 auto;
-  border-radius: 10px;
+
+.popup-inner {
+  width: 90%;
+  max-width: 900px;
+  position: relative;
 }
-.close-popup {
+
+.popup-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.popup-close {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  background: #fff;
-  color: #000;
-  border: none;
-  font-size: 28px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: background 0.3s, transform 0.2s;
-}
-.close-popup:hover {
-  background: #F76E2A;
+  top: -50px;
+  right: -10px;
+  font-size: 50px;
   color: #fff;
-  transform: rotate(90deg);
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-/* Slick arrows inside popup */
-.gallery-popup .slick-prev, .gallery-popup .slick-next {
-  background: rgba(255,255,255,0.8);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  z-index: 10;
-}
-.gallery-popup .slick-prev:hover, .gallery-popup .slick-next:hover {
-  background: #F76E2A;
+.popup-close:hover {
+  color: #F76E2A;
 }
 
-/* Mobile: slick for main gallery */
-@media(max-width: 768px) {
-  .expanding-gallery .gallery {
+.slick-prev:before, .slick-next:before {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery {
     display: block;
+  }
+  .gallery-item img {
+    height: 300px;
+  }
+  .expanding-gallery .all-links-title {
+    font-size: 36px;
+  }
+  .expanding-gallery .all-links-header .line-title hr {
+    display: none;
+  }
+  .popup-close {
+    top: -40px;
+    font-size: 40px;
+  }
+}
+.gallery-popup .slick-prev,
+.gallery-popup .slick-next {
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  backdrop-filter: blur(8px);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.gallery-popup .slick-prev:hover,
+.gallery-popup .slick-next:hover {
+  background: #F76E2A;
+  transform: scale(1.1);
+}
+
+.gallery-popup .slick-prev:before,
+.gallery-popup .slick-next:before {
+  font-size: 26px;
+  color: #fff;
+  opacity: 1;
+}
+
+/* Position them properly */
+.gallery-popup .slick-prev {
+  left: -70px;
+}
+
+.gallery-popup .slick-next {
+  right: -70px;
+}
+
+@media(max-width:767px) {
+  .gallery-popup .slick-prev {
+    left: -40px;
+  }
+  .gallery-popup .slick-next {
+    right: -40px;
+  }
+  .gallery-popup .slick-prev,
+  .gallery-popup .slick-next {
+    width: 45px;
+    height: 45px;
+  }
+  .gallery-popup .slick-prev:before,
+  .gallery-popup .slick-next:before {
+    font-size: 22px;
   }
 }
 </style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // init slick for popup
-    $('.popup-slider').slick({
-      infinite: true,
-      arrows: true,
-      dots: false,
-    });
-
-    // init slick for gallery on mobile
-    if (window.innerWidth < 768) {
-      $('.gallery').slick({
-        slidesToShow: 1,
-        centerMode: true,
-        centerPadding: '40px'
-      });
-    }
-
-    // click image -> open popup
-    document.querySelectorAll('.gallery-item img').forEach((img, index) => {
-      img.addEventListener('click', () => {
-        document.querySelector('.gallery-popup').classList.add('active');
-        $('.popup-slider').slick('slickGoTo', index);
-      });
-    });
-
-    // close popup
-    document.querySelector('.close-popup').addEventListener('click', () => {
-      document.querySelector('.gallery-popup').classList.remove('active');
-    });
-
-    // close on background click
-    document.querySelector('.gallery-popup').addEventListener('click', (e) => {
-      if (e.target.classList.contains('gallery-popup')) {
-        document.querySelector('.gallery-popup').classList.remove('active');
-      }
-    });
-  });
-</script>
 
 {% schema %}
 {
@@ -423,7 +483,7 @@
         {
           "type": "text",
           "id": "alt_text",
-          "label": "Alt Text"
+          "label": "Alt text"
         }
       ]
     }
@@ -437,7 +497,6 @@
   ]
 }
 {% endschema %}
-
 
 
 
