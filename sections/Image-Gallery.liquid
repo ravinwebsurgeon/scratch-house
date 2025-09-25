@@ -420,7 +420,7 @@ body.opens {
 .gallery-popup .slick-prev, .gallery-popup .slick-next {
     width: 55px;
     height: 55px;
-    background: #fff;
+    background: transparent;
     border-radius: 50%;
     backdrop-filter: blur(8px);
     display: flex !important;
@@ -434,19 +434,7 @@ body.opens {
     border: none;
     outline: none;
     font-size: 0;
-}
-
-.gallery-popup .slick-prev:hover,
-.gallery-popup .slick-next:hover {
-  background: #F76E2A;
-  transform: scale(1.1);
-}
-
-.gallery-popup .slick-prev:before,
-.gallery-popup .slick-next:before {
-  font-size: 26px;
-  color: #fff;
-  opacity: 1;
+    border: 1px solid #F76E2A;
 }
 
 /* Position them properly */
