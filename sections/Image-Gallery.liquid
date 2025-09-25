@@ -320,12 +320,13 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 .gallery-item img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 16px;
-  transition: transform 0.4s ease;
-  cursor: pointer;
+ width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    aspect-ratio: 1;
 }
 
 .gallery-item:hover img {
@@ -389,9 +390,7 @@ document.addEventListener("DOMContentLoaded", function() {
   .gallery {
     display: block;
   }
-  .gallery-item img {
-    height: 300px;
-  }
+
   .expanding-gallery .all-links-title {
     font-size: 36px;
   }
