@@ -333,15 +333,14 @@ document.addEventListener("DOMContentLoaded", function() {
   transform: scale(1.08);
 }
 
-.gallery-popup {
+.gallery-popup:after{
     position: fixed;
-    inset: 0;
     background: rgba(0, 0, 0, 0.9);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    padding: 0 50px;
+   content:"";
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
 }
 .gallery-popup.open {
   display: flex;
