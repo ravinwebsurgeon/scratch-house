@@ -256,6 +256,7 @@ document.addEventListener("DOMContentLoaded", function() {
   $('.popup-trigger').on('click', function() {
     const index = $(this).data('index');
     $('#gallery-popup').addClass('open');
+     $('body').addClass('open');
     $('.popup-slider').slick('slickGoTo', index);
   });
 
