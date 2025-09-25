@@ -15,9 +15,85 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_gallery_gUEpE7": {
+      "type": "Image-Gallery",
+      "blocks": {
+        "image_dRU3dP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2148759733.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_LLRatA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/top-view-delicious-mexican-food-ready-be-served.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_6AREYH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2148123694.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_eEbdUV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3827.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_3n3x8F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2147840958.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_yQ46KA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/top-view-delicious-healthy-breakfast.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_aGjHGT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/penne-pasta-with-tomato-sauce-beef-grated-cheese.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_UHq7cw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/flat-lay-mexican-food.jpg",
+            "alt_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_dRU3dP",
+        "image_LLRatA",
+        "image_6AREYH",
+        "image_eEbdUV",
+        "image_3n3x8F",
+        "image_yQ46KA",
+        "image_aGjHGT",
+        "image_UHq7cw"
+      ],
+      "name": "Expanding Image Gallery",
+      "settings": {
+        "top-heading": "Our Gallery"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_gallery_gUEpE7"
   ]
 }
