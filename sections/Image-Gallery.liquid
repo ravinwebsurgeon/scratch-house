@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function() {
   $('.popup-trigger').on('click', function() {
     const index = $(this).data('index');
     $('#gallery-popup').addClass('open');
-     $('body').addClass('open');
+     $('body').addClass('opens');
     $('.popup-slider').slick('slickGoTo', index);
   });
 
@@ -264,6 +264,7 @@ document.addEventListener("DOMContentLoaded", function() {
   $('.popup-close, #gallery-popup').on('click', function(e) {
     if (e.target.id === 'gallery-popup' || e.target.classList.contains('popup-close')) {
       $('#gallery-popup').removeClass('open');
+       $('body').removeClass('opens');
     }
   });
 });
@@ -358,6 +359,9 @@ document.addEventListener("DOMContentLoaded", function() {
     top: 50%;
     transform: translateY(-50%);
     z-index: 999;
+    margin:0 auto;
+    left:0;
+    right:0;
 }
 
 .popup-slider img {
