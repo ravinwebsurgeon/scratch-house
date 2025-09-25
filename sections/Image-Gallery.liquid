@@ -346,17 +346,17 @@ document.addEventListener("DOMContentLoaded", function() {
 .gallery-popup.open {
   display: flex;
 }
-.popup-inner.open {
-    display: block;
-}
-
 .gallery-popup.open .popup-inner {
     display: block;
 }
 .popup-inner {
-  width: 90%;
-  max-width: 900px;
-  position: relative;
+    width: 90%;
+    max-width: 900px;
+    position: absolute;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
 }
 
 .popup-slider img {
