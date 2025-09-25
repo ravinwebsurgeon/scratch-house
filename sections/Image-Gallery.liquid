@@ -169,7 +169,6 @@
 {% endschema %} {% endcomment %}
 
 
-
 <section class="expanding-gallery">
   <div class="page-width">
     <div class="all-links-header">
@@ -189,7 +188,8 @@
             <img
               src="{{ block.settings.image | img_url: 'master' }}"
               alt="{{ block.settings.alt_text | escape }}"
-              loading="lazy"
+              data-index="{{ forloop.index0 }}"
+              class="popup-trigger"
             >
           </div>
         {% endif %}
@@ -198,21 +198,36 @@
   </div>
 </section>
 
-{% comment %} <!-- jQuery + Slick JS (CDN) -->
+<!-- Popup Lightbox -->
+<div class="gallery-popup" id="gallery-popup">
+  <div class="popup-inner">
+    <button class="popup-close">&times;</button>
+    <div class="popup-slider">
+      {% for block in section.blocks %}
+        {% if block.settings.image %}
+          <div>
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.alt_text | escape }}">
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- jQuery + Slick -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> {% endcomment %}
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+  // Responsive gallery slider
   function initGallerySlider() {
     if (window.innerWidth <= 768) {
       if (!$('.responsive-gallery').hasClass('slick-initialized')) {
         $('.responsive-gallery').slick({
           slidesToShow: 1,
-          slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 2500,
           dots: true,
           arrows: false,
           infinite: true,
@@ -226,9 +241,30 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   }
-
   initGallerySlider();
   window.addEventListener('resize', initGallerySlider);
+
+  // Popup slider init
+  $('.popup-slider').slick({
+    slidesToShow: 1,
+    infinite: true,
+    arrows: true,
+    dots: true
+  });
+
+  // Open popup on image click
+  $('.popup-trigger').on('click', function() {
+    const index = $(this).data('index');
+    $('#gallery-popup').addClass('open');
+    $('.popup-slider').slick('slickGoTo', index);
+  });
+
+  // Close popup
+  $('.popup-close, #gallery-popup').on('click', function(e) {
+    if (e.target.id === 'gallery-popup' || e.target.classList.contains('popup-close')) {
+      $('#gallery-popup').removeClass('open');
+    }
+  });
 });
 </script>
 
@@ -243,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
   padding: 0 20px;
 }
 
-/* ---- Heading ---- */
+/* Heading */
 .expanding-gallery .all-links-header .line-title {
   display: flex;
   align-items: center;
@@ -269,7 +305,7 @@ document.addEventListener("DOMContentLoaded", function() {
   text-align: center;
 }
 
-/* ---- Gallery Grid ---- */
+/* Gallery Grid */
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -289,13 +325,61 @@ document.addEventListener("DOMContentLoaded", function() {
   object-fit: cover;
   border-radius: 16px;
   transition: transform 0.4s ease;
+  cursor: pointer;
 }
 
 .gallery-item:hover img {
   transform: scale(1.08);
 }
 
-/* ---- Responsive ---- */
+/* Popup */
+.gallery-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.gallery-popup.open {
+  display: flex;
+}
+
+.popup-inner {
+  width: 90%;
+  max-width: 900px;
+  position: relative;
+}
+
+.popup-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.popup-close {
+  position: absolute;
+  top: -50px;
+  right: -10px;
+  font-size: 50px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #F76E2A;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Responsive */
 @media (max-width: 1024px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
@@ -304,19 +388,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 @media (max-width: 768px) {
   .gallery {
-    display: block; /* slick will override this */
+    display: block;
   }
-
   .gallery-item img {
     height: 300px;
   }
-
   .expanding-gallery .all-links-title {
     font-size: 36px;
   }
-
   .expanding-gallery .all-links-header .line-title hr {
     display: none;
+  }
+  .popup-close {
+    top: -40px;
+    font-size: 40px;
   }
 }
 </style>
@@ -359,5 +444,6 @@ document.addEventListener("DOMContentLoaded", function() {
   ]
 }
 {% endschema %}
+
 
 
