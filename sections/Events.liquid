@@ -82,17 +82,16 @@
         <h3 class="title">{{ block.settings.title }}</h3>
         <p class="location">📍 {{ block.settings.location }}</p>
         <p class="time">⏰ {{ block.settings.time }}</p>
-      </div>
-
-      <div class="event-action">
-        {% if block.settings.badge_text != blank %}
-          {% if block.settings.badge_style == "button" %}
-            <a href="{{ block.settings.badge_link }}" class="badge-button">{{ block.settings.badge_text }}</a>
-          {% else %}
-            <span class="badge-label">{{ block.settings.badge_text }}</span>
+        <div class="event-action">
+          {% if block.settings.badge_text != blank %}
+            {% if block.settings.badge_style == "button" %}
+              <a href="{{ block.settings.badge_link }}" class="badge-button">{{ block.settings.badge_text }}</a>
+            {% else %}
+              <span class="badge-label">{{ block.settings.badge_text }}</span>
+            {% endif %}
           {% endif %}
-        {% endif %}
-      </div>
+        </div>
+      </div>      
     </div>
   </div>
 {% endfor %}
@@ -124,13 +123,14 @@
     margin: 0 -20px 0 0;
 } {% endcomment %}
 .event-row {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  padding: 20px;
-  border-radius: 10px;
-  background: #f5f5f5;
-  transition: transform 0.3s, background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: #F5F5F5;
+    transition: transform 0.3s, background 0.3s;
+    flex: 1 0 auto;
 }
 .event-row:hover {
   transform: translateY(-5px);
@@ -203,9 +203,6 @@ section.next-events .page-width {
   font-size: 14px;
   color: #555;
   margin: 2px 0;
-}
-.event-action {
-  flex-shrink: 0;
 }
 .badge-button {
   background: #b00;
