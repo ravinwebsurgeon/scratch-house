@@ -72,42 +72,70 @@
         "image_9n4k4E": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/016fc3fa2a158fe63f62c3097e2b3a8264f13809.jpg",
+            "image": "shopify://shop_images/2148759733.jpg",
             "alt_text": "Cheesy"
           }
         },
         "image_p6YJc8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg",
+            "image": "shopify://shop_images/top-view-delicious-mexican-food-ready-be-served.jpg",
             "alt_text": ""
           }
         },
         "image_YciF8m": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/a7eeec498a4a583e63de154c769da2df38d5f13d.jpg",
+            "image": "shopify://shop_images/2148123694.jpg",
             "alt_text": ""
           }
         },
         "image_4Q7Eid": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/62c5862b6094050f878999de8ca413911b381de2.jpg",
+            "image": "shopify://shop_images/3827.jpg",
             "alt_text": ""
           }
         },
         "image_UPrm4G": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/a7eeec498a4a583e63de154c769da2df38d5f13d.jpg",
+            "image": "shopify://shop_images/2147840958.jpg",
             "alt_text": ""
           }
         },
         "image_w3GPnY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/a7eeec498a4a583e63de154c769da2df38d5f13d.jpg",
+            "image": "shopify://shop_images/top-view-delicious-healthy-breakfast.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_dXH8He": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/penne-pasta-with-tomato-sauce-beef-grated-cheese.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_dRJ4VU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/flat-lay-mexican-food.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_tQK9jV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/flat-lay-delicious-brazilian-food-composition.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_btQ6Dc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/homemade-baked-porchetta-rolls-with-several-herbs-pepper-garlic.jpg",
             "alt_text": ""
           }
         }
@@ -118,7 +146,11 @@
         "image_YciF8m",
         "image_4Q7Eid",
         "image_UPrm4G",
-        "image_w3GPnY"
+        "image_w3GPnY",
+        "image_dXH8He",
+        "image_dRJ4VU",
+        "image_tQK9jV",
+        "image_btQ6Dc"
       ],
       "name": "Expanding Image Gallery",
       "settings": {
