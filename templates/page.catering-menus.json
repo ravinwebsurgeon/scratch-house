@@ -383,34 +383,63 @@
         "padding_bottom": 36
       }
     },
-    "gallery_section_ndfB6A": {
-      "type": "gallery-section",
+    "image_gallery_iRVprC": {
+      "type": "Image-Gallery",
       "blocks": {
-        "image_NUUdhF": {
+        "image_YNrkY9": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2148123694.jpg"
+            "image": "shopify://shop_images/2148759733.jpg",
+            "alt_text": "Cheesy"
           }
         },
-        "image_UUieyf": {
+        "image_9z3NEd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3827.jpg"
+            "image": "shopify://shop_images/top-view-delicious-mexican-food-ready-be-served.jpg",
+            "alt_text": ""
           }
         },
-        "image_qhbUVA": {
+        "image_XfFbct": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/2148123694.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_rWerQA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3827.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_aEfUdw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2147840958.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_8Xn7MD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/top-view-delicious-healthy-breakfast.jpg",
+            "alt_text": ""
+          }
         }
       },
       "block_order": [
-        "image_NUUdhF",
-        "image_UUieyf",
-        "image_qhbUVA"
+        "image_YNrkY9",
+        "image_9z3NEd",
+        "image_XfFbct",
+        "image_rWerQA",
+        "image_aEfUdw",
+        "image_8Xn7MD"
       ],
-      "name": "Gallery Section",
+      "name": "Expanding Image Gallery",
       "settings": {
-        "heading": "Our Gallery"
+        "top-heading": "Our Gallery"
       }
     }
   },
@@ -420,6 +449,6 @@
     "catering_menus_jAJDna",
     "scratch_compare_UmdFMq",
     "multirow_MVNXdj",
-    "gallery_section_ndfB6A"
+    "image_gallery_iRVprC"
   ]
 }
