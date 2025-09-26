@@ -1,7 +1,7 @@
 <section class="three-col-section {{ section.settings.content_alignment }}">
   <div class="container">
-    {% if block.settings.heading != blank %}
-        <h2 class="mid-heading">{{ block.settings.heading }}</h2>
+    {% if block.settings.main-hed != blank %}
+        <h2 class="mid-heading">{{ block.settings.main-hed }}</h2>
     {% endif %}
     <div class="three-col-grid">
       {% for block in section.blocks %}
