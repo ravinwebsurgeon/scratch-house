@@ -57,7 +57,15 @@
 
 <section class="next-events">
   <div class="page-width">
-    <h2>{{ section.settings.heading }}</h2>
+    <div class="all-links-header">
+      <div class="line-title">
+        <hr>    
+        {% if section.settings.heading != blank %}
+            <h2 class="all-links-title">{{ section.settings.heading }}</h2>
+        {% endif %}
+        <hr>
+      </div>  
+    </div>
     <p class="events-intro">{{ section.settings.subtext }}</p>
 
     <div class="events-list">
