@@ -437,9 +437,53 @@
         "image_aEfUdw",
         "image_8Xn7MD"
       ],
+      "disabled": true,
       "name": "Expanding Image Gallery",
       "settings": {
         "top-heading": "Our Gallery"
+      }
+    },
+    "customer_review_t9aMgK": {
+      "type": "customer-review",
+      "blocks": {
+        "video_block_nfbeNd": {
+          "type": "video_block",
+          "settings": {
+            "thumbnail": "shopify://shop_images/faaebc8854fdd720c8edf0c77752d9954aba1ed2.jpg",
+            "video": "shopify://files/videos/copy_6A66EABF-0681-4B8E-9494-C926AC6DC8E6.mp4"
+          }
+        },
+        "video_block_HwpFWe": {
+          "type": "video_block",
+          "settings": {
+            "thumbnail": "shopify://shop_images/86f4dd2f04d0ae0916d4f39ae7b2b5a2f61024ab.jpg",
+            "video": "shopify://files/videos/copy_6A66EABF-0681-4B8E-9494-C926AC6DC8E6.mp4"
+          }
+        },
+        "video_block_m9HXCQ": {
+          "type": "video_block",
+          "settings": {
+            "thumbnail": "shopify://shop_images/b478dfa9a8f141ba705a716f0d947772da9155b6.jpg",
+            "video": "shopify://files/videos/copy_6A66EABF-0681-4B8E-9494-C926AC6DC8E6.mp4"
+          }
+        },
+        "video_block_hhec7M": {
+          "type": "video_block",
+          "settings": {
+            "thumbnail": "shopify://shop_images/6d7565a8f9a013a827c3e82bb2ac6939dec3e490.jpg",
+            "video": "shopify://files/videos/copy_6A66EABF-0681-4B8E-9494-C926AC6DC8E6.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_block_nfbeNd",
+        "video_block_HwpFWe",
+        "video_block_m9HXCQ",
+        "video_block_hhec7M"
+      ],
+      "name": "Customer Review",
+      "settings": {
+        "title": "Customer Reviews"
       }
     }
   },
@@ -449,6 +493,7 @@
     "catering_menus_jAJDna",
     "scratch_compare_UmdFMq",
     "multirow_MVNXdj",
-    "image_gallery_iRVprC"
+    "image_gallery_iRVprC",
+    "customer_review_t9aMgK"
   ]
 }
