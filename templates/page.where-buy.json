@@ -300,6 +300,52 @@
       ],
       "name": "Testimonials Section",
       "settings": {}
+    },
+    "instagram_jmrqy7": {
+      "type": "instagram",
+      "blocks": {
+        "image_crQKQT": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/9d39fa496b57d4fca0bb3567e71ec167cb9b5e3e.png"
+          }
+        },
+        "image_VrdpPR": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/d180fd74cd45c94c2fec56322c8fd02b060d461d.png"
+          }
+        },
+        "image_nNJGhF": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/6209fcc0fca9f5a9feb418a74aded785c437d913.png"
+          }
+        },
+        "image_N7hx9C": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/58abfac2132b13bd7e1b11985c9fefce4de53ee7.png"
+          }
+        },
+        "image_hTdAJy": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/47149e3434de020109bbf39d6e0fc978747a0098.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_crQKQT",
+        "image_VrdpPR",
+        "image_nNJGhF",
+        "image_N7hx9C",
+        "image_hTdAJy"
+      ],
+      "name": "Instagram Section",
+      "settings": {
+        "title": "Follow us on Instagram"
+      }
     }
   },
   "order": [
@@ -308,6 +354,7 @@
     "image_text_bnner_WBqg9D",
     "image_gallery_idwQAr",
     "all_links_PYjTk8",
-    "testimonials_m6Y47n"
+    "testimonials_m6Y47n",
+    "instagram_jmrqy7"
   ]
 }
