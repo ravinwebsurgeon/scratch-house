@@ -562,6 +562,52 @@
       "settings": {
         "title": "Scratch House’s Epic recipes"
       }
+    },
+    "instagram_DyK7Yr": {
+      "type": "instagram",
+      "blocks": {
+        "image_wqwzd9": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/9d39fa496b57d4fca0bb3567e71ec167cb9b5e3e.png"
+          }
+        },
+        "image_m9GiJf": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/d180fd74cd45c94c2fec56322c8fd02b060d461d.png"
+          }
+        },
+        "image_jgW8gw": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/6209fcc0fca9f5a9feb418a74aded785c437d913.png"
+          }
+        },
+        "image_cCeN7L": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/58abfac2132b13bd7e1b11985c9fefce4de53ee7.png"
+          }
+        },
+        "image_gV339E": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/47149e3434de020109bbf39d6e0fc978747a0098.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_wqwzd9",
+        "image_m9GiJf",
+        "image_jgW8gw",
+        "image_cCeN7L",
+        "image_gV339E"
+      ],
+      "name": "Instagram Section",
+      "settings": {
+        "title": "Follow us on Instagram"
+      }
     }
   },
   "order": [
@@ -572,6 +618,7 @@
     "multirow_MVNXdj",
     "image_gallery_iRVprC",
     "customer_review_t9aMgK",
-    "recipes_product_Ezy8PM"
+    "recipes_product_Ezy8PM",
+    "instagram_DyK7Yr"
   ]
 }
