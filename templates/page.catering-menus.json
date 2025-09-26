@@ -486,83 +486,6 @@
         "title": "Customer Reviews"
       }
     },
-    "recipes_product_Ezy8PM": {
-      "type": "recipes-product",
-      "blocks": {
-        "recipe_block_BbUBYM": {
-          "type": "recipe_block",
-          "settings": {
-            "image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg",
-            "title": "Easter Brunch Recipe: Vegan Mini Quiches",
-            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
-            "button_label": "READ MORE",
-            "button_link": "#"
-          }
-        },
-        "recipe_block_mcQdBT": {
-          "type": "recipe_block",
-          "settings": {
-            "image": "shopify://shop_images/7fb2e21e41d7a8ddac31e97c1a516629976bf0f7.jpg",
-            "title": "Easter Brunch Recipe: Vegan Mini Quiches",
-            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
-            "button_label": "READ MORE",
-            "button_link": "#"
-          }
-        },
-        "recipe_block_dc7jmr": {
-          "type": "recipe_block",
-          "settings": {
-            "image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg",
-            "title": "Easter Brunch Recipe: Vegan Mini Quiches",
-            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
-            "button_label": "READ MORE",
-            "button_link": "#"
-          }
-        },
-        "recipe_block_PFTrPg": {
-          "type": "recipe_block",
-          "settings": {
-            "image": "shopify://shop_images/7fb2e21e41d7a8ddac31e97c1a516629976bf0f7.jpg",
-            "title": "Easter Brunch Recipe: Vegan Mini Quiches",
-            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
-            "button_label": "READ MORE",
-            "button_link": "#"
-          }
-        },
-        "recipe_block_pEyVtG": {
-          "type": "recipe_block",
-          "settings": {
-            "image": "shopify://shop_images/1473fdb526c3edda476a6cb481460ad1294ed8c4.jpg",
-            "title": "Easter Brunch Recipe: Vegan Mini Quiches",
-            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
-            "button_label": "READ MORE",
-            "button_link": "#"
-          }
-        },
-        "recipe_block_KwEEUW": {
-          "type": "recipe_block",
-          "settings": {
-            "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg",
-            "title": "Easter Brunch Recipe: Vegan Mini Quiches",
-            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
-            "button_label": "READ MORE",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "recipe_block_BbUBYM",
-        "recipe_block_mcQdBT",
-        "recipe_block_dc7jmr",
-        "recipe_block_PFTrPg",
-        "recipe_block_pEyVtG",
-        "recipe_block_KwEEUW"
-      ],
-      "name": "Recipe Product",
-      "settings": {
-        "title": "Scratch House’s Epic recipes"
-      }
-    },
     "instagram_DyK7Yr": {
       "type": "instagram",
       "blocks": {
@@ -618,7 +541,6 @@
     "multirow_MVNXdj",
     "image_gallery_iRVprC",
     "customer_review_t9aMgK",
-    "recipes_product_Ezy8PM",
     "instagram_DyK7Yr"
   ]
 }
