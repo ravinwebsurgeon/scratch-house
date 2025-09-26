@@ -20,7 +20,7 @@
     }
   }
 {%- endstyle -%}
-<div class="ents-contact-sec">
+<div class="ents-contact-sec color-{{ section.settings.color_scheme }} gradient">
 <div class="page-width">
 <div class="evet-coll">
     
@@ -28,7 +28,7 @@
 <img src="{{ section.settings.img | img_url:" " }}">
         </div>
         <div class="co-ev">
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="wraps">
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
     {%- if section.settings.heading != blank -%}
       <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
