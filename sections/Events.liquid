@@ -160,7 +160,7 @@ section.next-events .page-width {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 32%);
   justify-content: space-between;
 }
 .next-events .event-date {
@@ -214,19 +214,5 @@ section.next-events .page-width {
   font-size: 14px;
   color: #b00;
   font-style: italic;
-}
-@media (max-width: 992px) {
-  .event-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .event-content {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-  .event-action { 
-    margin-top: 10px; 
-  }
 }
 </style>
