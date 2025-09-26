@@ -293,6 +293,7 @@
       ],
       "name": "Custom Cooking",
       "settings": {
+        "main-hed": "COOKING CLASSES",
         "content_alignment": "center"
       }
     }
