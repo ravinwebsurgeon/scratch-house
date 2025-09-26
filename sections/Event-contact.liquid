@@ -2,62 +2,60 @@
 
 {%- style -%}
 
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  .ents-contact-sec .page-width{
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 0;
-  }
-  .ents-contact-sec .evet-coll {
-    width: 100%;
-    gap: 0;
+.section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
 }
-
+.ents-contact-sec .page-width{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 0;
+}
+.ents-contact-sec .evet-coll {
+  width: 100%;
+  gap: 0;
+}
 .ents-contact-sec .evet-coll .ev-img {
-    width: 48%;
+  width: 48%;
 }
-
 .ents-contact-sec .evet-coll .ev-img img {
-    width: 100%;
-    display: block;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 .ents-contact-sec .title {
-    font-family: Oswald;
-    font-weight: 700;
-    font-size: 44px;
-    text-transform: uppercase;
-    margin: 0 0 35px;
-    color: #000000;
-    line-height: 1.1;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 44px;
+  text-transform: uppercase;
+  margin: 0 0 35px;
+  color: #000000;
+  line-height: 1.1;
 }
 .ents-contact-sec .contact__button .button {
-    transition: background .3s;
-    background-color: #f76e2a;
-    border-radius: 0;
-    padding: 12px 30px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-decoration: none;
-    font-family: Oswald;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: normal;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
+  transition: background .3s;
+  background-color: #f76e2a;
+  border-radius: 0;
+  padding: 12px 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 .ents-contact-wraps .field .field__input {
-    border-radius: 0;
-    height: auto;
-    padding: 14px 11px;
+  border-radius: 0;
+  height: auto;
+  padding: 14px 11px;
+  font-family: Oswald;
 }
 .ents-contact-sec .contact__button .button:after,.ents-contact-sec .contact__button .button:before{
   display:none;
@@ -69,23 +67,23 @@
   margin-top:2rem;
 }
 .ents-contact-sec .imgt {
-    font-family: Oswald;
-    font-weight: 700;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin: 20px 0;
-    color: #000000;
-    line-height: 1.1;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: #000000;
+  line-height: 1.1;
+}
+.ents-contact-sec .evet-coll .co-ev {
+  width: 52%;
+  padding: 25px 8%;
+  background-color:rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
 
-.ents-contact-sec .evet-coll .co-ev {
-    width: 52%;
-    padding: 25px 8%;
-    background-color:rgb(238, 238, 238);
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-}
 @media(max-width:1199px){
   .ents-contact-sec .evet-coll .co-ev {
     padding: 25px 4%;
@@ -104,21 +102,22 @@
   }
 }
 
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+}
+
 {%- endstyle -%}
+
 <div class="ents-contact-sec color-{{ section.settings.color_scheme }} gradient">
-<div class="page-width">
-<div class="evet-coll">
+  <div class="page-width">
+  <div class="evet-coll">
     
     <div class="ev-img">
-<img src="{{ section.settings.img | img_url:" " }}">
-        </div>
+      <img src="{{ section.settings.img | img_url:" " }}" width="" height="">
+    </div>
         <div class="co-ev">
 <div class="ents-contact-wraps">
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
