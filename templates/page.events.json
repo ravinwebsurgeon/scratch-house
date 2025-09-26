@@ -143,62 +143,6 @@
         "link": ""
       }
     },
-    "multicolumn_fwafVD": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_NDDfzm": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/pp.avif",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_qRzEyg": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/7fb2e21e41d7a8ddac31e97c1a516629976bf0f7.jpg",
-            "title": "STAY TUNED FOR OUR NEXT COOKING CLASS!",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_bMniXd": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p><strong>Join our founder Chef Tony Howe for a night chatting all things cheese. Included topics will be the history with Scratch House, the basics of making your own fermented nut cheeses, recipe testing & more.</strong></p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_NDDfzm",
-        "column_qRzEyg",
-        "column_bMniXd"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "COOKING CLASSES",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "custom_cooking_xitWYG": {
       "type": "custom-cooking",
       "blocks": {
@@ -303,7 +247,6 @@
     "restaurant_zeBdVr",
     "events_VE9hpB",
     "portfolio_gallery_E8WQ9n",
-    "multicolumn_fwafVD",
     "custom_cooking_xitWYG",
     "event_contact_E3BVUz",
     "instagram_Xdh6dT"
