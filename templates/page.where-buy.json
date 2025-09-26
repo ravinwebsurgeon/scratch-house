@@ -138,6 +138,20 @@
             "image": "shopify://shop_images/homemade-baked-porchetta-rolls-with-several-herbs-pepper-garlic.jpg",
             "alt_text": ""
           }
+        },
+        "image_tzXz6M": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/side-view-caesar-salad-with-chicken-sauces_1.jpg",
+            "alt_text": ""
+          }
+        },
+        "image_YUCnwi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pp.avif",
+            "alt_text": ""
+          }
         }
       },
       "block_order": [
@@ -150,7 +164,9 @@
         "image_dXH8He",
         "image_dRJ4VU",
         "image_tQK9jV",
-        "image_btQ6Dc"
+        "image_btQ6Dc",
+        "image_tzXz6M",
+        "image_YUCnwi"
       ],
       "name": "Expanding Image Gallery",
       "settings": {
