@@ -13,13 +13,7 @@
       "id": "subtext",
       "label": "Intro Text",
       "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-    },
-   {
-"type": "image_picker",
-"id": "mm",
-"label": "Image"
-}
-   
+    }
   ],
   "blocks": [
     {
@@ -43,7 +37,8 @@
             { "value": "label", "label": "Text Label" }
           ]
         },
-        { "type": "url", "id": "badge_link", "label": "Badge Link" }
+        { "type": "url", "id": "badge_link", "label": "Badge Link" },
+        { "type": "image_picker", "id": "event_image", "label": "Event Image" }
       ]
     }
   ],
@@ -63,85 +58,58 @@
 
 <section class="next-events">
   <div class="page-width">
-    <header class="events-header">
-      <div class="no-m">
-        <div class="left-h">
-        <h2>{{ section.settings.heading }}</h2>
-        <p class="events-intro">{{ section.settings.subtext }}</p>
-      </div>
-      <div class="ryt-tx">
-   <img src="{{  section.settings.mm | img_url:"medium" }}">
-        </div>
-
-      </div>
-     
-    </header>
+    <h2>{{ section.settings.heading }}</h2>
+    <p class="events-intro">{{ section.settings.subtext }}</p>
 
     <div class="events-list">
       {% for block in section.blocks %}
-        <div class="event-row">
-          <div class="event-date">
-            <span class="day">{{ block.settings.day }}</span>
-            <span class="month">{{ block.settings.month }},</span>
-            <span class="year">{{ block.settings.year }}</span>
-          </div>
-          <div class="event-info">
-            <h3 class="title">{{ block.settings.title }}</h3>
-            <p class="location">📍 {{ block.settings.location }}</p>
-            <p class="time">📍{{ block.settings.time }}</p>
-          </div>
-          <div class="event-action">
-            {% if block.settings.badge_text != blank %}
-              {% if block.settings.badge_style == "button" %}
-                <a href="{{ block.settings.badge_link }}" class="badge-button">{{ block.settings.badge_text }}</a>
-              {% else %}
-                <span class="badge-label">{{ block.settings.badge_text }}</span>
-              {% endif %}
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
+  {% assign is_even = forloop.index0 | modulo: 2 %}
+  <div class="event-row {% if is_even == 0 %}odd{% else %}even{% endif %}">
+    {% if block.settings.event_image %}
+      <div class="event-image">
+        <img src="{{ block.settings.event_image | img_url: 'medium' }}" alt="{{ block.settings.title }}">
+      </div>
+    {% endif %}
+
+    <div class="event-date">
+      <span class="day">{{ block.settings.day }}</span>
+      <span class="month">{{ block.settings.month }},</span>
+      <span class="year">{{ block.settings.year }}</span>
+    </div>
+
+    <div class="event-info">
+      <h3 class="title">{{ block.settings.title }}</h3>
+      <p class="location">📍 {{ block.settings.location }}</p>
+      <p class="time">⏰ {{ block.settings.time }}</p>
+    </div>
+
+    <div class="event-action">
+      {% if block.settings.badge_text != blank %}
+        {% if block.settings.badge_style == "button" %}
+          <a href="{{ block.settings.badge_link }}" class="badge-button">{{ block.settings.badge_text }}</a>
+        {% else %}
+          <span class="badge-label">{{ block.settings.badge_text }}</span>
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+
+
     </div>
   </div>
 </section>
 
 <style>
-  .evet-coll {
-    display: flex;
-    gap: 63px;
-}
 .next-events {
-  padding: 60px 0;
   font-family: "Georgia", serif;
   color: #111;
-}
-.no-m {
-    display: flex;
-}
-.events-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  border-bottom: 1px solid #000;
-  margin-bottom: 30px;
-}
-.events-label {
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #666;
-  margin-bottom: 6px;
+  padding: 60px 0;
 }
 .events-intro {
-  max-width: 400px;
-  font-size: 15px;
-  color: #444;
-}
-.view-all {
-  text-decoration: none;
-  font-size: 14px;
-  color: #111;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
 }
 .events-list {
   display: flex;
@@ -149,25 +117,39 @@
   gap: 20px;
 }
 .event-row {
-  display: grid;
-  grid-template-columns: 80px 1fr auto;
+  display: flex;
   align-items: center;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 20px 0;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: transform 0.3s, background 0.3s;
+}
+.event-row:hover {
+  transform: translateY(-5px);
+  background: #eee;
+}
+.event-row.even {
+  flex-direction: row-reverse;
+}
+.event-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .event-date {
   text-align: center;
   font-size: 14px;
-  line-height: 1.3;
+  min-width: 80px;
 }
 .event-date .day {
-  display: block;
   font-size: 34px;
   font-weight: bold;
 }
 .event-info .title {
   font-size: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 .event-info .location,
 .event-info .time {
@@ -175,8 +157,11 @@
   color: #555;
   margin: 2px 0;
 }
+.event-action {
+  margin-left: auto;
+}
 .badge-button {
-  background: #111;
+  background: #b00;
   color: #fff;
   padding: 8px 16px;
   border-radius: 30px;
@@ -184,17 +169,18 @@
   font-size: 14px;
   transition: background 0.3s;
 }
-.badge-button:hover { background: #333; }
+.badge-button:hover { background: #800; }
 .badge-label {
   font-size: 14px;
-  color: #b66;
+  color: #b00;
   font-style: italic;
 }
-@media (max-width: 768px) {
-  .event-row {
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: auto auto;
+@media (max-width: 992px) {
+  .event-row, .event-row.even {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .event-action { margin-top: 10px; }
+  .event-action { margin-left: 0; margin-top: 10px; }
+  .event-image img { width: 100%; max-width: 100%; margin-bottom: 10px; }
 }
 </style>
