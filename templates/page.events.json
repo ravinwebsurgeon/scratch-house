@@ -211,6 +211,52 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "instagram_Xdh6dT": {
+      "type": "instagram",
+      "blocks": {
+        "image_jnMgVh": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/9d39fa496b57d4fca0bb3567e71ec167cb9b5e3e.png"
+          }
+        },
+        "image_k6GWaB": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/d180fd74cd45c94c2fec56322c8fd02b060d461d.png"
+          }
+        },
+        "image_mAARnD": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/6209fcc0fca9f5a9feb418a74aded785c437d913.png"
+          }
+        },
+        "image_69YyLx": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/58abfac2132b13bd7e1b11985c9fefce4de53ee7.png"
+          }
+        },
+        "image_UXq7ra": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/47149e3434de020109bbf39d6e0fc978747a0098.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_jnMgVh",
+        "image_k6GWaB",
+        "image_mAARnD",
+        "image_69YyLx",
+        "image_UXq7ra"
+      ],
+      "name": "Instagram Section",
+      "settings": {
+        "title": "Follow us on Instagram"
+      }
     }
   },
   "order": [
@@ -219,6 +265,7 @@
     "events_VE9hpB",
     "portfolio_gallery_E8WQ9n",
     "multicolumn_fwafVD",
-    "event_contact_E3BVUz"
+    "event_contact_E3BVUz",
+    "instagram_Xdh6dT"
   ]
 }
