@@ -1,8 +1,14 @@
 <section class="three-col-section {{ section.settings.content_alignment }}">
-  <div class="container">
-    {% if section.settings.main-hed != blank %}
-      <h2 class="mid-heading">{{ section.settings.main-hed }}</h2>
-    {% endif %}
+  <div class="container">    
+    <div class="all-links-header">
+      <div class="line-title">
+        <hr>    
+        {% if section.settings.main-hed != blank %}
+            <h2 class="all-links-title">{{ section.settings.main-hed }}</h2>
+        {% endif %}
+        <hr>
+      </div>  
+    </div>
 
     <div class="three-col-grid">
       {% for block in section.blocks %}
