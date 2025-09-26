@@ -160,7 +160,7 @@
           "settings": {
             "heading": "STAY TUNED FOR OUR NEXT COOKING CLASS!",
             "text": "<p>Join our founder Chef Tony Howe for a night chatting all things cheese. Included topics will be the history with Scratch House, the basics of making your own fermented nut cheeses, recipe testing & more.</p>",
-            "show_button": true,
+            "show_button": false,
             "button_text": "sdccx",
             "button_link": "#"
           }
