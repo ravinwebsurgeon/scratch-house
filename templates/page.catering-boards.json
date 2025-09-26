@@ -275,101 +275,6 @@
         "padding_bottom": 0
       }
     },
-    "gallery_section_L48MEA": {
-      "type": "gallery-section",
-      "blocks": {
-        "image_gEfTAt": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_4291.png"
-          }
-        },
-        "image_PFif83": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg"
-          }
-        },
-        "image_9DyBFd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/d180fd74cd45c94c2fec56322c8fd02b060d461d.png"
-          }
-        },
-        "image_9wjHeJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg"
-          }
-        },
-        "image_zWkJic": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1473fdb526c3edda476a6cb481460ad1294ed8c4.jpg"
-          }
-        },
-        "image_bfVqNq": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_4293.png"
-          }
-        },
-        "image_E3NTHB": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/pp.avif"
-          }
-        },
-        "image_mLBPKd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/side-view-caesar-salad-with-chicken-sauces_1.jpg"
-          }
-        },
-        "image_rQGgjy": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/homemade-baked-porchetta-rolls-with-several-herbs-pepper-garlic.jpg"
-          }
-        },
-        "image_rcNiLQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/flat-lay-delicious-brazilian-food-composition.jpg"
-          }
-        },
-        "image_PP883i": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/flat-lay-mexican-food.jpg"
-          }
-        },
-        "image_XEMUgj": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/penne-pasta-with-tomato-sauce-beef-grated-cheese.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_gEfTAt",
-        "image_PFif83",
-        "image_9DyBFd",
-        "image_9wjHeJ",
-        "image_zWkJic",
-        "image_bfVqNq",
-        "image_E3NTHB",
-        "image_mLBPKd",
-        "image_rQGgjy",
-        "image_rcNiLQ",
-        "image_PP883i",
-        "image_XEMUgj"
-      ],
-      "name": "Gallery Section",
-      "settings": {
-        "heading": "Our Gallery"
-      }
-    },
     "image_gallery_bA7JT4": {
       "type": "Image-Gallery",
       "blocks": {
@@ -485,7 +390,6 @@
     "testimonials_6P8pnx",
     "events_a6Qap3",
     "image_with_text_VE8XNQ",
-    "gallery_section_L48MEA",
     "image_gallery_bA7JT4"
   ]
 }
