@@ -62,11 +62,11 @@
 
     <div class="events-list">
       {% for block in section.blocks %}
-  {% assign is_even = forloop.index0 | modulo: 2 %}
+     {% assign is_even = forloop.index0 | modulo: 2 %}
   <div class="event-row {% if is_even == 1 %}even-row{% endif %}">
     {% if block.settings.event_image %}
     <div class="event-image">
-      <img src="{{ block.settings.event_image | img_url: 'medium' }}" alt="{{ block.settings.title }}">
+      <img src="{{ block.settings.event_image | img_url: 'medium' }}" alt="{{ block.settings.title }}" width="" height="">
     </div>
     {% endif %}
 
