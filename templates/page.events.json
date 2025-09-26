@@ -257,6 +257,44 @@
       "settings": {
         "title": "Follow us on Instagram"
       }
+    },
+    "custom_cooking_xitWYG": {
+      "type": "custom-cooking",
+      "blocks": {
+        "image_block_Dkar4k": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/7fb2e21e41d7a8ddac31e97c1a516629976bf0f7.jpg",
+            "alt": "Image"
+          }
+        },
+        "text_block_3aHFUh": {
+          "type": "text_block",
+          "settings": {
+            "heading": "sdsdd",
+            "text": "<p>Write your content here.</p>",
+            "show_button": false,
+            "button_text": "Learn more",
+            "button_link": ""
+          }
+        },
+        "image_block_kVF3DJ": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/flat-lay-delicious-brazilian-food-composition.jpg",
+            "alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_Dkar4k",
+        "text_block_3aHFUh",
+        "image_block_kVF3DJ"
+      ],
+      "name": "Custom Cooking",
+      "settings": {
+        "content_alignment": "center"
+      }
     }
   },
   "order": [
@@ -266,6 +304,7 @@
     "portfolio_gallery_E8WQ9n",
     "multicolumn_fwafVD",
     "event_contact_E3BVUz",
-    "instagram_Xdh6dT"
+    "instagram_Xdh6dT",
+    "custom_cooking_xitWYG"
   ]
 }
