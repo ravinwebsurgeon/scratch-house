@@ -2,16 +2,11 @@
   <div class="container">
     <div class="three-col-grid">
       {% for block in section.blocks %}
-        <div class="three-box">
-          
+        <div class="three-box">          
           {% if block.type == 'image_block' %}
             {% if block.settings.image %}
               <div class="image-wrap">
-                <img 
-                  src="{{ block.settings.image | img_url: '720x' }}" 
-                  alt="{{ block.settings.alt | escape }}" 
-                  loading="lazy" 
-                />
+                <img src="{{ block.settings.image | img_url: '720x' }}" alt="{{ block.settings.alt | escape }}" loading="lazy" width="" height="">
               </div>
             {% endif %}
           {% elsif block.type == 'text_block' %}
