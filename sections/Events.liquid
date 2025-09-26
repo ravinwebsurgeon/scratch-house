@@ -63,38 +63,40 @@
 
     <div class="events-list">
       {% for block in section.blocks %}
-      <div class="event-row">
-        {% if block.settings.event_image %}
-        <div class="event-image">
-          <img src="{{ block.settings.event_image | img_url: 'medium' }}" alt="{{ block.settings.title }}">
-        </div>
-        {% endif %}
+  {% assign is_even = forloop.index0 | modulo: 2 %}
+  <div class="event-row {% if is_even == 1 %}even-row{% endif %}">
+    {% if block.settings.event_image %}
+    <div class="event-image">
+      <img src="{{ block.settings.event_image | img_url: 'medium' }}" alt="{{ block.settings.title }}">
+    </div>
+    {% endif %}
 
-        <div class="event-content">
-          <div class="event-date">
-            <span class="day">{{ block.settings.day }}</span>
-            <span class="month">{{ block.settings.month }},</span>
-            <span class="year">{{ block.settings.year }}</span>
-          </div>
-
-          <div class="event-info">
-            <h3 class="title">{{ block.settings.title }}</h3>
-            <p class="location">📍 {{ block.settings.location }}</p>
-            <p class="time">⏰ {{ block.settings.time }}</p>
-          </div>
-
-          <div class="event-action">
-            {% if block.settings.badge_text != blank %}
-              {% if block.settings.badge_style == "button" %}
-                <a href="{{ block.settings.badge_link }}" class="badge-button">{{ block.settings.badge_text }}</a>
-              {% else %}
-                <span class="badge-label">{{ block.settings.badge_text }}</span>
-              {% endif %}
-            {% endif %}
-          </div>
-        </div>
+    <div class="event-content">
+      <div class="event-date">
+        <span class="day">{{ block.settings.day }}</span>
+        <span class="month">{{ block.settings.month }},</span>
+        <span class="year">{{ block.settings.year }}</span>
       </div>
-      {% endfor %}
+
+      <div class="event-info">
+        <h3 class="title">{{ block.settings.title }}</h3>
+        <p class="location">📍 {{ block.settings.location }}</p>
+        <p class="time">⏰ {{ block.settings.time }}</p>
+      </div>
+
+      <div class="event-action">
+        {% if block.settings.badge_text != blank %}
+          {% if block.settings.badge_style == "button" %}
+            <a href="{{ block.settings.badge_link }}" class="badge-button">{{ block.settings.badge_text }}</a>
+          {% else %}
+            <span class="badge-label">{{ block.settings.badge_text }}</span>
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
     </div>
   </div>
 </section>
@@ -128,18 +130,24 @@
   transform: translateY(-5px);
   background: #eee;
 }
+/* Even rows: flip image and content */
+.event-row.even-row {
+  flex-direction: row-reverse;
+}
+.event-image,
+.event-content {
+  width: 50%;
+}
 .event-image img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 .event-content {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 .event-date {
   text-align: center;
@@ -182,19 +190,19 @@
   color: #b00;
   font-style: italic;
 }
+
+/* Responsive */
 @media (max-width: 992px) {
-  .event-row {
+  .event-row,
+  .event-row.even-row {
     flex-direction: column;
-    align-items: flex-start;
   }
+  .event-image,
   .event-content {
-    flex-direction: column;
-    align-items: flex-start;
     width: 100%;
   }
   .event-image img {
     width: 100%;
-    max-width: 100%;
     margin-bottom: 10px;
   }
   .event-action { margin-top: 10px; }
