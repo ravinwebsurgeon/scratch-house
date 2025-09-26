@@ -1,25 +1,34 @@
 <section class="three-col-section {{ section.settings.content_alignment }}">
   <div class="container">
-    {% if block.settings.main-hed != blank %}
-        <h2 class="mid-heading">{{ block.settings.main-hed }}</h2>
+    {% if section.settings.main-hed != blank %}
+      <h2 class="mid-heading">{{ section.settings.main-hed }}</h2>
     {% endif %}
+
     <div class="three-col-grid">
       {% for block in section.blocks %}
-        <div class="three-box">          
+        <div class="three-box">
+          
           {% if block.type == 'image_block' %}
             {% if block.settings.image %}
               <div class="image-wrap">
-                <img src="{{ block.settings.image | img_url: '720x' }}" alt="{{ block.settings.alt | escape }}" loading="lazy" width="" height="">
+                <img 
+                  src="{{ block.settings.image | img_url: '720x' }}" 
+                  alt="{{ block.settings.alt | escape }}" 
+                  loading="lazy" 
+                >
               </div>
             {% endif %}
+          
           {% elsif block.type == 'text_block' %}
             <div class="mid-inner">
               {% if block.settings.heading != blank %}
                 <h3 class="mid-heading">{{ block.settings.heading }}</h3>
               {% endif %}
+              
               {% if block.settings.text != blank %}
                 <div class="mid-text">{{ block.settings.text }}</div>
               {% endif %}
+              
               {% if block.settings.show_button and block.settings.button_text != blank %}
                 <a href="{{ block.settings.button_link }}" class="mid-button" role="button">
                   {{ block.settings.button_text }}
@@ -34,7 +43,7 @@
 
   <style>
     .three-col-section { padding: 60px 0; }
-    .three-col-section .container { max-width: 100%; margin: 0 auto; padding: 0 16px; }
+    .three-col-section .container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
     .three-col-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: center; }
     .three-box { display: flex; justify-content: center; align-items: center; text-align: center; }
     .three-col-grid .image-wrap img { width: 100%; max-width: 360px; border-radius: 8px; display: block; }
@@ -47,8 +56,6 @@
     .three-col-section.center .three-box { text-align: center; }
     .three-col-section.left .three-box { text-align: left; }
     .three-col-section.right .three-box { text-align: right; }
-
- 
   </style>
 </section>
 
@@ -57,10 +64,10 @@
   "name": "Custom Cooking",
   "settings": [
     {
-        "type": "text",
-        "id": "main-hed",
-        "label": "Heading",
-        "default": "Your heading here"
+      "type": "text",
+      "id": "main-hed",
+      "label": "Main Heading",
+      "default": "Your heading here"
     },
     {
       "type": "select",
@@ -141,4 +148,3 @@
   ]
 }
 {% endschema %}
-
