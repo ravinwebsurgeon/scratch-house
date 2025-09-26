@@ -51,7 +51,8 @@
             "time": "Unlimited",
             "badge_text": "Contact Us",
             "badge_style": "button",
-            "badge_link": ""
+            "badge_link": "",
+            "event_image": "shopify://shop_images/86f4dd2f04d0ae0916d4f39ae7b2b5a2f61024ab.jpg"
           }
         },
         "event_TiWcBW": {
@@ -65,7 +66,8 @@
             "time": "Limited",
             "badge_text": "Have a Look",
             "badge_style": "button",
-            "badge_link": ""
+            "badge_link": "",
+            "event_image": "shopify://shop_images/b478dfa9a8f141ba705a716f0d947772da9155b6.jpg"
           }
         },
         "event_Q3kVT3": {
@@ -79,7 +81,8 @@
             "time": "No Limit",
             "badge_text": "About Us",
             "badge_style": "button",
-            "badge_link": ""
+            "badge_link": "",
+            "event_image": "shopify://shop_images/b478dfa9a8f141ba705a716f0d947772da9155b6.jpg"
           }
         }
       },
@@ -91,8 +94,7 @@
       "name": "Next Events",
       "settings": {
         "heading": "Events",
-        "subtext": "All pick up catering orders are available at Scratch House Vegan Kitchen: 6309 University Ave, San DiegoAll displays include 3 to 5 cheeses and crackers/bread, plus seasonal accompianments such as nuts, pickles, fruit, and seasonal bruschetta. We can now offer gluten free, nut free, and other allergen free options.",
-        "mm": "shopify://shop_images/6d7565a8f9a013a827c3e82bb2ac6939dec3e490.jpg"
+        "subtext": "All pick up catering orders are available at Scratch House Vegan Kitchen: 6309 University Ave, San DiegoAll displays include 3 to 5 cheeses and crackers/bread, plus seasonal accompianments such as nuts, pickles, fruit, and seasonal bruschetta. We can now offer gluten free, nut free, and other allergen free options."
       }
     },
     "portfolio_gallery_E8WQ9n": {
