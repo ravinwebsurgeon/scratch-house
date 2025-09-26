@@ -143,60 +143,43 @@
         "link": ""
       }
     },
-    "multicolumn_fwafVD": {
-      "type": "multicolumn",
+    "custom_cooking_xitWYG": {
+      "type": "custom-cooking",
       "blocks": {
-        "column_NDDfzm": {
-          "type": "column",
+        "image_block_Dkar4k": {
+          "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/pp.avif",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/a397fa_a1b52abd75124140a5e6a6a03c23c1dc_mv2.avif",
+            "alt": "Image"
           }
         },
-        "column_qRzEyg": {
-          "type": "column",
+        "text_block_3aHFUh": {
+          "type": "text_block",
           "settings": {
-            "image": "shopify://shop_images/7fb2e21e41d7a8ddac31e97c1a516629976bf0f7.jpg",
-            "title": "STAY TUNED FOR OUR NEXT COOKING CLASS!",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "heading": "STAY TUNED FOR OUR NEXT COOKING CLASS!",
+            "text": "<p>Join our founder Chef Tony Howe for a night chatting all things cheese. Included topics will be the history with Scratch House, the basics of making your own fermented nut cheeses, recipe testing & more.</p>",
+            "show_button": false,
+            "button_text": "Learn more",
+            "button_link": ""
           }
         },
-        "column_bMniXd": {
-          "type": "column",
+        "image_block_kVF3DJ": {
+          "type": "image_block",
           "settings": {
-            "title": "",
-            "text": "<p><strong>Join our founder Chef Tony Howe for a night chatting all things cheese. Included topics will be the history with Scratch House, the basics of making your own fermented nut cheeses, recipe testing & more.</strong></p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/b478dfa9a8f141ba705a716f0d947772da9155b6.jpg",
+            "alt": "Image"
           }
         }
       },
       "block_order": [
-        "column_NDDfzm",
-        "column_qRzEyg",
-        "column_bMniXd"
+        "image_block_Dkar4k",
+        "text_block_3aHFUh",
+        "image_block_kVF3DJ"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "Custom Cooking",
       "settings": {
-        "title": "COOKING CLASSES",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "main-hed": "COOKING CLASSES",
+        "content_alignment": "center"
       }
     },
     "event_contact_E3BVUz": {
@@ -257,45 +240,6 @@
       "settings": {
         "title": "Follow us on Instagram"
       }
-    },
-    "custom_cooking_xitWYG": {
-      "type": "custom-cooking",
-      "blocks": {
-        "image_block_Dkar4k": {
-          "type": "image_block",
-          "settings": {
-            "image": "shopify://shop_images/a397fa_a1b52abd75124140a5e6a6a03c23c1dc_mv2.avif",
-            "alt": "Image"
-          }
-        },
-        "text_block_3aHFUh": {
-          "type": "text_block",
-          "settings": {
-            "heading": "STAY TUNED FOR OUR NEXT COOKING CLASS!",
-            "text": "<p>Join our founder Chef Tony Howe for a night chatting all things cheese. Included topics will be the history with Scratch House, the basics of making your own fermented nut cheeses, recipe testing & more.</p>",
-            "show_button": false,
-            "button_text": "Learn more",
-            "button_link": ""
-          }
-        },
-        "image_block_kVF3DJ": {
-          "type": "image_block",
-          "settings": {
-            "image": "shopify://shop_images/b478dfa9a8f141ba705a716f0d947772da9155b6.jpg",
-            "alt": "Image"
-          }
-        }
-      },
-      "block_order": [
-        "image_block_Dkar4k",
-        "text_block_3aHFUh",
-        "image_block_kVF3DJ"
-      ],
-      "name": "Custom Cooking",
-      "settings": {
-        "main-hed": "COOKING CLASSES",
-        "content_alignment": "center"
-      }
     }
   },
   "order": [
@@ -303,9 +247,8 @@
     "restaurant_zeBdVr",
     "events_VE9hpB",
     "portfolio_gallery_E8WQ9n",
-    "multicolumn_fwafVD",
+    "custom_cooking_xitWYG",
     "event_contact_E3BVUz",
-    "instagram_Xdh6dT",
-    "custom_cooking_xitWYG"
+    "instagram_Xdh6dT"
   ]
 }
