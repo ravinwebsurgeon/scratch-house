@@ -1,5 +1,8 @@
 <section class="three-col-section {{ section.settings.content_alignment }}">
   <div class="container">
+    {% if block.settings.heading != blank %}
+        <h2 class="mid-heading">{{ block.settings.heading }}</h2>
+    {% endif %}
     <div class="three-col-grid">
       {% for block in section.blocks %}
         <div class="three-box">          
@@ -12,7 +15,7 @@
           {% elsif block.type == 'text_block' %}
             <div class="mid-inner">
               {% if block.settings.heading != blank %}
-                <h2 class="mid-heading">{{ block.settings.heading }}</h2>
+                <h3 class="mid-heading">{{ block.settings.heading }}</h3>
               {% endif %}
               {% if block.settings.text != blank %}
                 <div class="mid-text">{{ block.settings.text }}</div>
@@ -24,7 +27,6 @@
               {% endif %}
             </div>
           {% endif %}
-
         </div>
       {% endfor %}
     </div>
