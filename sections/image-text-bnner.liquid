@@ -1,4 +1,4 @@
-<div class="custom-banner-section">
+<div class="custom-banner-section {{ section.settings.custom_class }}">
   <div class="custom-banner-wrapper">
     <div class="custom-banner-text" data-aos="fade-up">
       <h2>{{ section.settings.heading }}</h2>
@@ -25,6 +25,11 @@
 {
   "name": "Image-Text-Banner",
   "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
     {
       "type": "image_picker",
       "id": "image",
