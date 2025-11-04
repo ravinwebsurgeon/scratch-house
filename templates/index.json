@@ -275,9 +275,9 @@
       "type": "combo-board",
       "name": "Combo Board Section",
       "settings": {
-        "title": "Best Seller Combo boards",
+        "title": "Best Seller Combo's",
         "heading": "Best Sellers",
-        "subheading": "Can't-go-wrong favorites & Shark Tank features.",
+        "subheading": "Can't-go-wrong favorites & Chef's Selections",
         "button_label": "SHOP NOW",
         "button_link": "#",
         "image": "shopify://shop_images/Rectangle_4283.png"
@@ -404,7 +404,7 @@
           "settings": {
             "feature": "hormone-free",
             "scratch": "right",
-            "other_plant": "wrong"
+            "other_plant": "right"
           }
         },
         "meat_item_gGzchc": {
@@ -444,7 +444,7 @@
       ],
       "name": "Scratch Compare",
       "settings": {
-        "title": "How does scratch compare?"
+        "title": "How does scratch house compare?"
       }
     },
     "customer_review_xwiMKH": {
