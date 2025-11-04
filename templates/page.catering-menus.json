@@ -17,168 +17,13 @@
         "padding_bottom": 28
       }
     },
-    "image_text_bnner_FG9gKP": {
-      "type": "image-text-bnner",
-      "name": "Image-Text-Banner",
-      "settings": {
-        "image": "shopify://shop_images/b478dfa9a8f141ba705a716f0d947772da9155b6.jpg",
-        "heading": "CATERING MENUS",
-        "subtext": "",
-        "button_label": "Shop Now",
-        "button_link": "shopify://collections/all"
-      }
-    },
-    "catering_menus_jAJDna": {
-      "type": "catering-menus",
-      "blocks": {
-        "link_block_9MmNtg": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/side-view-caesar-salad-with-chicken-sauces_1.jpg",
-            "block_title": "Hors D'oeuvres",
-            "block_desc": "View Menu",
-            "block_link": "https://www.scratchhousevegan.com/_files/ugd/a397fa_aece14385d894b1fa7e2d247528e9c76.pdf"
-          }
-        },
-        "link_block_EX8DB6": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/homemade-baked-porchetta-rolls-with-several-herbs-pepper-garlic.jpg",
-            "block_title": "Easter",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/IMG_3139.pdf?v=1758196535"
-          }
-        },
-        "link_block_dH6NtP": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/flat-lay-delicious-brazilian-food-composition.jpg",
-            "block_title": "LATIN AMERICA",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part4.pdf?v=1758197495"
-          }
-        },
-        "link_block_pFz3TY": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/flat-lay-mexican-food.jpg",
-            "block_title": "TACO BAR",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part3.pdf?v=1758196627"
-          }
-        },
-        "link_block_GAFicr": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/penne-pasta-with-tomato-sauce-beef-grated-cheese.jpg",
-            "block_title": "ITALIAN",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part5.pdf?v=1758196693"
-          }
-        },
-        "link_block_gamhdE": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/top-view-delicious-healthy-breakfast.jpg",
-            "block_title": "Hawaiian",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part6.pdf?v=1758196769"
-          }
-        },
-        "link_block_mKHXMy": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/2147840958.jpg",
-            "block_title": "Southern BBQ",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part7.pdf?v=1758196831"
-          }
-        },
-        "link_block_zLcfjF": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/3827.jpg",
-            "block_title": "THAI",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part8.pdf?v=1758196890"
-          }
-        },
-        "link_block_G3XQ4U": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/2148123694.jpg",
-            "block_title": "Chinese",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part9.pdf?v=1758196935"
-          }
-        },
-        "link_block_gcbPBL": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/top-view-delicious-mexican-food-ready-be-served.jpg",
-            "block_title": "Caribbean",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part10.pdf?v=1758197605"
-          }
-        },
-        "link_block_JQrbpn": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/2148759733.jpg",
-            "block_title": "Mediterranean",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Part11_1.pdf?v=1758197182"
-          }
-        },
-        "link_block_VxGiVm": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/5665f01c496b91ea8031bb6143c2c784a3cdfe35.jpg",
-            "block_title": "Breakfast",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Catering_Menus.pdf?v=1758197258"
-          }
-        },
-        "link_block_PAkcXN": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/Rectangle4248.png",
-            "block_title": "Brunch",
-            "block_desc": "View Menu",
-            "block_link": "https://cdn.shopify.com/s/files/1/0774/9376/4347/files/Scratch_House_Catering_Menus_1.pdf?v=1758197384"
-          }
-        }
-      },
-      "block_order": [
-        "link_block_9MmNtg",
-        "link_block_EX8DB6",
-        "link_block_dH6NtP",
-        "link_block_pFz3TY",
-        "link_block_GAFicr",
-        "link_block_gamhdE",
-        "link_block_mKHXMy",
-        "link_block_zLcfjF",
-        "link_block_G3XQ4U",
-        "link_block_gcbPBL",
-        "link_block_JQrbpn",
-        "link_block_VxGiVm",
-        "link_block_PAkcXN"
-      ],
-      "name": "Catering Menus",
-      "settings": {
-        "top-heading": "Lists of Menus",
-        "para": "",
-        "btn_link": "",
-        "btn_text": ""
-      }
-    },
     "scratch_compare_UmdFMq": {
       "type": "scratch-compare",
       "blocks": {
         "cheese_item_dAGQgJ": {
           "type": "cheese_item",
           "settings": {
-            "feature": "Dairy % lactose free",
+            "feature": "Dairy Free",
             "scratch": "right",
             "dairy": "wrong",
             "other_plant": "right"
@@ -226,7 +71,7 @@
             "feature": "gluten-free",
             "scratch": "right",
             "dairy": "wrong",
-            "other_plant": "wrong"
+            "other_plant": "right"
           }
         },
         "cheese_item_MUEtnz": {
@@ -235,7 +80,7 @@
             "feature": "Impact on planet",
             "scratch": "right",
             "dairy": "wrong",
-            "other_plant": "wrong"
+            "other_plant": "right"
           }
         },
         "cheese_item_G643Ai": {
@@ -244,7 +89,7 @@
             "feature": "Hormone-free",
             "scratch": "right",
             "dairy": "wrong",
-            "other_plant": "wrong"
+            "other_plant": "right"
           }
         },
         "cheese_item_thyQY7": {
@@ -333,7 +178,7 @@
       ],
       "name": "Scratch Compare",
       "settings": {
-        "title": "How does scratch compare?"
+        "title": "How does scratch house compare?"
       }
     },
     "image_gallery_iRVprC": {
@@ -488,8 +333,6 @@
   },
   "order": [
     "main",
-    "image_text_bnner_FG9gKP",
-    "catering_menus_jAJDna",
     "scratch_compare_UmdFMq",
     "image_gallery_iRVprC",
     "customer_review_t9aMgK",
