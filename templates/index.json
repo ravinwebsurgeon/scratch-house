@@ -266,7 +266,7 @@
         "cheese_item_hD7iLU": {
           "type": "cheese_item",
           "settings": {
-            "feature": "Dairy % lactose free",
+            "feature": "Dairy free",
             "scratch": "right",
             "dairy": "wrong",
             "other_plant": "right"
