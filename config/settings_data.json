@@ -109,8 +109,8 @@
     "brand_headline": "",
     "brand_description": "<p></p>",
     "brand_image_width": 100,
-    "social_facebook_link": "#",
-    "social_instagram_link": "#",
+    "social_facebook_link": "#scratchhousesd",
+    "social_instagram_link": "#scratchhousesd",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "#",
@@ -149,7 +149,7 @@
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
-          "button_label": "#ffffff",
+          "button_label": "#ffd600",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
