@@ -265,6 +265,7 @@
       "blocks": {
         "cheese_item_hD7iLU": {
           "type": "cheese_item",
+          "name": "dairy free",
           "settings": {
             "feature": "Dairy free",
             "scratch": "right",
@@ -274,6 +275,7 @@
         },
         "cheese_item_V7Gw97": {
           "type": "cheese_item",
+          "name": "cholesterol free",
           "settings": {
             "feature": "cholesterol free",
             "scratch": "right",
@@ -283,6 +285,7 @@
         },
         "cheese_item_mx9MqU": {
           "type": "cheese_item",
+          "name": "mouthwatering taste",
           "settings": {
             "feature": "mouthwatering taste",
             "scratch": "right",
@@ -292,6 +295,7 @@
         },
         "cheese_item_HNfFFi": {
           "type": "cheese_item",
+          "name": "probiotics",
           "settings": {
             "feature": "probiotics",
             "scratch": "right",
@@ -301,6 +305,7 @@
         },
         "cheese_item_kcChxL": {
           "type": "cheese_item",
+          "name": "brain boosting nootropics",
           "settings": {
             "feature": "brain boosting nootropics",
             "scratch": "right",
@@ -310,8 +315,9 @@
         },
         "cheese_item_6tP6iX": {
           "type": "cheese_item",
+          "name": "immune support",
           "settings": {
-            "feature": "gluten-free",
+            "feature": "immune support",
             "scratch": "right",
             "dairy": "wrong",
             "other_plant": "wrong"
@@ -319,20 +325,22 @@
         },
         "cheese_item_MhnLXe": {
           "type": "cheese_item",
+          "name": "impact on planet",
           "settings": {
             "feature": "Impact on planet",
             "scratch": "right",
             "dairy": "wrong",
-            "other_plant": "wrong"
+            "other_plant": "right"
           }
         },
         "cheese_item_PXYVE6": {
           "type": "cheese_item",
+          "name": "hormone free",
           "settings": {
             "feature": "Hormone-free",
             "scratch": "right",
             "dairy": "wrong",
-            "other_plant": "wrong"
+            "other_plant": "right"
           }
         },
         "cheese_item_C3nceD": {
