@@ -56,7 +56,14 @@
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
+            "quote": "\"It's the kind of cheese that makes you forget you're even eating vegan. Whether you're vegan or not, this cheese is a must-try!\""
+          }
+        },
+        "testimonial_cXhUgY": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "quote": ""
           }
         },
         "testimonial_azzfpq": {
@@ -108,6 +115,7 @@
         "testimonial_3apHgA",
         "testimonial_rWeMQe",
         "testimonial_4T4DeL",
+        "testimonial_cXhUgY",
         "testimonial_azzfpq",
         "testimonial_QX4WRB",
         "testimonial_d4gPWf",
