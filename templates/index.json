@@ -58,55 +58,6 @@
             "stars": 5,
             "quote": "\"It's the kind of cheese that makes you forget you're even eating vegan. Whether you're vegan or not, this cheese is a must-try!\""
           }
-        },
-        "testimonial_cXhUgY": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": ""
-          }
-        },
-        "testimonial_azzfpq": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”"
-          }
-        },
-        "testimonial_QX4WRB": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
-          }
-        },
-        "testimonial_d4gPWf": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”"
-          }
-        },
-        "testimonial_Jaqbbz": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
-          }
-        },
-        "testimonial_wyKaUL": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”"
-          }
-        },
-        "testimonial_g7n9zm": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
-          }
         }
       },
       "block_order": [
@@ -114,14 +65,7 @@
         "testimonial_HhaPPi",
         "testimonial_3apHgA",
         "testimonial_rWeMQe",
-        "testimonial_4T4DeL",
-        "testimonial_cXhUgY",
-        "testimonial_azzfpq",
-        "testimonial_QX4WRB",
-        "testimonial_d4gPWf",
-        "testimonial_Jaqbbz",
-        "testimonial_wyKaUL",
-        "testimonial_g7n9zm"
+        "testimonial_4T4DeL"
       ],
       "name": "Testimonials Section",
       "settings": {}
