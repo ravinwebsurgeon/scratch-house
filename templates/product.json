@@ -108,12 +108,12 @@
       "type": "3-box-section",
       "name": "Hero 3-Box with Products",
       "settings": {
-        "banner_image": "shopify://shop_images/banner_demo.jpg",
-        "right_image": "shopify://shop_images/about-pizzon.png",
-        "right_heading": "Delicious Pizza",
-        "right_button_link": "shopify://collections/spring-salad",
+        "banner_image": "shopify://shop_images/BB6E37BE-034F-42B4-ABEB-A2FFBDCCFA44_1_201_a.heic",
+        "right_image": "shopify://shop_images/BB6E37BE-034F-42B4-ABEB-A2FFBDCCFA44_1_201_a.heic",
+        "right_heading": "Custom Charcuterie",
+        "right_button_link": "shopify://collections/cheeses",
         "right_button_text": "Shop Collection",
-        "slider_collection": "spring-salad"
+        "slider_collection": "cheeses"
       }
     },
     "related-products": {
