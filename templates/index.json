@@ -15,7 +15,7 @@
       "settings": {
         "custom_class": "home-banner-sec",
         "image": "shopify://shop_images/613E202F-FC66-454D-B178-1527A8F73AFE_1_201_a.heic",
-        "heading": "Crafted from Plants. Made to Indulge",
+        "heading": "Crafted from Plants.   Made to Indulge",
         "subtext": "Artisanal cheeses and gourmet meats infused with probiotics, brain boosting  mushrooms, and protein.",
         "button_label": "SHOP CHEESES",
         "button_link": "#"
@@ -28,7 +28,7 @@
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "quote": "\"If you're looking for a vegan cheese that doesn’t compromise on flavor or texture, Scratch House is an absolute game-changer.\""
+            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
           }
         },
         "testimonial_HhaPPi": {
@@ -42,28 +42,49 @@
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like fake cheese. Not Scratch House, they've nailed it!”"
+            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
           }
         },
         "testimonial_azzfpq": {
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "quote": "\"The cheeses are rich, creamy, and perfectly balanced, with just the right amount of tang and depth.\""
+            "quote": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”"
           }
         },
         "testimonial_QX4WRB": {
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "quote": "\"Each bite is smooth yet indulgent, and the textures are spot-on—whether you're spreading it on crackers, melting it over pasta, or enjoying it on its own.\""
+            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
           }
         },
         "testimonial_d4gPWf": {
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "quote": "\"It's the kind of cheese that makes you forget you're even eating vegan. Whether you're vegan or not, this cheese is a must-try!\""
+            "quote": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”"
+          }
+        },
+        "testimonial_Jaqbbz": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
+          }
+        },
+        "testimonial_wyKaUL": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "quote": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”"
+          }
+        },
+        "testimonial_g7n9zm": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
           }
         }
       },
@@ -73,7 +94,10 @@
         "testimonial_4T4DeL",
         "testimonial_azzfpq",
         "testimonial_QX4WRB",
-        "testimonial_d4gPWf"
+        "testimonial_d4gPWf",
+        "testimonial_Jaqbbz",
+        "testimonial_wyKaUL",
+        "testimonial_g7n9zm"
       ],
       "name": "Testimonials Section",
       "settings": {}
@@ -93,6 +117,13 @@
           "settings": {
             "tab_group": "Cheeses",
             "col": "berry-crumble-focaccia"
+          }
+        },
+        "collection_item_YrTET7": {
+          "type": "collection_item",
+          "settings": {
+            "tab_group": "",
+            "col": ""
           }
         },
         "collection_item_AJD6Ne": {
@@ -120,7 +151,7 @@
           "type": "collection_item",
           "settings": {
             "tab_group": "Meats",
-            "col": "soy-curls"
+            "col": "pot-roast"
           }
         },
         "collection_item_yJR9rG": {
@@ -141,6 +172,7 @@
       "block_order": [
         "collection_item_cprJQk",
         "collection_item_PEeefr",
+        "collection_item_YrTET7",
         "collection_item_AJD6Ne",
         "collection_item_VmRWMa",
         "collection_item_taQPxP",
