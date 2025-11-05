@@ -156,6 +156,7 @@
     },
     "holiday_special_GN4CwD": {
       "type": "holiday-special",
+      "custom_css": [],
       "name": "Holiday Special Section",
       "settings": {
         "title": "HOLIDAY SPECIAL",
@@ -163,7 +164,7 @@
         "subheading": "A Festive Plant-Based Feast",
         "button_label": "SHOP NOW",
         "button_link": "#",
-        "image": "shopify://shop_images/Rectangle_4253.png"
+        "image": "shopify://shop_images/02F053C9-7AB9-44E1-A703-3365F9B2192F_1_201_a.heic"
       }
     },
     "testimonials_jVGXNR": {
@@ -256,7 +257,7 @@
         "subheading": "Can't-go-wrong favorites & Chef's Selections",
         "button_label": "SHOP NOW",
         "button_link": "#",
-        "image": "shopify://shop_images/Rectangle_4283.png"
+        "image": "shopify://shop_images/C8574F70-BDB0-45FA-A6E6-A60A9995650C.jpg"
       }
     },
     "scratch_compare_jNrdgT": {
