@@ -120,6 +120,7 @@
         },
         "collection_item_BWna6Q": {
           "type": "collection_item",
+          "disabled": true,
           "settings": {
             "tab_group": "",
             "col": "pot-roast"
