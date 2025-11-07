@@ -90,6 +90,7 @@
         },
         "collection_item_YrTET7": {
           "type": "collection_item",
+          "disabled": true,
           "settings": {
             "tab_group": "",
             "col": ""
@@ -97,6 +98,7 @@
         },
         "collection_item_AJD6Ne": {
           "type": "collection_item",
+          "disabled": true,
           "settings": {
             "tab_group": "Cheeses",
             "col": "pot-roast"
