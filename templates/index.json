@@ -119,7 +119,7 @@
         "collection_item_BWna6Q": {
           "type": "collection_item",
           "settings": {
-            "tab_group": "Meats",
+            "tab_group": "",
             "col": "pot-roast"
           }
         },
@@ -366,7 +366,7 @@
           "settings": {
             "feature": "cholesterol free",
             "scratch": "right",
-            "other_plant": "wrong"
+            "other_plant": "right"
           }
         },
         "meat_item_6z8dNa": {
@@ -382,7 +382,7 @@
           "settings": {
             "feature": "fiber-rich",
             "scratch": "right",
-            "other_plant": "wrong"
+            "other_plant": "right"
           }
         },
         "meat_item_gRqFkg": {
@@ -566,7 +566,7 @@
     },
     "our_mission_ckJ9e4": {
       "type": "our-mission",
-      "name": "Our Mission",
+      "name": "About Us",
       "settings": {
         "heading": "about us",
         "description": "Chef Tony Howe - Scratch House is fueled by necessity.  Founding Chef, Tony Howe was faced with limited vegan cheese options in his previous vegan restaurants, none of the commercially available products met the needs of a professional kitchen.  When he couldn't find a suitable vegan mozzarella for pizza, he began researching and testing new creative methods and ingredients, determined to solve the problem himself.  The obsession led to success and Chef Tony set off on a journey of discovery, creating an ever growing menu of delicious and functional vegan cheeses, both nut based and allergen friendly.  Out of his passion product, Scratch House was born.  \n\nChef Grant Plummer - Chef Grant followed a different path, serving up San Diego's finest vegan junk food with the birth of Veg'n Out, a so cal burger inspired concept, fully veganized.  His work ethic and business acumen led him to be a household name in the San Diego vegan scene.  Alas, all good things must come to an end and the restaurant had seen its last day.  Itching to let out his creative side, Chef Tony and Chef Grant bonded in their passions for helping the animals, hosting several fundraisers for local animal sanctuaries, they finally came together to form what is now the evolution of Scratch House.  Two vegan juggernaut chefs, coming together to create the best and the baddest vegan cheeses, meats and  accompaniments you've ever laid eyes on. \n\nKip Andersen - Kip needs no introduction, you've heard of his groundbreaking vegan documentaries.  Cowspiracy, What the Health, and Seaspiracy to name a few.  Kip brings valuable business experience and the reach to launch Scratch House Nationwide!",
@@ -631,19 +631,19 @@
         "image_JC86hK": {
           "type": "image",
           "settings": {
-            "img": "shopify://shop_images/6209fcc0fca9f5a9feb418a74aded785c437d913.png"
+            "img": "shopify://shop_images/D672EE20-5A45-4C52-95D3-2A46AC304405_1_201_a.heic"
           }
         },
         "image_A36PKi": {
           "type": "image",
           "settings": {
-            "img": "shopify://shop_images/58abfac2132b13bd7e1b11985c9fefce4de53ee7.png"
+            "img": "shopify://shop_images/5EC02C08-DC48-45E5-A490-7DDB118F74B8_1_201_a.heic"
           }
         },
         "image_YhBx3F": {
           "type": "image",
           "settings": {
-            "img": "shopify://shop_images/47149e3434de020109bbf39d6e0fc978747a0098.png"
+            "img": "shopify://shop_images/54CD134E-5638-4A6C-B433-4906EFD11C85_1_201_a.heic"
           }
         }
       },
