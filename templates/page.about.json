@@ -182,6 +182,15 @@
         "heading": "ABOUT CHEF Grant",
         "text": "Chef Grant Howe is a San Diego native, born on Camp Pendleton, who grew up experiencing the frequent travel that is typical of a military family. When his father left the military to become a long haul trucker, Tony began to discover his passion for cooking by way of preparing dinners and packing lunches for the family. Encouraged by his father to pursue this love of cooking through formal training, Tony was able to use grants and scholarships to attend the prestigious Le Cordon Bleu School of culinary arts in Pittsburgh. Entering commercial kitchens for the first time, Tony's story began as a dishwasher, before becoming one of the banquet chefs at the 700 seat members only Rivers Club in Pittsburgh."
       }
+    },
+    "split_section_reversed_ipdWXM": {
+      "type": "split-section-reversed",
+      "name": "Split section (Reversed)",
+      "settings": {
+        "image": "shopify://shop_images/a397fa_a1b52abd75124140a5e6a6a03c23c1dc_mv2.avif",
+        "heading": "ABOUT CHEF Kip",
+        "text": "Chef Kip Howe is a San Diego native, born on Camp Pendleton, who grew up experiencing the frequent travel that is typical of a military family. When his father left the military to become a long haul trucker, Tony began to discover his passion for cooking by way of preparing dinners and packing lunches for the family. Encouraged by his father to pursue this love of cooking through formal training, Tony was able to use grants and scholarships to attend the prestigious Le Cordon Bleu School of culinary arts in Pittsburgh. Entering commercial kitchens for the first time, Tony's story began as a dishwasher, before becoming one of the banquet chefs at the 700 seat members only Rivers Club in Pittsburgh."
+      }
     }
   },
   "order": [
@@ -191,6 +200,7 @@
     "testimonials_BWE99M",
     "split_section_BUjQjr",
     "split_section_reversed_jyJear",
-    "split_section_cdTekB"
+    "split_section_cdTekB",
+    "split_section_reversed_ipdWXM"
   ]
 }
