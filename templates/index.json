@@ -11,7 +11,6 @@
   "sections": {
     "image_text_bnner_HKPkqF": {
       "type": "image-text-bnner",
-      "disabled": true,
       "name": "Image-Text-Banner",
       "settings": {
         "custom_class": "home-banner-sec",
