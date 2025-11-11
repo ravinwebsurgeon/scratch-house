@@ -45,6 +45,7 @@
         "slide_qntWLK",
         "slide_7f7hbR"
       ],
+      "disabled": true,
       "name": "Restaurant",
       "settings": {}
     },
@@ -89,6 +90,7 @@
         "image_WfNypy",
         "image_AnkFx6"
       ],
+      "disabled": true,
       "name": "Portfolio Gallery",
       "settings": {
         "sub-head": "We would love to cater your next party or event!",
@@ -248,8 +250,8 @@
         "text_Ci7xcf": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>8 inch board - $50</strong></p><p><strong>12 inch board - $100</strong></p><p><strong>16 inch board - $160</strong></p>",
-            "text_style": "subtitle"
+            "text": "<p><strong>8 inch board (serves 2-3) $60</strong></p><p><strong>12 inch board (serves 4-6) $120</strong></p><p><strong>16 inch board (serves 8-12) $180</strong></p><p><strong>***Available for pickup or delivery in San Diego only***</strong></p>",
+            "text_style": "body"
           }
         }
       },
@@ -259,12 +261,12 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Rectangle_4292.png",
+        "image": "shopify://shop_images/BB6E37BE-034F-42B4-ABEB-A2FFBDCCFA44_1_201_a.heic",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "ambient",
-        "content_layout": "overlap",
+        "content_layout": "no-overlap",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
