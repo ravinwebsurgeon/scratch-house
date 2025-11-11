@@ -117,19 +117,19 @@
             "col": "charcuterie-boards"
           }
         },
+        "collection_item_yJR9rG": {
+          "type": "collection_item",
+          "settings": {
+            "tab_group": "Best Seller Combos",
+            "col": "spring-salad"
+          }
+        },
         "collection_item_BWna6Q": {
           "type": "collection_item",
           "disabled": true,
           "settings": {
             "tab_group": "",
             "col": "pot-roast"
-          }
-        },
-        "collection_item_yJR9rG": {
-          "type": "collection_item",
-          "settings": {
-            "tab_group": "Best Seller Combos",
-            "col": "spring-salad"
           }
         },
         "collection_item_W88zVW": {
@@ -147,8 +147,8 @@
         "collection_item_AJD6Ne",
         "collection_item_VmRWMa",
         "collection_item_taQPxP",
-        "collection_item_BWna6Q",
         "collection_item_yJR9rG",
+        "collection_item_BWna6Q",
         "collection_item_W88zVW"
       ],
       "name": "Tabbing Section",
@@ -473,6 +473,7 @@
         "video_block_xLpg3j",
         "video_block_nYj9mX"
       ],
+      "disabled": true,
       "name": "Customer Review",
       "settings": {
         "title": "Customer Reviews"
@@ -550,6 +551,7 @@
         "recipe_block_A9rLXg",
         "recipe_block_HjkzBK"
       ],
+      "disabled": true,
       "name": "Recipe Product",
       "settings": {
         "title": "Scratch House’s Epic recipes"
