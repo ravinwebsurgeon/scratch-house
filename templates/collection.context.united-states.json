@@ -12,14 +12,5 @@
   "context": {
     "market": "united-states"
   },
-  "sections": {
-    "banner": {
-      "disabled": true,
-      "settings": {
-        "show_collection_image": false,
-        "show_collection_description": false
-      },
-      "blocks": {}
-    }
-  }
+  "sections": {}
 }
