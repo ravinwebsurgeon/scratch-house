@@ -18,7 +18,7 @@
         "heading": "Crafted from Plants.   Made to Indulge",
         "subtext": "Artisanal cheeses and gourmet meats infused with probiotics, brain boosting  mushrooms, and protein.",
         "button_label": "SHOP CHEESES",
-        "button_link": "#"
+        "button_link": "shopify://collections/all"
       }
     },
     "testimonials_hwjLUt": {
@@ -152,6 +152,7 @@
         "collection_item_BWna6Q",
         "collection_item_W88zVW"
       ],
+      "disabled": true,
       "name": "Tabbing Section",
       "settings": {
         "title": "Artisanal Cheeses & Meats",
@@ -254,6 +255,7 @@
     },
     "combo_board_emHV9M": {
       "type": "combo-board",
+      "disabled": true,
       "name": "Combo Board Section",
       "settings": {
         "title": "Best Seller Combo's",
