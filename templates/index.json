@@ -75,6 +75,7 @@
       "blocks": {
         "collection_item_cprJQk": {
           "type": "collection_item",
+          "disabled": true,
           "settings": {
             "tab_group": "Cheeses",
             "col": "charcuterie-boards"
