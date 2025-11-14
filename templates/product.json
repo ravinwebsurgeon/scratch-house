@@ -98,6 +98,7 @@
     },
     "product_faq_h9XiHL": {
       "type": "product-faq",
+      "disabled": true,
       "name": "Product FAQ",
       "settings": {
         "heading": "Frequently Asked Questions",
