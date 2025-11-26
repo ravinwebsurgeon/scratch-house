@@ -91,6 +91,7 @@
         "event_TiWcBW",
         "event_Q3kVT3"
       ],
+      "disabled": true,
       "name": "Next Events",
       "settings": {
         "heading": "We would love to cater your next party or event!",

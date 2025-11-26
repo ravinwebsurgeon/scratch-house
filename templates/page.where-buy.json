@@ -57,8 +57,10 @@
     },
     "image_text_bnner_WBqg9D": {
       "type": "image-text-bnner",
+      "disabled": true,
       "name": "Image-Text-Banner",
       "settings": {
+        "custom_class": "",
         "image": "shopify://shop_images/2147840958.jpg",
         "heading": "where to find us",
         "subtext": "Currently serving Southern California for catering, events, wholesale/retail & wholesalers nationwide!",
@@ -168,6 +170,7 @@
         "image_tzXz6M",
         "image_YUCnwi"
       ],
+      "disabled": true,
       "name": "Expanding Image Gallery",
       "settings": {
         "top-heading": "Our Gallery"
@@ -176,6 +179,15 @@
     "all_links_PYjTk8": {
       "type": "all-links",
       "blocks": {
+        "link_block_Xme6xm": {
+          "type": "link_block",
+          "settings": {
+            "badge": "",
+            "block_title": "",
+            "block_desc": "",
+            "block_link": ""
+          }
+        },
         "link_block_RYEMpL": {
           "type": "link_block",
           "settings": {
@@ -208,6 +220,7 @@
         }
       },
       "block_order": [
+        "link_block_Xme6xm",
         "link_block_RYEMpL",
         "link_block_FzayKN",
         "link_block_VHrJ6L"

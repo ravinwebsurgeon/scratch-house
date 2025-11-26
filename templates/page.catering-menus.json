@@ -279,6 +279,7 @@
         "video_block_m9HXCQ",
         "video_block_hhec7M"
       ],
+      "disabled": true,
       "name": "Customer Review",
       "settings": {
         "title": "Customer Reviews"
