@@ -275,113 +275,6 @@
         "padding_top": 72,
         "padding_bottom": 32
       }
-    },
-    "image_gallery_bA7JT4": {
-      "type": "Image-Gallery",
-      "blocks": {
-        "image_WX8nUT": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2148759733.jpg",
-            "alt_text": "Cheesy"
-          }
-        },
-        "image_tPEFbM": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/top-view-delicious-mexican-food-ready-be-served.jpg",
-            "alt_text": ""
-          }
-        },
-        "image_hMEUTQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2148123694.jpg",
-            "alt_text": ""
-          }
-        },
-        "image_kiFHnx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3827.jpg",
-            "alt_text": ""
-          }
-        },
-        "image_cgqihb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2147840958.jpg",
-            "alt_text": ""
-          }
-        },
-        "image_aykMDG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/top-view-delicious-healthy-breakfast.jpg",
-            "alt_text": ""
-          }
-        },
-        "image_iLBQyc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/penne-pasta-with-tomato-sauce-beef-grated-cheese.jpg",
-            "alt_text": ""
-          }
-        },
-        "image_gyKgp9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/flat-lay-mexican-food.jpg",
-            "alt_text": ""
-          }
-        },
-        "image_JXd6B6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/flat-lay-delicious-brazilian-food-composition.jpg",
-            "alt_text": ""
-          }
-        },
-        "image_X9rcex": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/homemade-baked-porchetta-rolls-with-several-herbs-pepper-garlic.jpg",
-            "alt_text": ""
-          }
-        },
-        "image_Dm3hnc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/side-view-caesar-salad-with-chicken-sauces_1.jpg",
-            "alt_text": ""
-          }
-        },
-        "image_FtXrRV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/pp.avif",
-            "alt_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_WX8nUT",
-        "image_tPEFbM",
-        "image_hMEUTQ",
-        "image_kiFHnx",
-        "image_cgqihb",
-        "image_aykMDG",
-        "image_iLBQyc",
-        "image_gyKgp9",
-        "image_JXd6B6",
-        "image_X9rcex",
-        "image_Dm3hnc",
-        "image_FtXrRV"
-      ],
-      "name": "Expanding Image Gallery",
-      "settings": {
-        "top-heading": "Our Gallery"
-      }
     }
   },
   "order": [
@@ -390,7 +283,6 @@
     "portfolio_gallery_j8HJfx",
     "testimonials_6P8pnx",
     "events_a6Qap3",
-    "image_with_text_VE8XNQ",
-    "image_gallery_bA7JT4"
+    "image_with_text_VE8XNQ"
   ]
 }
