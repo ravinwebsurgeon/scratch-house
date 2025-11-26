@@ -100,7 +100,7 @@
           "type": "collection_item",
           "disabled": true,
           "settings": {
-            "tab_group": "Cheeses",
+            "tab_group": "Soy Curls",
             "col": "pot-roast"
           }
         },
@@ -167,7 +167,7 @@
         "heading": "THANKSGIVING TURKEY ROULADE",
         "subheading": "A Festive Plant-Based Centerpiece",
         "button_label": "SHOP NOW",
-        "button_link": "#",
+        "button_link": "shopify://products/turkey-roulade",
         "image": "shopify://shop_images/02F053C9-7AB9-44E1-A703-3365F9B2192F_1_201_a.heic"
       }
     },
