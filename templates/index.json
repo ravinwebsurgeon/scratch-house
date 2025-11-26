@@ -9,6 +9,48 @@
  */
 {
   "sections": {
+    "1764138858224687ca": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8892197_7kKLKC": {
+          "type": "ai_gen_block_8892197",
+          "settings": {
+            "image": "shopify://shop_images/980F7229-A603-4A6C-88E9-5A2EF37F6849_1_102_o.jpg",
+            "heading": "Give the gift of choice",
+            "description": "<p>Perfect for any occasion. Let them choose exactly what they want with a gift card.</p>",
+            "show_amounts": true,
+            "amount_1": "$25",
+            "amount_2": "$50",
+            "amount_3": "$100",
+            "amount_4": "$150",
+            "button_text": "Purchase gift card",
+            "button_link": "",
+            "background_color": "#ffffff",
+            "text_color": "#121212",
+            "amount_bg_color": "#f3f3f3",
+            "amount_text_color": "#121212",
+            "amount_border_color": "#e0e0e0",
+            "button_bg_color": "#121212",
+            "button_text_color": "#ffffff",
+            "button_hover_bg_color": "#000000",
+            "max_width": 1200,
+            "heading_size": 40,
+            "description_size": 16,
+            "image_border_radius": 8,
+            "amount_border_radius": 4,
+            "button_border_radius": 0,
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "padding_horizontal": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8892197_7kKLKC"
+      ],
+      "settings": {}
+    },
     "image_text_bnner_HKPkqF": {
       "type": "image-text-bnner",
       "name": "Image-Text-Banner",
@@ -657,6 +699,7 @@
     }
   },
   "order": [
+    "1764138858224687ca",
     "image_text_bnner_HKPkqF",
     "testimonials_hwjLUt",
     "tabbing_section_QnHixi",
