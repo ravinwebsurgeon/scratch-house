@@ -236,46 +236,11 @@
     "testimonials_m6Y47n": {
       "type": "testimonials",
       "blocks": {
-        "testimonial_7EqmkC": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
-          }
-        },
-        "testimonial_Kt8tmf": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”"
-          }
-        },
-        "testimonial_fmAQDP": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
-          }
-        },
-        "testimonial_b6KhEM": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”"
-          }
-        },
-        "testimonial_9UAMp6": {
-          "type": "testimonial",
-          "settings": {
-            "stars": 5,
-            "quote": "“I was very leery. Every vegan cheese I ever\ntried tasted like cardboard.”"
-          }
-        },
         "testimonial_PzVXUY": {
           "type": "testimonial",
           "settings": {
             "stars": 5,
-            "quote": "“Scratch House will help you create the vegan charcuterie spread of your dreams.”"
+            "quote": "\"If you're looking for a vegan cheese that doesn’t compromise on flavor or texture, Scratch House is an absolute game-changer."
           }
         },
         "testimonial_hCynpV": {
@@ -301,11 +266,6 @@
         }
       },
       "block_order": [
-        "testimonial_7EqmkC",
-        "testimonial_Kt8tmf",
-        "testimonial_fmAQDP",
-        "testimonial_b6KhEM",
-        "testimonial_9UAMp6",
         "testimonial_PzVXUY",
         "testimonial_hCynpV",
         "testimonial_zcGiwy",
@@ -355,6 +315,7 @@
         "image_N7hx9C",
         "image_hTdAJy"
       ],
+      "disabled": true,
       "name": "Instagram Section",
       "settings": {
         "title": "Follow us on Instagram"
