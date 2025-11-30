@@ -39,10 +39,9 @@
         "heading_EVPw8J",
         "text_4FpVQw"
       ],
-      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg",
+        "image": "shopify://shop_images/IMG_4499.jpg",
         "image_overlay_opacity": 20,
         "image_height": "medium",
         "image_behavior": "none",
@@ -182,9 +181,10 @@
         "link_block_Xme6xm": {
           "type": "link_block",
           "settings": {
-            "badge": "",
-            "block_title": "",
-            "block_desc": "",
+            "custom_image": "shopify://shop_images/IMG_4601.jpg",
+            "badge": "Besties Vegan Paradise",
+            "block_title": "Find our products at this 100% Vegan Market with locations in West Hollywoods Original Farmers Market & East Hollywood",
+            "block_desc": "View Website",
             "block_link": ""
           }
         },
