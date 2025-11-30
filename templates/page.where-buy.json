@@ -178,26 +178,6 @@
     "all_links_PYjTk8": {
       "type": "all-links",
       "blocks": {
-        "link_block_R7mei7": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/IMG_4624.jpg",
-            "badge": "Windmill Farms Market",
-            "block_title": "Find our Cheeses at this local San Diego market!",
-            "block_desc": "View Website",
-            "block_link": "https://windmillfarmsmarket.com/"
-          }
-        },
-        "link_block_UY8XCb": {
-          "type": "link_block",
-          "settings": {
-            "custom_image": "shopify://shop_images/IMG_4623.jpg",
-            "badge": "Food Fight! Grocery",
-            "block_title": "Find our products at this 100% Vegan Grocer in PDX!",
-            "block_desc": "View Website",
-            "block_link": "https://foodfightgrocery.com/"
-          }
-        },
         "link_block_VHrJ6L": {
           "type": "link_block",
           "settings": {
@@ -216,6 +196,26 @@
             "block_title": "Find our products at this 100% Vegan Market with locations in West Hollywoods Original Farmers Market & East Hollywood",
             "block_desc": "View Website",
             "block_link": ""
+          }
+        },
+        "link_block_R7mei7": {
+          "type": "link_block",
+          "settings": {
+            "custom_image": "shopify://shop_images/IMG_4624.jpg",
+            "badge": "Windmill Farms Market",
+            "block_title": "Find our Cheeses at this local San Diego market!",
+            "block_desc": "View Website",
+            "block_link": "https://windmillfarmsmarket.com/"
+          }
+        },
+        "link_block_UY8XCb": {
+          "type": "link_block",
+          "settings": {
+            "custom_image": "shopify://shop_images/IMG_4623.jpg",
+            "badge": "Food Fight! Grocery",
+            "block_title": "Find our products at this 100% Vegan Grocer in PDX!",
+            "block_desc": "View Website",
+            "block_link": "https://foodfightgrocery.com/"
           }
         },
         "link_block_RYEMpL": {
@@ -240,10 +240,10 @@
         }
       },
       "block_order": [
-        "link_block_R7mei7",
-        "link_block_UY8XCb",
         "link_block_VHrJ6L",
         "link_block_Xme6xm",
+        "link_block_R7mei7",
+        "link_block_UY8XCb",
         "link_block_RYEMpL",
         "link_block_FzayKN"
       ],
