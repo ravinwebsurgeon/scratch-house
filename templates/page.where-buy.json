@@ -178,6 +178,16 @@
     "all_links_PYjTk8": {
       "type": "all-links",
       "blocks": {
+        "link_block_UY8XCb": {
+          "type": "link_block",
+          "settings": {
+            "custom_image": "shopify://shop_images/IMG_4623.jpg",
+            "badge": "Food Fight! Grocery",
+            "block_title": "Find our products at this 100% Vegan Grocer in PDX!",
+            "block_desc": "View Website",
+            "block_link": "https://foodfightgrocery.com/"
+          }
+        },
         "link_block_VHrJ6L": {
           "type": "link_block",
           "settings": {
@@ -220,6 +230,7 @@
         }
       },
       "block_order": [
+        "link_block_UY8XCb",
         "link_block_VHrJ6L",
         "link_block_Xme6xm",
         "link_block_RYEMpL",
