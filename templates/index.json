@@ -569,9 +569,9 @@
       "name": "Our Mission",
       "settings": {
         "heading": "Our mission",
-        "description": "At Scratch House, we strive to bring you unprecidented flavors and textures, made with quality ingredients that are good for your health, the animals and our planet!",
+        "description": "At Scratch House, we strive to bring you unprecidented flavors and textures, made with quality ingredients that are good for your health, the animals and our planet!\n\nFeel good knowing knowing that a portion of profits from every order goes directly to local animal sanctuaries!",
         "button_link": "#",
-        "button_text": "Join Our Journey",
+        "button_text": "",
         "image": "shopify://shop_images/8067118B-E166-4F48-AEF7-CCE34836D2DF.jpg"
       }
     },
