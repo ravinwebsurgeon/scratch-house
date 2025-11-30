@@ -49,37 +49,76 @@
       "name": "Restaurant",
       "settings": {}
     },
+    "image_with_text_VE8XNQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nKHNdA": {
+          "type": "heading",
+          "settings": {
+            "heading": "custom cheese displays",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ci7xcf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>8 inch board (serves 2-3) $60</strong></p><p><strong>12 inch board (serves 4-6) $120</strong></p><p><strong>16 inch board (serves 8-12) $180</strong></p><p><strong>***Available for pickup or delivery in San Diego only***</strong></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nKHNdA",
+        "text_Ci7xcf"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/IMG_3894.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "ambient",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "padding_top": 72,
+        "padding_bottom": 32
+      }
+    },
     "portfolio_gallery_j8HJfx": {
       "type": "portfolio-gallery",
       "blocks": {
         "image_rWGFmr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_4293.png"
+            "image": "shopify://shop_images/IMG_4488.jpg"
           }
         },
         "image_A3rRrK": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_4292.png"
+            "image": "shopify://shop_images/IMG_4489.jpg"
           }
         },
         "image_gQi7CP": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ff966b6a92f9b9394fc986cf942fc038ae62e55f.jpg"
+            "image": "shopify://shop_images/F47EDAEF-D50D-4937-9F07-B6C615D4CD9C_1_201_a.heic"
           }
         },
         "image_WfNypy": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/62c5862b6094050f878999de8ca413911b381de2.jpg"
+            "image": "shopify://shop_images/0526D29B-5F60-430F-9D67-66146CACA402_1_201_a.heic"
           }
         },
         "image_AnkFx6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ea1d6fae33e76732b41757847e4966c82518f9bf.jpg"
+            "image": "shopify://shop_images/02415979-8118-4975-B897-400F71370AA0_1_201_a.heic"
           }
         }
       },
@@ -90,10 +129,9 @@
         "image_WfNypy",
         "image_AnkFx6"
       ],
-      "disabled": true,
       "name": "Portfolio Gallery",
       "settings": {
-        "sub-head": "We would love to cater your next party or event!",
+        "sub-head": "Let our chefs make the charcuterie display of your dreams!",
         "heading": "Larger parties are priced on a per person basis, email us for a quote.​",
         "link": "shopify://pages/events"
       }
@@ -212,53 +250,14 @@
         "heading": "All displays include 3 to 5 cheeses and crackers/bread, plus seasonal accompianments such as nuts, pickles, fruit, and seasonal bruschetta. We can now offer gluten free, nut free, and other allergen free options.",
         "subtext": "<p>All pick up catering orders are available at Scratch House Vegan Kitchen: 6309 University Ave, San Diego</p>"
       }
-    },
-    "image_with_text_VE8XNQ": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_nKHNdA": {
-          "type": "heading",
-          "settings": {
-            "heading": "custom cheese displays",
-            "heading_size": "h1"
-          }
-        },
-        "text_Ci7xcf": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>8 inch board (serves 2-3) $60</strong></p><p><strong>12 inch board (serves 4-6) $120</strong></p><p><strong>16 inch board (serves 8-12) $180</strong></p><p><strong>***Available for pickup or delivery in San Diego only***</strong></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_nKHNdA",
-        "text_Ci7xcf"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/BB6E37BE-034F-42B4-ABEB-A2FFBDCCFA44_1_201_a.heic",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "ambient",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-1",
-        "padding_top": 72,
-        "padding_bottom": 32
-      }
     }
   },
   "order": [
     "main",
     "restaurant_pzFhNt",
+    "image_with_text_VE8XNQ",
     "portfolio_gallery_j8HJfx",
     "testimonials_6P8pnx",
-    "events_a6Qap3",
-    "image_with_text_VE8XNQ"
+    "events_a6Qap3"
   ]
 }
