@@ -88,6 +88,37 @@
         "padding_bottom": 32
       }
     },
+    "rich_text_MANDQ8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pHWDf9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Serving the San Diego Area",
+            "heading_size": "h1"
+          }
+        },
+        "text_BGWqPg": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>All displays include 5 cheeses and crackers/bread, plus seasonal accompaniments such as nuts, pickles, and fruits. We offer gluten free, nut free, and other allergen free options.</h4>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pHWDf9",
+        "text_BGWqPg"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "portfolio_gallery_j8HJfx": {
       "type": "portfolio-gallery",
       "blocks": {
@@ -256,6 +287,7 @@
     "main",
     "restaurant_pzFhNt",
     "image_with_text_VE8XNQ",
+    "rich_text_MANDQ8",
     "portfolio_gallery_j8HJfx",
     "testimonials_6P8pnx",
     "events_a6Qap3"
