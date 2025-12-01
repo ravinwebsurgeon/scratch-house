@@ -77,6 +77,13 @@
     "tabbing_section_QnHixi": {
       "type": "tabbing-section",
       "blocks": {
+        "collection_item_wpGBP7": {
+          "type": "collection_item",
+          "settings": {
+            "tab_group": "Test",
+            "col": "soy-curls"
+          }
+        },
         "collection_item_cprJQk": {
           "type": "collection_item",
           "disabled": true,
@@ -146,6 +153,7 @@
         }
       },
       "block_order": [
+        "collection_item_wpGBP7",
         "collection_item_cprJQk",
         "collection_item_PEeefr",
         "collection_item_YrTET7",
@@ -156,7 +164,6 @@
         "collection_item_BWna6Q",
         "collection_item_W88zVW"
       ],
-      "disabled": true,
       "name": "Tabbing Section",
       "settings": {
         "title": "Artisanal Cheeses & Meats",
