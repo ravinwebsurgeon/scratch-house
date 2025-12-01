@@ -86,10 +86,10 @@
                     <div class="footer-block__details-content rte">
                       {{ block.settings.subtext }}
                       <div class="mail-to">
-                       <a href="mailto:TONY.SCRATCHHOUSE@GMAIL.COM​">{{ block.settings.mailto }}​</a>
+                       {{ block.settings.mailto }}​
                       </div>
                       <div class="footer-number">
-                          <a href="tel:540-532-7139">{{ block.settings.telto }}</a>
+                          {{ block.settings.telto }}
                       </div>
                     </div>
                   {%- when 'link_list' -%}
