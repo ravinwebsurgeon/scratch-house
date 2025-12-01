@@ -237,6 +237,16 @@
             "block_desc": "View Website",
             "block_link": "https://nomaddonuts.com/"
           }
+        },
+        "link_block_XYJEQW": {
+          "type": "link_block",
+          "settings": {
+            "custom_image": "shopify://shop_images/IMG_4625.jpg",
+            "badge": "The Vreamery",
+            "block_title": "Find our allergen friendly cheeses at this 100% Vegan Deli and Cheese shop in Austin, TX.",
+            "block_desc": "View Website",
+            "block_link": "https://rebelcheese.com/?srsltid=AfmBOopFAbuhe8ERUkZEF9E8Gqmc2WuqL4hQnE84g6pYAlAkGtY7yx2P"
+          }
         }
       },
       "block_order": [
@@ -245,7 +255,8 @@
         "link_block_R7mei7",
         "link_block_UY8XCb",
         "link_block_RYEMpL",
-        "link_block_FzayKN"
+        "link_block_FzayKN",
+        "link_block_XYJEQW"
       ],
       "name": "All Links",
       "settings": {
