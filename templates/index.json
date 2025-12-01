@@ -77,20 +77,6 @@
     "tabbing_section_QnHixi": {
       "type": "tabbing-section",
       "blocks": {
-        "collection_item_iLi76p": {
-          "type": "collection_item",
-          "settings": {
-            "tab_group": "Demo",
-            "col": "cheeses"
-          }
-        },
-        "collection_item_WTDaNK": {
-          "type": "collection_item",
-          "settings": {
-            "tab_group": "Demo",
-            "col": "spring-salad"
-          }
-        },
         "collection_item_cprJQk": {
           "type": "collection_item",
           "disabled": true,
@@ -160,8 +146,6 @@
         }
       },
       "block_order": [
-        "collection_item_iLi76p",
-        "collection_item_WTDaNK",
         "collection_item_cprJQk",
         "collection_item_PEeefr",
         "collection_item_YrTET7",
@@ -172,6 +156,7 @@
         "collection_item_BWna6Q",
         "collection_item_W88zVW"
       ],
+      "disabled": true,
       "name": "Tabbing Section",
       "settings": {
         "title": "Artisanal Cheeses & Meats",
