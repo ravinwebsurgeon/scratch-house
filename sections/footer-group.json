@@ -55,8 +55,8 @@
           "settings": {
             "heading": "CONTACT",
             "subtext": "",
-            "mailto": "<p>info@scratchhousevegan.com</p>",
-            "telto": "<p>For Catering & General Questions<br/><br/></p>"
+            "mailto": "<p><a href=\"mailto:info@scratchhousevegan.com\" title=\"mailto:info@scratchhousevegan.com\">info@scratchhousevegan.com</a></p>",
+            "telto": "<p><a href=\"mailto:info@scratchhousevegan.com\" title=\"mailto:info@scratchhousevegan.com\">For Catering & General Questions</a><br/><br/></p>"
           }
         },
         "link_list_RcqwFx": {
