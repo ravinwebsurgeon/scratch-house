@@ -140,12 +140,6 @@
             "image": "shopify://shop_images/F47EDAEF-D50D-4937-9F07-B6C615D4CD9C_1_201_a.heic"
           }
         },
-        "image_WfNypy": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/0526D29B-5F60-430F-9D67-66146CACA402_1_201_a.heic"
-          }
-        },
         "image_AnkFx6": {
           "type": "image",
           "settings": {
@@ -157,7 +151,6 @@
         "image_rWGFmr",
         "image_A3rRrK",
         "image_gQi7CP",
-        "image_WfNypy",
         "image_AnkFx6"
       ],
       "name": "Portfolio Gallery",
