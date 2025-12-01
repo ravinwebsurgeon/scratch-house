@@ -134,24 +134,24 @@
             "image": "shopify://shop_images/IMG_4489.jpg"
           }
         },
-        "image_gQi7CP": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/F47EDAEF-D50D-4937-9F07-B6C615D4CD9C_1_201_a.heic"
-          }
-        },
         "image_AnkFx6": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/02415979-8118-4975-B897-400F71370AA0_1_201_a.heic"
+          }
+        },
+        "image_gQi7CP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/F47EDAEF-D50D-4937-9F07-B6C615D4CD9C_1_201_a.heic"
           }
         }
       },
       "block_order": [
         "image_rWGFmr",
         "image_A3rRrK",
-        "image_gQi7CP",
-        "image_AnkFx6"
+        "image_AnkFx6",
+        "image_gQi7CP"
       ],
       "name": "Portfolio Gallery",
       "settings": {
