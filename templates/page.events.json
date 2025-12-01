@@ -107,12 +107,6 @@
             "image": "shopify://shop_images/5EC02C08-DC48-45E5-A490-7DDB118F74B8_1_201_a_3d296f5f-877f-4f86-b964-fbbe595cf4e3.heic"
           }
         },
-        "image_NU3EUD": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/EFBBAE65-3774-4DE0-B7AC-4FB9F35BB1F5_1_201_a.heic"
-          }
-        },
         "image_h3WWWK": {
           "type": "image",
           "settings": {
@@ -134,7 +128,6 @@
       },
       "block_order": [
         "image_w3MqPz",
-        "image_NU3EUD",
         "image_h3WWWK",
         "image_U3RAnY",
         "image_TB3AEg"
