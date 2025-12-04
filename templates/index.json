@@ -156,6 +156,7 @@
         "collection_item_BWna6Q",
         "collection_item_W88zVW"
       ],
+      "disabled": true,
       "name": "Tabbing Section",
       "settings": {
         "title": "Artisanal Cheeses & Meats",
@@ -621,6 +622,43 @@
       "settings": {
         "title": "Follow us on Instagram"
       }
+    },
+    "tabbing_section_4gUGCQ": {
+      "type": "tabbing-section",
+      "blocks": {
+        "collection_item_mYcUHJ": {
+          "type": "collection_item",
+          "settings": {
+            "tab_group": "Cheeses",
+            "col": "cheeses"
+          }
+        },
+        "collection_item_ihRGqU": {
+          "type": "collection_item",
+          "settings": {
+            "tab_group": "Meats",
+            "col": "pot-roast"
+          }
+        },
+        "collection_item_pWrwyK": {
+          "type": "collection_item",
+          "settings": {
+            "tab_group": "best seller combos",
+            "col": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_mYcUHJ",
+        "collection_item_ihRGqU",
+        "collection_item_pWrwyK"
+      ],
+      "disabled": true,
+      "name": "Tabbed Collections",
+      "settings": {
+        "title": "Artisanal Cheeses & meats",
+        "all_col": ""
+      }
     }
   },
   "order": [
@@ -636,6 +674,7 @@
     "our_mission_AJydqF",
     "everydays_holiday_967hhM",
     "blocks_A7wEAJ",
-    "instagram_d3HUyC"
+    "instagram_d3HUyC",
+    "tabbing_section_4gUGCQ"
   ]
 }
