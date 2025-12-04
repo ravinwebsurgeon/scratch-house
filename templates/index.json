@@ -19,10 +19,10 @@
       "settings": {
         "custom_class": "home-banner-sec",
         "image": "shopify://shop_images/IMG_4488.jpg",
-        "heading": "Crafted from Plants.   Made to Indulge",
+        "heading": "Crafted from Plants,   Made to Indulge.",
         "subtext": "Artisanal cheeses and gourmet meats infused with probiotics, brain boosting  mushrooms, and protein.",
         "button_label": "SHOP CHEESES",
-        "button_link": "shopify://collections/all"
+        "button_link": "shopify://collections/cheeses"
       }
     },
     "testimonials_hwjLUt": {
@@ -215,6 +215,7 @@
         "cheese_item_mx9MqU": {
           "type": "cheese_item",
           "name": "mouthwatering taste",
+          "disabled": true,
           "settings": {
             "feature": "mouthwatering taste",
             "scratch": "right",
@@ -299,6 +300,7 @@
         },
         "meat_item_6z8dNa": {
           "type": "meat_item",
+          "disabled": true,
           "settings": {
             "feature": "mouthwatering taste",
             "scratch": "right",
@@ -488,7 +490,7 @@
       "name": "Our Mission",
       "settings": {
         "heading": "Our mission",
-        "description": "At Scratch House, we strive to bring you unprecidented flavors and textures, made with quality ingredients that are good for your health, the animals and our planet!\n\nFeel good knowing knowing that a portion of profits from every order goes directly to local animal sanctuaries!",
+        "description": "At Scratch House, we strive to bring you unprecidented flavors and textures, made with quality ingredients that are good for your health, the animals and our planet!\n\nFeel good knowing that a portion of profits from every order goes directly to local animal sanctuaries!",
         "button_link": "#",
         "button_text": "",
         "image": "shopify://shop_images/8067118B-E166-4F48-AEF7-CCE34836D2DF.jpg"
