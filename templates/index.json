@@ -122,29 +122,22 @@
         "collection_item_yJR9rG": {
           "type": "collection_item",
           "settings": {
-            "tab_group": "Best Seller Combos",
+            "tab_group": "Curated Boxes",
             "col": "chefs-choice-combos"
           }
         },
         "collection_item_kCDbkE": {
           "type": "collection_item",
           "settings": {
-            "tab_group": "Best Seller Combos",
+            "tab_group": "Curated Boxes",
             "col": "the-fromagier-bundle"
           }
         },
         "collection_item_8RBCwK": {
           "type": "collection_item",
           "settings": {
-            "tab_group": "Best Seller Combos",
+            "tab_group": "Curated Boxes",
             "col": "the-essentials-bundle"
-          }
-        },
-        "collection_item_zBf4w8": {
-          "type": "collection_item",
-          "settings": {
-            "tab_group": "",
-            "col": ""
           }
         }
       },
@@ -157,8 +150,7 @@
         "collection_item_qh8hVB",
         "collection_item_yJR9rG",
         "collection_item_kCDbkE",
-        "collection_item_8RBCwK",
-        "collection_item_zBf4w8"
+        "collection_item_8RBCwK"
       ],
       "name": "Tabbing Section",
       "settings": {
