@@ -145,7 +145,7 @@
         "image_block_Dkar4k": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/a397fa_a1b52abd75124140a5e6a6a03c23c1dc_mv2.avif",
+            "image": "shopify://shop_images/8067118B-E166-4F48-AEF7-CCE34836D2DF.jpg",
             "alt": "Image"
           }
         },
@@ -153,9 +153,9 @@
           "type": "text_block",
           "settings": {
             "heading": "STAY TUNED FOR OUR NEXT COOKING CLASS!",
-            "text": "<p>Join our founder Chef Tony Howe for a night chatting all things cheese. Included topics will be the history with Scratch House, the basics of making your own fermented nut cheeses, recipe testing & more.</p>",
+            "text": "<p>Join our founding Chef, Tony Howe for a night chatting all things cheese. Included topics will be the history with Scratch House, the basics of making your own fermented nut cheeses, recipe testing & more.</p>",
             "show_button": false,
-            "button_text": "sdccx",
+            "button_text": "",
             "button_link": "#"
           }
         },
