@@ -165,14 +165,13 @@
     },
     "combo_board_emHV9M": {
       "type": "combo-board",
-      "disabled": true,
       "name": "Combo Board Section",
       "settings": {
         "title": "Best Seller Combo's",
         "heading": "Best Sellers",
         "subheading": "Can't-go-wrong favorites & Chef's Selections",
         "button_label": "SHOP NOW",
-        "button_link": "#",
+        "button_link": "shopify://collections/chefs-selections",
         "image": "shopify://shop_images/C8574F70-BDB0-45FA-A6E6-A60A9995650C.jpg"
       }
     },
