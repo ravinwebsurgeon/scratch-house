@@ -101,8 +101,22 @@
         "collection_item_taQPxP": {
           "type": "collection_item",
           "settings": {
-            "tab_group": "Meats",
+            "tab_group": "Meats & Sauces",
             "col": "soy-curls"
+          }
+        },
+        "collection_item_QNFYyd": {
+          "type": "collection_item",
+          "settings": {
+            "tab_group": "Meats & Sauces",
+            "col": "pot-roast"
+          }
+        },
+        "collection_item_qh8hVB": {
+          "type": "collection_item",
+          "settings": {
+            "tab_group": "Meats & Sauces",
+            "col": "sauces"
           }
         },
         "collection_item_yJR9rG": {
@@ -126,11 +140,11 @@
             "col": "the-essentials-bundle"
           }
         },
-        "collection_item_QNFYyd": {
+        "collection_item_zBf4w8": {
           "type": "collection_item",
           "settings": {
-            "tab_group": "Meats",
-            "col": "pot-roast"
+            "tab_group": "",
+            "col": ""
           }
         }
       },
@@ -139,10 +153,12 @@
         "collection_item_PEeefr",
         "collection_item_VmRWMa",
         "collection_item_taQPxP",
+        "collection_item_QNFYyd",
+        "collection_item_qh8hVB",
         "collection_item_yJR9rG",
         "collection_item_kCDbkE",
         "collection_item_8RBCwK",
-        "collection_item_QNFYyd"
+        "collection_item_zBf4w8"
       ],
       "name": "Tabbing Section",
       "settings": {
