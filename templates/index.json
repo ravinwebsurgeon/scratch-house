@@ -79,10 +79,9 @@
       "blocks": {
         "collection_item_cprJQk": {
           "type": "collection_item",
-          "disabled": true,
           "settings": {
             "tab_group": "Cheeses",
-            "col": "charcuterie-boards"
+            "col": "cheeses"
           }
         },
         "collection_item_PEeefr": {
@@ -90,22 +89,6 @@
           "settings": {
             "tab_group": "Cheeses",
             "col": "berry-crumble-focaccia"
-          }
-        },
-        "collection_item_YrTET7": {
-          "type": "collection_item",
-          "disabled": true,
-          "settings": {
-            "tab_group": "",
-            "col": ""
-          }
-        },
-        "collection_item_AJD6Ne": {
-          "type": "collection_item",
-          "disabled": true,
-          "settings": {
-            "tab_group": "Soy Curls",
-            "col": "pot-roast"
           }
         },
         "collection_item_VmRWMa": {
@@ -126,41 +109,21 @@
           "type": "collection_item",
           "settings": {
             "tab_group": "Best Seller Combos",
-            "col": "spring-salad"
-          }
-        },
-        "collection_item_BWna6Q": {
-          "type": "collection_item",
-          "disabled": true,
-          "settings": {
-            "tab_group": "",
-            "col": "pot-roast"
-          }
-        },
-        "collection_item_W88zVW": {
-          "type": "collection_item",
-          "settings": {
-            "tab_group": "Best Seller Combos",
-            "col": "charcuterie-boards"
+            "col": "chefs-choice-combos"
           }
         }
       },
       "block_order": [
         "collection_item_cprJQk",
         "collection_item_PEeefr",
-        "collection_item_YrTET7",
-        "collection_item_AJD6Ne",
         "collection_item_VmRWMa",
         "collection_item_taQPxP",
-        "collection_item_yJR9rG",
-        "collection_item_BWna6Q",
-        "collection_item_W88zVW"
+        "collection_item_yJR9rG"
       ],
-      "disabled": true,
       "name": "Tabbing Section",
       "settings": {
         "title": "Artisanal Cheeses & Meats",
-        "all_col": "shopify://collections/berry-crumble-focaccia"
+        "all_col": "shopify://collections/cheeses"
       }
     },
     "holiday_special_GN4CwD": {
