@@ -71,6 +71,9 @@
         "testimonial_rWeMQe",
         "testimonial_4T4DeL"
       ],
+      "custom_css": [
+        ".testimonials blockquote,.testimonials .testimonial__quote,.testimonial-quote {font-family: var(--font-body-family); font-size: var(--font-body-scale); font-weight: var(--font-body-weight); font-style: var(--font-body-style); letter-spacing: normal; line-height: 1.6;}"
+      ],
       "name": "Testimonials Section",
       "settings": {}
     },
