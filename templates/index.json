@@ -72,7 +72,7 @@
         "testimonial_4T4DeL"
       ],
       "custom_css": [
-        ".testimonials blockquote,.testimonials .testimonial__quote,.testimonial-quote {font-family: var(--font-body-family); font-size: var(--font-body-scale); font-weight: var(--font-body-weight); font-style: var(--font-body-style); letter-spacing: normal; line-height: 1.6;}"
+        ".testimonials blockquote,.testimonials .testimonial__quote,.testimonial-quote {font-family: 'Poppins', sans-serif !important; font-size: 1rem !important; font-weight: 400 !important; font-style: normal !important; letter-spacing: normal !important; line-height: 1.6 !important;}"
       ],
       "name": "Testimonials Section",
       "settings": {}
